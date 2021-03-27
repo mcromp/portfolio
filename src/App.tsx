@@ -9,12 +9,14 @@ import ProjectDash from "./Pages/Home/ProjectDash/ProjectDash";
 function App() {
  return (
   <div className="App">
-   <Header />
-   <Landing />
-   <AboutMe />
-   <ProjectDash />
-   <Contact />
-   <Footer />
+   <div>
+    <Header />
+    <Landing />
+    <AboutMe />
+    <ProjectDash />
+    <Contact />
+    <Footer />
+   </div>
   </div>
  );
 }
