@@ -1,11 +1,9 @@
 const NavBar = () => {
  return (
-  <nav>
-   <ul>
-    <li>About me</li>
-    <li>projects</li>
-    <li>contacts</li>
-   </ul>
+  <nav className="navbar">
+   <button className="navbar__links">About me</button>
+   <button className="navbar__links">projects</button>
+   <button className="navbar__links">contacts</button>
   </nav>
  );
 };

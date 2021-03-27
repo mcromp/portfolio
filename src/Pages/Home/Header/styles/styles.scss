@@ -1,0 +1,16 @@
+.header {
+ display: flex;
+ justify-content: space-evenly;
+ padding: 0 1em;
+ background: rgb(205, 245, 165);
+ .navbar {
+  display: flex;
+  align-items: center;
+  background: rgb(250, 210, 210);
+  &__links {
+   margin: 0 1em;
+   height: 100%;
+   cursor: pointer;
+  }
+ }
+}
