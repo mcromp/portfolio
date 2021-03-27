@@ -10,7 +10,14 @@
   &__links {
    margin: 0 1em;
    height: 100%;
-   cursor: pointer;
+   //  cursor: pointer;
   }
  }
+}
+.scrolled {
+ position: fixed;
+ width: 100%;
+ top: 0px;
+ left: 0px;
+ z-index: 1;
 }
