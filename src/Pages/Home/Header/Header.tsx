@@ -8,6 +8,7 @@ const Header = () => {
  const [headerStyle, setHeaderStyle] = useState({
   transition: "all 200ms ease-in",
  });
+
  useScrollPosition(
   ({ prevPos, currPos }) => {
    const isVisible = currPos.y > prevPos.y;
@@ -24,6 +25,7 @@ const Header = () => {
   },
   [headerStyle],
  );
+
  return (
   <div className="scrolled">
    <header style={{ ...headerStyle }} className="header">
