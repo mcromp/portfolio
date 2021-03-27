@@ -1,0 +1,24 @@
+.landing {
+ display: flex;
+ height: 40em;
+ .welcome {
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: lavender;
+  width: 50%;
+ }
+
+ .head3d {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  background: pink;
+  span {
+   font-size: 10rem;
+  }
+ }
+}
