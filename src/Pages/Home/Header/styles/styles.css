@@ -12,5 +12,13 @@
           align-items: center;
   padding: 0 1em;
   background: lightblue;
+  -webkit-transition: -webkit-transform 0.2s ease-in-out;
+  transition: -webkit-transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
+}
+
+.hidden {
+  top: -100%;
 }
 /*# sourceMappingURL=styles.css.map */

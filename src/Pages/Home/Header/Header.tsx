@@ -15,7 +15,7 @@ const Header = () => {
  );
 
  return (
-  <header className={isVisible ? "header" : ""}>
+  <header className={isVisible ? "header" : "hidden"}>
    <Logo />
    <button className="navbar__menu-toggle">toggle menu</button>
    <NavBar />
