@@ -5,34 +5,21 @@ import NavBar from "./NavBar";
 import "./styles/styles.css";
 
 const Header = () => {
- const [headerStyle, setHeaderStyle] = useState({
-  transition: "all 200ms ease-in",
- });
+ const [isVisible, setIsVisible] = useState(true);
 
  useScrollPosition(
   ({ prevPos, currPos }) => {
-   const isVisible = currPos.y > prevPos.y;
-
-   const shouldBeStyle = {
-    visibility: isVisible ? "visible" : "hidden",
-    transition: `all 200ms ${isVisible ? "ease-in" : "ease-out"}`,
-    transform: isVisible ? "none" : "translate(0, -100%)",
-   };
-
-   if (JSON.stringify(shouldBeStyle) === JSON.stringify(headerStyle)) return;
-
-   setHeaderStyle(shouldBeStyle);
+   setIsVisible(currPos.y > prevPos.y);
   },
-  [headerStyle],
+  [isVisible],
  );
 
  return (
-  <div className="scrolled">
-   <header style={{ ...headerStyle }} className="header">
-    <Logo />
-    <NavBar />
-   </header>
-  </div>
+  <header className={isVisible ? "header" : ""}>
+   <Logo />
+   <button className="navbar__menu-toggle">toggle menu</button>
+   <NavBar />
+  </header>
  );
 };
 
