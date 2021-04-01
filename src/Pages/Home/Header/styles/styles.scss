@@ -6,8 +6,9 @@
  align-items: center;
  padding: 0 1em;
  background: lightblue;
- transition: transform 0.2s ease-in-out;
-}
-.hidden {
- top: -100%;
+ transition: all 0.5s;
+ &--hidden {
+  @extend .header;
+  transform: translateY(-100%);
+ }
 }
