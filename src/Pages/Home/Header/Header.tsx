@@ -1,10 +1,10 @@
 import { useScrollPosition } from "@n8tb1t/use-scroll-position";
-import { useState } from "react";
+import { useLayoutEffect, useState } from "react";
 import Logo from "./Logo";
 import Menu from "./Menu";
 import "./styles/styles.css";
 
-const Header = () => {
+const Header: React.FC<any> = ({ setIsModalOpen }) => {
  const [isVisible, setIsVisible] = useState(true);
  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -18,6 +18,11 @@ const Header = () => {
   undefined,
   100,
  );
+
+ //stop body scrolling when menu is open
+ useLayoutEffect(() => {
+  document.body.style.overflow = isMenuOpen ? "hidden" : "unset";
+ }, [isMenuOpen]);
 
  return (
   <header className={isVisible ? "header" : "header--hidden"}>
