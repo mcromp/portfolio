@@ -25,20 +25,23 @@ const Header: React.FC<any> = ({ setIsModalOpen }) => {
  }, [isMenuOpen]);
 
  return (
-  <header className={isVisible ? "header" : "header--hidden"}>
-   <Logo />
-   <button
-    className={isMenuOpen && isVisible ? "menu-toggle--open" : "menu-toggle"}
-    onClick={() => setIsMenuOpen((pS) => !pS)}
-   >
-    toggle menu
-   </button>
-   <Menu
-    isMenuOpen={isMenuOpen}
-    setIsMenuOpen={setIsMenuOpen}
-    isVisible={isVisible}
-   />
-  </header>
+  <>
+   <div className={isMenuOpen && isVisible ? "modal--open" : "modal"} />
+   <header className={isVisible ? "header" : "header--hidden"}>
+    <Logo />
+    <button
+     className={isMenuOpen && isVisible ? "menu-toggle--open" : "menu-toggle"}
+     onClick={() => setIsMenuOpen((pS) => !pS)}
+    >
+     toggle menu
+    </button>
+    <Menu
+     isMenuOpen={isMenuOpen}
+     setIsMenuOpen={setIsMenuOpen}
+     isVisible={isVisible}
+    />
+   </header>
+  </>
  );
 };
 
