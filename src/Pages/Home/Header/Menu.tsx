@@ -1,8 +1,16 @@
 import { HashLink } from "react-router-hash-link";
 
-const NavBar: React.FC<any> = ({ isMenuOpen, setIsMenuOpen, isVisible }) => {
+const NavBar: React.FC<any> = ({
+ isMenuOpen,
+ setIsMenuOpen,
+ isVisible,
+ menuRef,
+}) => {
  return (
-  <nav className={isMenuOpen && isVisible ? "navbar--menuOpen" : "navbar"}>
+  <nav
+   ref={menuRef}
+   className={isMenuOpen && isVisible ? "navbar--menuOpen" : "navbar"}
+  >
    <HashLink
     className="navbar__links"
     smooth

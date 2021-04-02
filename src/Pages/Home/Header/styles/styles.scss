@@ -19,7 +19,7 @@
  }
 
  .navbar {
-  background: lightcoral;
+  background: lightgreen;
   display: none;
   position: absolute;
   top: 100%;
@@ -33,17 +33,14 @@
    @extend .navbar;
    display: flex;
    flex-direction: column;
-   justify-content: center;
-   overscroll-behavior: contain;
    .navbar__links {
+    color: green;
     text-decoration: none;
     text-transform: uppercase;
-    font-family: "Arial Narrow Bold", sans-serif;
     font-weight: 700;
-    padding: 2rem;
+    padding: 0.5rem;
     margin: 1rem 0;
-    border: thick double #32a1ce;
-    background: orange;
+    border: solid 1px;
     font-size: calc(1vw + 1em);
    }
   }

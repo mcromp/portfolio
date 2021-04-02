@@ -1470,6 +1470,11 @@
     estree-walker "^1.0.1"
     picomatch "^2.2.2"
 
+"@rooks/use-outside-click-ref@^4.10.1":
+  version "4.10.1"
+  resolved "https://registry.yarnpkg.com/@rooks/use-outside-click-ref/-/use-outside-click-ref-4.10.1.tgz#c53a871f88be10fa8a240d16419f4cb9f3588fcd"
+  integrity sha512-5yGRS/tHu9bb4XsIDsGw251/8rh957Ko2iEbRAGxMby0FnnJGTaMV7orwu+SCNJQqTf/MkcHbo8T70HcPXTAiQ==
+
 "@sinonjs/commons@^1.7.0":
   version "1.8.2"
   resolved "https://registry.yarnpkg.com/@sinonjs/commons/-/commons-1.8.2.tgz#858f5c4b48d80778fde4b9d541f27edc0d56488b"
