@@ -1,5 +1,5 @@
 import { useScrollPosition } from "@n8tb1t/use-scroll-position";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import Logo from "./Logo";
 import Menu from "./Menu";
 import "./styles/styles.css";
@@ -23,12 +23,16 @@ const Header = () => {
   <header className={isVisible ? "header" : "header--hidden"}>
    <Logo />
    <button
-    className={isMenuOpen ? "menu-toggle" : "menu-toggle"}
+    className={isMenuOpen && isVisible ? "menu-toggle--open" : "menu-toggle"}
     onClick={() => setIsMenuOpen((pS) => !pS)}
    >
     toggle menu
    </button>
-   <Menu isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
+   <Menu
+    isMenuOpen={isMenuOpen}
+    setIsMenuOpen={setIsMenuOpen}
+    isVisible={isVisible}
+   />
   </header>
  );
 };

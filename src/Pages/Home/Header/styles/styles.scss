@@ -1,6 +1,3 @@
-$d-font: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
- "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-
 .header {
  position: fixed;
  display: flex;
@@ -10,45 +7,52 @@ $d-font: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
  padding: 0 1rem;
  width: 100vw;
  background: lightblue;
- transition: all 0.5s;
+ transition: transform 0.5s;
+ //  overflow: auto;
+
  &--hidden {
   @extend .header;
   transform: translateY(-100%);
  }
  .logo {
-  font-size: calc(1vw + 1em);
+  font-size: calc(1vw + 0.9em);
  }
  .navbar {
   background: lightcoral;
   display: none;
   position: absolute;
-  top: 0;
+  top: 100%;
   right: 0;
   margin: 0;
   padding: 3rem 0 1rem 0;
-
+  animation: slidein 0.2s ease-in-out;
+  width: calc(8rem + 25vw);
+  height: 100vh;
   &--menuOpen {
    @extend .navbar;
    display: flex;
    flex-direction: column;
    justify-content: center;
-   width: 50%;
-
+   overscroll-behavior: contain;
    .navbar__links {
     text-decoration: none;
     text-transform: uppercase;
     font-family: "Arial Narrow Bold", sans-serif;
     font-weight: 700;
-    padding: 1rem;
+    padding: 2rem;
+    margin: 1rem 0;
+    border: thick double #32a1ce;
+    background: orange;
     font-size: calc(1vw + 1em);
    }
   }
  }
+
  .menu-toggle {
   position: relative;
   z-index: 1;
   border: 0;
-  background-color: transparent;
+  background-color: coral;
   font-size: 3em;
   width: 1em;
   height: 1em;
@@ -56,16 +60,38 @@ $d-font: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
   text-indent: 5em;
   white-space: nowrap;
   overflow: hidden;
+  border-radius: 50%;
+
   &:hover {
    cursor: pointer;
   }
   &::after {
    position: absolute;
-   top: 0.2em;
+   top: 0.3em;
    left: 0.2em;
    display: block;
    content: "\2261";
    text-indent: 0;
   }
+
+  &--open {
+   @extend .menu-toggle;
+   &::after {
+    top: 0.4em;
+    left: 0.25em;
+    font-size: 0.8em;
+    content: "\2715";
+   }
+  }
+ }
+}
+
+@keyframes slidein {
+ from {
+  transform: translateX(100%);
+ }
+
+ to {
+  transform: translateX(0);
  }
 }
