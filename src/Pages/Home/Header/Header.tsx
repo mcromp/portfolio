@@ -20,17 +20,16 @@ const Header: React.FC<any> = () => {
   100,
  );
 
- const outsideMenuClick = () => {
-  if (isMenuOpen) setIsMenuOpen(false);
- };
-
  //stop body scrolling when menu is open
  useLayoutEffect(() => {
   document.body.style.overflow = isMenuOpen ? "hidden" : "unset";
  }, [isMenuOpen]);
 
- //listens for clicks outside menu using useOutsideClickRef
- //https://react-hooks.org/docs/use-outside-click-ref
+ //listens for clicks outside menu using https://react-hooks.org/docs/use-outside-click-ref
+ const outsideMenuClick = () => {
+  if (isMenuOpen) setIsMenuOpen(false);
+ };
+
  const [menuRef] = useOutsideClickRef(outsideMenuClick);
 
  return (
