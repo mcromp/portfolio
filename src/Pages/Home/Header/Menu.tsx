@@ -28,31 +28,31 @@ const NavBar: React.FC<any> = ({
    ref={menuRef}
    className={isMenuOpen && isVisible ? "navbar--menuOpen" : "navbar"}
   >
-   <HashLink
-    className="navbar__links"
-    smooth
-    to="/#about"
-    onClick={() => setIsMenuOpen(false)}
-   >
+   <MenuHashLink to="" setIsMenuOpen={setIsMenuOpen}>
+    home
+   </MenuHashLink>
+   <MenuHashLink to="about" setIsMenuOpen={setIsMenuOpen}>
     about me
-   </HashLink>
-   <HashLink
-    className="navbar__links"
-    smooth
-    to="/#projects"
-    onClick={() => setIsMenuOpen(false)}
-   >
+   </MenuHashLink>
+   <MenuHashLink to="projects" setIsMenuOpen={setIsMenuOpen}>
     projects
-   </HashLink>
-   <HashLink
-    className="navbar__links"
-    smooth
-    to="/#contact"
-    onClick={() => setIsMenuOpen(false)}
-   >
+   </MenuHashLink>
+   <MenuHashLink to="contact" setIsMenuOpen={setIsMenuOpen}>
     contact
-   </HashLink>
+   </MenuHashLink>
   </nav>
  );
 };
+
+const MenuHashLink: React.FC<any> = ({ to, children, setIsMenuOpen }) => (
+ <HashLink
+  className="navbar__links"
+  smooth
+  to={`/#${to}`}
+  onClick={() => setIsMenuOpen(false)}
+ >
+  {children}
+ </HashLink>
+);
+
 export default NavBar;
