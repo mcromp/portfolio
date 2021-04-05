@@ -1,3 +1,11 @@
-const Logo = () => <h1 className="logo">MCROMP</h1>;
+import { HashLink } from "react-router-hash-link";
+
+const Logo = () => (
+ <h1 className="logo">
+  <HashLink smooth to="/#">
+   MCROMP
+  </HashLink>
+ </h1>
+);
 
 export default Logo;

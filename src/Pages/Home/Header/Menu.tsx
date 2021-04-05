@@ -31,7 +31,7 @@ const NavBar: React.FC<any> = ({
    <HashLink
     className="navbar__links"
     smooth
-    to="#about"
+    to="/#about"
     onClick={() => setIsMenuOpen(false)}
    >
     about me
@@ -39,7 +39,7 @@ const NavBar: React.FC<any> = ({
    <HashLink
     className="navbar__links"
     smooth
-    to="#projects"
+    to="/#projects"
     onClick={() => setIsMenuOpen(false)}
    >
     projects
@@ -47,7 +47,7 @@ const NavBar: React.FC<any> = ({
    <HashLink
     className="navbar__links"
     smooth
-    to="#contact"
+    to="/#contact"
     onClick={() => setIsMenuOpen(false)}
    >
     contact
