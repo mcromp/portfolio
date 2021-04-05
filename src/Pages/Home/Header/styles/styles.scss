@@ -59,9 +59,11 @@
   white-space: nowrap;
   overflow: hidden;
   border-radius: 50%;
-
+  transition: background-color 0.5s;
   &:hover {
    cursor: pointer;
+   filter: brightness(110%);
+   background-color: whitesmoke;
   }
   &::after {
    position: absolute;

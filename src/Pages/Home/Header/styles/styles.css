@@ -77,10 +77,15 @@
   white-space: nowrap;
   overflow: hidden;
   border-radius: 50%;
+  -webkit-transition: background-color 0.5s;
+  transition: background-color 0.5s;
 }
 
 .header .menu-toggle:hover, .header--hidden .menu-toggle:hover, .header .menu-toggle--open:hover, .header--hidden .menu-toggle--open:hover {
   cursor: pointer;
+  -webkit-filter: brightness(110%);
+          filter: brightness(110%);
+  background-color: whitesmoke;
 }
 
 .header .menu-toggle::after, .header--hidden .menu-toggle::after, .header .menu-toggle--open::after, .header--hidden .menu-toggle--open::after {

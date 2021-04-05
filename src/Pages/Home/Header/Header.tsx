@@ -25,7 +25,7 @@ const Header: React.FC<any> = () => {
   document.body.style.overflow = isMenuOpen ? "hidden" : "unset";
  }, [isMenuOpen]);
 
- //listens for clicks outside menu using https://react-hooks.org/docs/use-outside-click-ref
+ //https://react-hooks.org/docs/use-outside-click-ref
  const outsideMenuClick = () => {
   if (isMenuOpen) setIsMenuOpen(false);
  };
