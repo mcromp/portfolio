@@ -12,7 +12,7 @@ const Header: React.FC<any> = () => {
  //https://github.com/n8tb1t/use-scroll-position#readme
  useScrollPosition(
   ({ prevPos, currPos }) => {
-   setIsVisible(currPos.y > prevPos.y);
+   setIsVisible(currPos.y >= prevPos.y || currPos.y === 0);
   },
   [isVisible],
   undefined,
