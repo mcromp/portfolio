@@ -1,13 +1,13 @@
 import "./App.css";
 import AboutMe from "./Pages/Home/AboutMe/AboutMe";
 import Contact from "./Pages/Home/Contact/Contact";
-import Footer from "./Pages/Home/Footer/Footer";
-import Header from "./Pages/Home/Header/Header";
+import Footer from "./Pages/Shared/Footer/Footer";
+import Header from "./Pages/Shared/Header/Header";
 import Landing from "./Pages/Home/Landing/Landing";
 import ProjectDash from "./Pages/Home/ProjectDash/ProjectDash";
 import { Switch, Route } from "react-router-dom";
 import MenuPlan from "./Pages/Projects/MenuPlan";
-import ScrollToTop from "./Pages/Home/ScrollToTop/ScrollToTop";
+import ScrollToTop from "./Pages/Shared/ScrollToTop/ScrollToTop";
 
 function App() {
  return (
