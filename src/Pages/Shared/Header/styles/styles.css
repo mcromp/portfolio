@@ -37,8 +37,8 @@
   right: 0;
   margin: 0;
   padding: 3rem 0 1rem 0;
-  -webkit-animation: slidein 0.2s ease-in-out;
-          animation: slidein 0.2s ease-in-out;
+  -webkit-animation: slide-in-from-right 0.2s ease-in-out;
+          animation: slide-in-from-right 0.2s ease-in-out;
   width: calc(8rem + 25vw);
   height: 100vh;
 }
@@ -120,7 +120,7 @@
   background-color: rgba(0, 0, 0, 0.4);
 }
 
-@-webkit-keyframes slidein {
+@-webkit-keyframes slide-in-from-right {
   from {
     -webkit-transform: translateX(100%);
             transform: translateX(100%);
@@ -131,7 +131,7 @@
   }
 }
 
-@keyframes slidein {
+@keyframes slide-in-from-right {
   from {
     -webkit-transform: translateX(100%);
             transform: translateX(100%);

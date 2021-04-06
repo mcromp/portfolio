@@ -26,7 +26,7 @@
   right: 0;
   margin: 0;
   padding: 3rem 0 1rem 0;
-  animation: slidein 0.2s ease-in-out;
+  animation: slide-in-from-right 0.2s ease-in-out;
   width: calc(8rem + 25vw);
   height: 100vh;
   &--menuOpen {
@@ -101,7 +101,7 @@
  }
 }
 
-@keyframes slidein {
+@keyframes slide-in-from-right {
  from {
   transform: translateX(100%);
  }

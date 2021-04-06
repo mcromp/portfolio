@@ -22,9 +22,9 @@ function App() {
      <AboutMe />
      <ProjectDash />
      <Contact />
-     <ScrollToTop />
     </Route>
    </Switch>
+   <ScrollToTop />
    <Footer />
   </div>
  );

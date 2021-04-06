@@ -1,2 +1,11 @@
-.scroll-to-top {
+.top-scroll {
+ position: fixed;
+ z-index: 2;
+ right: 1em;
+ bottom: 1em;
+ transition: transform 0.6s;
+ &--hidden {
+  @extend .top-scroll;
+  transform: translateY(10em);
+ }
 }
