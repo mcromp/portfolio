@@ -7,6 +7,7 @@ import Landing from "./Pages/Home/Landing/Landing";
 import ProjectDash from "./Pages/Home/ProjectDash/ProjectDash";
 import { Switch, Route } from "react-router-dom";
 import MenuPlan from "./Pages/Projects/MenuPlan";
+import ScrollToTop from "./Pages/Home/ScrollToTop/ScrollToTop";
 
 function App() {
  return (
@@ -21,6 +22,7 @@ function App() {
      <AboutMe />
      <ProjectDash />
      <Contact />
+     <ScrollToTop />
     </Route>
    </Switch>
    <Footer />

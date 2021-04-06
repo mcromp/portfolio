@@ -1,27 +1,7 @@
 const MenuPlan = () => {
  return (
-  <div>
-   <br />
-   <br />
-   <br />
-   <br />
-   <br />
-   <br />
-   <br />
-   <br />
-   <br />
-   <br />
-   <br />
-   <br />
-   <br />
+  <div style={{ margin: "1200px 0" }}>
    <h1>HELO</h1>MenuPlan
-   <br />
-   <br />
-   <br />
-   <br />
-   <br />
-   <br />
-   <br />
   </div>
  );
 };
