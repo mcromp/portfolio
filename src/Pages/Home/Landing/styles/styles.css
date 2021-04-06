@@ -1,1 +1,72 @@
-/* No CSS *//*# sourceMappingURL=styles.css.map */
+.landing {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.landing .welcome {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #555;
+  border-radius: 10px;
+}
+
+.landing .welcome__super-title {
+  padding: 3em 0 0 0;
+  margin: 0;
+  color: #fff;
+  text-align: left;
+  width: 100%;
+}
+
+.landing .welcome__title {
+  color: #fff;
+  font-family: "Varela", sans-serif;
+  letter-spacing: 0.01px;
+  font-weight: 800;
+  font-size: calc(1vw + 4rem);
+  padding: 0;
+  margin: 0;
+}
+
+.landing .welcome__sub-title {
+  color: #fff;
+}
+
+.landing .welcome__text {
+  color: #fff;
+}
+
+.landing .head3d {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: pink;
+  height: 90em;
+}
+
+.landing .head3d span {
+  font-size: 3rem;
+}
+/*# sourceMappingURL=styles.css.map */

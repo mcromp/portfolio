@@ -17,7 +17,7 @@
  }
 
  .logo {
-  font-size: calc(1vw + 0.9em);
+  font-size: $font-size-logo;
  }
 
  .navbar {
@@ -26,53 +26,54 @@
   top: 100%;
   right: 0;
   padding: 3rem 0 1rem 0;
-  animation: slidein 0.2s ease-in-out;
   height: 100vh;
   width: calc(8rem + 25vw);
+  animation: slidein 0.2s ease-in-out;
+
   &--menuOpen {
    @extend .navbar;
    display: flex;
    flex-direction: column;
+   background: $dark1;
    z-index: 2;
 
    .navbar__links {
+    padding: 0.5rem;
+    margin: 1rem 0;
     text-decoration: none;
     text-transform: uppercase;
     font-weight: 700;
-    padding: 0.5rem;
-    margin: 1rem 0;
-    border: solid 1px;
-    font-size: calc(1vw + 1em);
+    background: $light2;
+    font-size: $font-size-nav-links;
    }
   }
  }
 
  .menu-toggle {
   position: relative;
-  z-index: 3;
-  border: 0;
-  background-color: $;
   font-size: 3em;
+  border: 0;
   width: 1em;
   height: 1em;
   line-height: 0.4;
+  border-radius: 50%;
+  background-color: $light1;
   text-indent: 5em;
   white-space: nowrap;
   overflow: hidden;
-  border-radius: 50%;
   transition: background-color 0.5s;
+  z-index: 3;
   &:hover {
    cursor: pointer;
-   filter: brightness(110%);
-   background-color: whitesmoke;
+   background-color: $light2;
   }
   &::after {
    position: absolute;
    top: 0.3em;
    left: 0.2em;
+   text-indent: 0;
    display: block;
    content: "\2261";
-   text-indent: 0;
   }
 
   &--open {
@@ -92,13 +93,12 @@
  &--open {
   display: block;
   position: fixed;
-  z-index: 1;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: rgb(0, 0, 0);
   background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1;
  }
 }
 
