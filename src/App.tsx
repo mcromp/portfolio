@@ -14,8 +14,14 @@ function App() {
   <div className="App">
    <Header />
    <Switch>
-    <Route path="/p/">
+    <Route path="/p/menu">
      <MenuPlan />
+    </Route>
+    <Route path="/p/flag">
+     <span>flag</span>
+    </Route>
+    <Route path="/p/muz">
+     <span>muz</span>
     </Route>
     <Route path="/">
      <Landing />

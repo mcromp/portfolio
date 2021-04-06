@@ -48,6 +48,7 @@ const MenuHashLink: React.FC<any> = ({ to, children, setIsMenuOpen }) => (
  <HashLink
   className="navbar__links"
   smooth
+  replace
   to={`/#${to}`}
   onClick={() => setIsMenuOpen(false)}
  >
