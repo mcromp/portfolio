@@ -1,40 +1,41 @@
+@import "../../../../base";
+
 .header {
  position: fixed;
  display: flex;
  justify-content: space-between;
  align-items: center;
- margin: 0;
  padding: 0 1rem;
  width: 100vw;
- background: lightblue;
- transition: transform 0.5s;
- //  overflow: auto;
  z-index: 2;
+ transition: transform 0.5s;
+ background: $light2;
+
  &--hidden {
   @extend .header;
-  transform: translateY(-100%);
+  transform: translateY(-110%);
  }
+
  .logo {
   font-size: calc(1vw + 0.9em);
  }
 
  .navbar {
-  background: lightgreen;
   display: none;
   position: absolute;
   top: 100%;
   right: 0;
-  margin: 0;
   padding: 3rem 0 1rem 0;
-  animation: slide-in-from-right 0.2s ease-in-out;
-  width: calc(8rem + 25vw);
+  animation: slidein 0.2s ease-in-out;
   height: 100vh;
+  width: calc(8rem + 25vw);
   &--menuOpen {
    @extend .navbar;
    display: flex;
    flex-direction: column;
+   z-index: 2;
+
    .navbar__links {
-    color: green;
     text-decoration: none;
     text-transform: uppercase;
     font-weight: 700;
@@ -50,7 +51,7 @@
   position: relative;
   z-index: 3;
   border: 0;
-  background-color: coral;
+  background-color: $;
   font-size: 3em;
   width: 1em;
   height: 1em;
@@ -101,7 +102,7 @@
  }
 }
 
-@keyframes slide-in-from-right {
+@keyframes slidein {
  from {
   transform: translateX(100%);
  }

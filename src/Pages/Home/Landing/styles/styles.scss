@@ -1,28 +1,47 @@
-.landing {
- display: flex;
- flex-direction: column;
- height: 140em;
- .welcome {
-  padding: 1em;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background: lavender;
-  // width: 50%;
-  height: 90em;
- }
+// .landing {
+//  display: flex;
+//  flex-direction: column;
+//  .welcome {
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   justify-content: center;
+//   background: #555;
+//   &__super-title {
+//    padding: 3em 0 0 0;
+//    margin: 0;
+//    color: #fff;
+//    text-align: left;
+//    width: 100%;
+//   }
+//   &__title {
+//    color: #fff;
+//    font-family: "Varela", sans-serif;
+//    letter-spacing: 0.01px;
+//    font-weight: 800;
+//    font-size: calc(1vw + 4rem);
+//    padding: 0;
+//    margin: 0;
+//   }
+//   &__sub-title {
+//    color: #fff;
+//   }
+//   &__text {
+//    color: #fff;
+//   }
+//   border-radius: 10px;
+//  }
 
- .head3d {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  // width: 50%;
-  background: pink;
-  height: 90em;
+//  .head3d {
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   // width: 50%;
+//   background: pink;
+//   height: 90em;
 
-  span {
-   font-size: 3rem;
-  }
- }
-}
+//   span {
+//    font-size: 3rem;
+//   }
+//  }
+// }

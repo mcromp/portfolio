@@ -9,20 +9,19 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 0;
   padding: 0 1rem;
   width: 100vw;
-  background: lightblue;
+  z-index: 2;
   -webkit-transition: -webkit-transform 0.5s;
   transition: -webkit-transform 0.5s;
   transition: transform 0.5s;
   transition: transform 0.5s, -webkit-transform 0.5s;
-  z-index: 2;
+  background: #ddd;
 }
 
 .header--hidden {
-  -webkit-transform: translateY(-100%);
-          transform: translateY(-100%);
+  -webkit-transform: translateY(-110%);
+          transform: translateY(-110%);
 }
 
 .header .logo, .header--hidden .logo {
@@ -30,17 +29,15 @@
 }
 
 .header .navbar, .header--hidden .navbar, .header .navbar--menuOpen, .header--hidden .navbar--menuOpen {
-  background: lightgreen;
   display: none;
   position: absolute;
   top: 100%;
   right: 0;
-  margin: 0;
   padding: 3rem 0 1rem 0;
-  -webkit-animation: slide-in-from-right 0.2s ease-in-out;
-          animation: slide-in-from-right 0.2s ease-in-out;
-  width: calc(8rem + 25vw);
+  -webkit-animation: slidein 0.2s ease-in-out;
+          animation: slidein 0.2s ease-in-out;
   height: 100vh;
+  width: calc(8rem + 25vw);
 }
 
 .header .navbar--menuOpen, .header--hidden .navbar--menuOpen {
@@ -51,10 +48,10 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  z-index: 2;
 }
 
 .header .navbar--menuOpen .navbar__links, .header--hidden .navbar--menuOpen .navbar__links {
-  color: green;
   text-decoration: none;
   text-transform: uppercase;
   font-weight: 700;
@@ -120,7 +117,7 @@
   background-color: rgba(0, 0, 0, 0.4);
 }
 
-@-webkit-keyframes slide-in-from-right {
+@-webkit-keyframes slidein {
   from {
     -webkit-transform: translateX(100%);
             transform: translateX(100%);
@@ -131,7 +128,7 @@
   }
 }
 
-@keyframes slide-in-from-right {
+@keyframes slidein {
   from {
     -webkit-transform: translateX(100%);
             transform: translateX(100%);
