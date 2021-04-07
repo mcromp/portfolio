@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,400,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@1,600&display=swap");
 .top-scroll, .top-scroll--hidden {
   position: fixed;
   z-index: 2;
@@ -7,10 +9,28 @@
   transition: -webkit-transform 0.6s;
   transition: transform 0.6s;
   transition: transform 0.6s, -webkit-transform 0.6s;
+  height: 3em;
+  width: 3em;
+  text-indent: 10em;
+  overflow: hidden;
+  text-indent: -10em;
+  border: none;
+  background: #444;
 }
 
 .top-scroll--hidden {
   -webkit-transform: translateY(10em);
           transform: translateY(10em);
+}
+
+.top-scroll::after, .top-scroll--hidden::after {
+  position: absolute;
+  font-size: 2em;
+  font-family: serif;
+  bottom: 0.1em;
+  right: 0.2em;
+  text-indent: 0;
+  color: #fff;
+  content: "\25B2";
 }
 /*# sourceMappingURL=styles.css.map */

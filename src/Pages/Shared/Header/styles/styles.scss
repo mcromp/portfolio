@@ -67,10 +67,10 @@
   height: 1em;
   line-height: 0.4;
   border-radius: 50%;
-  background-color: $light1;
   text-indent: 5em;
   white-space: nowrap;
   overflow: hidden;
+  background-color: $light1;
   transition: background-color 0.5s;
   z-index: 3;
   &:hover {
