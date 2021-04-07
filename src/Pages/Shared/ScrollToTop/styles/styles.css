@@ -15,7 +15,7 @@
   overflow: hidden;
   text-indent: -10em;
   border: none;
-  background: #444;
+  background: #fff;
 }
 
 .top-scroll--hidden {
@@ -30,7 +30,7 @@
   bottom: 0.1em;
   right: 0.2em;
   text-indent: 0;
-  color: #fff;
+  color: #444;
   content: "\25B2";
 }
 /*# sourceMappingURL=styles.css.map */
