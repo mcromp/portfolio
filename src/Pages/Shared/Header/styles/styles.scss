@@ -44,16 +44,16 @@
    @extend .navbar;
    display: flex;
    flex-direction: column;
-   background: $dark1;
+   justify-content: flex-start;
+   background: $light1;
    z-index: 2;
-
    .navbar__links {
-    padding: 0.5rem;
-    margin: 1rem 0;
-    text-decoration: none;
+    padding: 0.7rem 0;
+    margin: 0.5rem 0;
     text-transform: uppercase;
-    font-weight: 700;
-    background: $light2;
+    font-weight: 300;
+    color: $dark1;
+    font-family: $f-fam-p;
     font-size: $f-size-nav-links;
    }
   }
