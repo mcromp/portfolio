@@ -12,7 +12,7 @@
 }
 
 .about-me {
-  padding: 1rem;
+  padding: 3em 1em;
   background: #ddd;
   text-align: left;
   font-family: sans-serif;
@@ -21,6 +21,16 @@
 }
 
 .about-me p {
-  padding-bottom: 1rem;
+  padding-bottom: 1em;
+  white-space: pre-wrap;
+}
+
+.about-me__tech-list {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 /*# sourceMappingURL=styles.css.map */

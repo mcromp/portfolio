@@ -11,13 +11,19 @@
  letter-spacing: calc(2vw + 0.1em);
 }
 .about-me {
- padding: 1rem;
+ padding: 3em 1em;
  background: $light2;
  text-align: left;
  font-family: $f-fam-p;
  font-size: $f-size-p;
  font-weight: 300;
  p {
-  padding-bottom: 1rem;
+  padding-bottom: 1em;
+  white-space: pre-wrap;
+ }
+ &__tech-list {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
  }
 }
