@@ -1,0 +1,23 @@
+@import "../../../../base";
+
+.section_title {
+ text-transform: uppercase;
+ padding: 1rem 0;
+ font-size: $f-size-h2;
+ font-family: $f-fam-primary;
+ color: $dark1;
+ text-align: left;
+ font-weight: 800;
+ letter-spacing: calc(2vw + 0.1em);
+}
+.about-me {
+ padding: 1rem;
+ background: $light2;
+ text-align: left;
+ font-family: $f-fam-p;
+ font-size: $f-size-p;
+ font-weight: 300;
+ p {
+  padding-bottom: 1rem;
+ }
+}

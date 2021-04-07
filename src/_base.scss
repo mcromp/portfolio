@@ -9,9 +9,14 @@ $l-color2: #e0c3fc;
 
 $f-fam-primary: "Mulish", sans-serif;
 $f-fam-h: "IBM Plex Sans", sans-serif;
-$f-size-logo: calc(2vw + 1.2em);
-$f-size-h: calc(2vw + 2.3em);
+$f-fam-p: sans-serif;
+$f-size-logo: calc(2vw + 1.2rem);
+$f-size-h: calc(2vw + 2.3rem);
+$f-size-h2: calc(2vw + 0.9rem);
+$f-size-p: calc(1vw + 0.7rem);
 
-$f-size-welcome-text: calc(1.5vw + 1em);
+$f-size-welcome-text: calc(1.5vw + 1rem);
 
-$f-size-nav-links: calc(1vw + 1em);
+$f-size-nav-links: calc(1vw + 1rem);
+
+$shadow-main: 4px 2px 0.5px;

@@ -29,7 +29,7 @@
 }
 
 .header .logo, .header--hidden .logo {
-  font-size: calc(2vw + 1.2em);
+  font-size: calc(2vw + 1.2rem);
   font-family: "Mulish", sans-serif;
   color: #444;
   font-weight: 800;
@@ -77,7 +77,7 @@
   text-transform: uppercase;
   font-weight: 700;
   background: #ddd;
-  font-size: calc(1vw + 1em);
+  font-size: calc(1vw + 1rem);
 }
 
 .header .menu-toggle, .header--hidden .menu-toggle, .header .menu-toggle--open, .header--hidden .menu-toggle--open {
