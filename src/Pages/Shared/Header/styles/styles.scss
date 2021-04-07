@@ -9,15 +9,25 @@
  width: 100vw;
  z-index: 2;
  transition: transform 0.5s;
- background: $light2;
-
+ background: $light1;
+ box-shadow: 1px 1px 20px black;
  &--hidden {
   @extend .header;
   transform: translateY(-110%);
  }
 
  .logo {
-  font-size: $font-size-logo;
+  font-size: $f-size-logo;
+  font-family: $f-fam-primary;
+  color: $dark1;
+  font-weight: 800;
+  letter-spacing: calc(2vw + 0.1em);
+  text-transform: uppercase;
+  transition: transform 1s;
+
+  &:hover {
+   transform: scale(1.07);
+  }
  }
 
  .navbar {
@@ -44,7 +54,7 @@
     text-transform: uppercase;
     font-weight: 700;
     background: $light2;
-    font-size: $font-size-nav-links;
+    font-size: $f-size-nav-links;
    }
   }
  }

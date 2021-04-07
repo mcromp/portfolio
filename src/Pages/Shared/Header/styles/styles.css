@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,400,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@1,600&display=swap");
 .header, .header--hidden {
   position: fixed;
   display: -webkit-box;
@@ -16,7 +18,9 @@
   transition: -webkit-transform 0.5s;
   transition: transform 0.5s;
   transition: transform 0.5s, -webkit-transform 0.5s;
-  background: #ddd;
+  background: #fff;
+  -webkit-box-shadow: 1px 1px 20px black;
+          box-shadow: 1px 1px 20px black;
 }
 
 .header--hidden {
@@ -25,7 +29,21 @@
 }
 
 .header .logo, .header--hidden .logo {
-  font-size: calc(1vw + 0.9em);
+  font-size: calc(2vw + 1.2em);
+  font-family: "Mulish", sans-serif;
+  color: #444;
+  font-weight: 800;
+  letter-spacing: calc(2vw + 0.1em);
+  text-transform: uppercase;
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+}
+
+.header .logo:hover, .header--hidden .logo:hover {
+  -webkit-transform: scale(1.07);
+          transform: scale(1.07);
 }
 
 .header .navbar, .header--hidden .navbar, .header .navbar--menuOpen, .header--hidden .navbar--menuOpen {

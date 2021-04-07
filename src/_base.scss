@@ -1,6 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,400,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@1,600&display=swap");
+
 $dark1: #444;
 $light1: #fff;
 $light2: #ddd;
+$l-color1: #8ec5fc;
+$l-color2: #e0c3fc;
 
-$font-size-logo: calc(1vw + 0.9em);
-$font-size-nav-links: calc(1vw + 1em);
+$f-fam-primary: "Mulish", sans-serif;
+$f-fam-h: "IBM Plex Sans", sans-serif;
+$f-size-logo: calc(2vw + 1.2em);
+$f-size-h: calc(2vw + 2.3em);
+
+$f-size-welcome-text: calc(1.5vw + 1em);
+
+$f-size-nav-links: calc(1vw + 1em);

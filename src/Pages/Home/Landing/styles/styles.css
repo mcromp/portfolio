@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,400,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@1,600&display=swap");
 .landing {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -22,34 +24,28 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background: #555;
-  border-radius: 10px;
-}
-
-.landing .welcome__super-title {
-  padding: 3em 0 0 0;
-  margin: 0;
-  color: #fff;
-  text-align: left;
-  width: 100%;
+  height: 100vh;
+  background-color: #8ec5fc;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#8ec5fc), color-stop(74%, #e0c3fc));
+  background-image: linear-gradient(180deg, #8ec5fc 0%, #e0c3fc 74%);
 }
 
 .landing .welcome__title {
-  color: #fff;
-  font-family: "Varela", sans-serif;
-  letter-spacing: 0.01px;
-  font-weight: 800;
-  font-size: calc(1vw + 4rem);
-  padding: 0;
+  padding: 2rem 0;
   margin: 0;
-}
-
-.landing .welcome__sub-title {
-  color: #fff;
+  color: #444;
+  font-weight: 800;
+  line-height: 80%;
+  font-size: calc(2vw + 2.3em);
+  font-family: "Mulish", sans-serif;
 }
 
 .landing .welcome__text {
-  color: #fff;
+  padding: 0;
+  margin: 0;
+  color: #444;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: calc(1.5vw + 1em);
 }
 
 .landing .head3d {
@@ -62,11 +58,29 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background: pink;
-  height: 90em;
+  background: #e0c3fc;
+  height: 10em;
 }
 
 .landing .head3d span {
   font-size: 3rem;
+}
+
+@-webkit-keyframes moveIt {
+  from {
+    background-position: bottom left;
+  }
+  to {
+    background-position: bottom right;
+  }
+}
+
+@keyframes moveIt {
+  from {
+    background-position: bottom left;
+  }
+  to {
+    background-position: bottom right;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
