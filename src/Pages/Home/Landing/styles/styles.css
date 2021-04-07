@@ -25,9 +25,9 @@
       -ms-flex-pack: center;
           justify-content: center;
   height: 100vh;
-  background-color: #8ec5fc;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#8ec5fc), color-stop(74%, #e0c3fc));
-  background-image: linear-gradient(180deg, #8ec5fc 0%, #e0c3fc 74%);
+  background-color: #eee;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#eee), color-stop(74%, #eee));
+  background-image: linear-gradient(180deg, #eee 0%, #eee 74%);
 }
 
 .landing .welcome__title {
@@ -58,7 +58,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background: #e0c3fc;
+  background: #eee;
   height: 10em;
 }
 

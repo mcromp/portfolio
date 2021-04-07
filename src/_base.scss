@@ -4,8 +4,8 @@
 $dark1: #444;
 $light1: #fff;
 $light2: #ddd;
-$l-color1: #8ec5fc;
-$l-color2: #e0c3fc;
+$l-color1: #eee;
+$l-color2: #eee;
 
 $f-fam-primary: "Mulish", sans-serif;
 $f-fam-h: "IBM Plex Sans", sans-serif;
@@ -20,3 +20,14 @@ $f-size-welcome-text: calc(1.5vw + 1rem);
 $f-size-nav-links: calc(1vw + 1rem);
 
 $shadow-main: 4px 2px 0.5px;
+
+%section-title {
+ text-transform: uppercase;
+ padding: 1rem 0;
+ font-size: $f-size-h2;
+ font-family: $f-fam-primary;
+ color: $dark1;
+ text-align: left;
+ font-weight: 800;
+ letter-spacing: calc(2vw + 0.1em);
+}
