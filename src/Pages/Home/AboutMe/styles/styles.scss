@@ -3,19 +3,17 @@
 .section_title {
  @extend %section-title;
 }
+
 .about-me {
  padding: 3em 1em;
  background: $light2;
- text-align: left;
- font-family: $f-fam-p;
- font-size: $f-size-p;
- font-weight: 300;
  p {
-  padding-bottom: 1em;
-  white-space: pre-wrap;
+  @extend %section-p;
  }
  &__tech-list {
   width: 100%;
+  @extend %section-p;
+
   display: flex;
   justify-content: space-around;
  }

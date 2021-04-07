@@ -4,7 +4,7 @@ import Contact from "./Pages/Home/Contact/Contact";
 import Footer from "./Pages/Shared/Footer/Footer";
 import Header from "./Pages/Shared/Header/Header";
 import Landing from "./Pages/Home/Landing/Landing";
-import ProjectDash from "./Pages/Home/ProjectDash/ProjectDash";
+import ProjectSection from "./Pages/Home/ProjectSection/ProjectSection";
 import { Switch, Route } from "react-router-dom";
 import MenuPlan from "./Pages/Projects/MenuPlan";
 import ScrollToTop from "./Pages/Shared/ScrollToTop/ScrollToTop";
@@ -26,7 +26,7 @@ function App() {
     <Route path="/">
      <Landing />
      <AboutMe />
-     <ProjectDash />
+     <ProjectSection />
      <Contact />
     </Route>
    </Switch>

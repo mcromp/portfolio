@@ -2,6 +2,8 @@
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@1,600&display=swap");
 
 $dark1: #444;
+$dark2: #666;
+
 $light1: #fff;
 $light2: #ddd;
 $l-color1: #eee;
@@ -23,11 +25,19 @@ $shadow-main: 4px 2px 0.5px;
 
 %section-title {
  text-transform: uppercase;
- padding: 1rem 0;
+ padding: 1rem 0 2rem 0;
  font-size: $f-size-h2;
  font-family: $f-fam-primary;
  color: $dark1;
  text-align: left;
  font-weight: 800;
  letter-spacing: calc(2vw + 0.1em);
+}
+%section-p {
+ text-align: left;
+ font-family: $f-fam-p;
+ font-size: $f-size-p;
+ font-weight: 300;
+ padding-bottom: 1em;
+ white-space: pre-wrap;
 }

@@ -15,20 +15,19 @@ const AboutMe = () => {
     <br />
     <br />
     As for programming... <br />
-    I first fell in love as a kid making text adventures with QBasic using the
-    family’s Windows 95 computer.
+    I first fell in love as a kid making fantasy text adventures with QBasic
+    using the family’s Windows 95 computer.
     <br />
     <br />
     Cut to the present day, I’ve completed several online frontend courses and
-    successfully deployed several web apps (none of which are set in a dungeon,
-    unfortunately).
+    successfully deployed several web apps (none of which set in a fantasy
+    dungeon, unfortunately).
     <br />
     <br />
     Outside of programming I enjoy creating art, traveling, playing guitar, and
     hiking.
     <br />
-    ...Yes, also coffee
-    <Emoji symbol="☕" label="coffee" />
+    ...Yes, also coffee <Emoji symbol="☕" label="coffee" />
    </p>
    <p>Some of the tech I've been using recently:</p>
    <div className="about-me__tech-list">
