@@ -3,7 +3,52 @@
 .section_title {
  @extend %section-title;
 }
+
 .project-dash {
- padding: 3em 1em;
- background: pink;
+ padding: 3rem 1rem;
+ background: $light1;
+
+ &__projects {
+  display: flex;
+  flex-direction: column;
+  // maps color from color list as background for project cards
+  @for $i from 1 through length($color-list) {
+   a:nth-child(#{length($color-list)}n + #{$i}) {
+    background: linear-gradient(
+     to right,
+     nth($color-list, $i),
+     rgb(207, 243, 255)
+    );
+   }
+  }
+  .proj-card {
+   padding: 1rem;
+   margin: 10px;
+   transition: transform 0.2s;
+   max-width: 20em;
+   &:hover {
+    transform: translateY(-0.2em);
+   }
+
+   &__title {
+    font-family: $f-fam-h;
+    font-size: $f-size-h3;
+    font-weight: 400;
+    padding: 1rem 0;
+    color: $dark1;
+   }
+   &__text {
+    font-family: $f-fam-p;
+    font-size: $f-size-p;
+
+    font-weight: 300;
+    $f-size-h2: calc(2vw + 0.9rem);
+    color: $dark1;
+   }
+  }
+ }
+}
+
+a {
+ text-decoration: none;
 }
