@@ -17,6 +17,7 @@ export const projectList: any = [
   to: "flag",
   title: "Flag Memeory",
   img: "",
-  text: "This is a placeholder for an app wher you match flags",
+  text:
+   "A memory game web application that reveals the wikipedia summary of a country when its flags are correctly matched",
  },
 ];

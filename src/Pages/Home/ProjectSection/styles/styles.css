@@ -11,6 +11,15 @@
   letter-spacing: calc(2vw + 0.1em);
 }
 
+.project-dash p {
+  text-align: left;
+  font-family: sans-serif;
+  font-size: calc(1vw + 0.7rem);
+  font-weight: 300;
+  padding-bottom: 1em;
+  white-space: pre-wrap;
+}
+
 .project-dash {
   padding: 3rem 1rem;
   background: #fff;
@@ -26,36 +35,6 @@
           flex-direction: column;
 }
 
-.project-dash__projects a:nth-child(6n + 1) {
-  background: -webkit-gradient(linear, left top, right top, from(#9ad9db), to(#cff3ff));
-  background: linear-gradient(to right, #9ad9db, #cff3ff);
-}
-
-.project-dash__projects a:nth-child(6n + 2) {
-  background: -webkit-gradient(linear, left top, right top, from(#beb4c5), to(#cff3ff));
-  background: linear-gradient(to right, #beb4c5, #cff3ff);
-}
-
-.project-dash__projects a:nth-child(6n + 3) {
-  background: -webkit-gradient(linear, left top, right top, from(#e5b3bb), to(#cff3ff));
-  background: linear-gradient(to right, #e5b3bb, #cff3ff);
-}
-
-.project-dash__projects a:nth-child(6n + 4) {
-  background: -webkit-gradient(linear, left top, right top, from(green), to(#cff3ff));
-  background: linear-gradient(to right, green, #cff3ff);
-}
-
-.project-dash__projects a:nth-child(6n + 5) {
-  background: -webkit-gradient(linear, left top, right top, from(blue), to(#cff3ff));
-  background: linear-gradient(to right, blue, #cff3ff);
-}
-
-.project-dash__projects a:nth-child(6n + 6) {
-  background: -webkit-gradient(linear, left top, right top, from(purple), to(#cff3ff));
-  background: linear-gradient(to right, purple, #cff3ff);
-}
-
 .project-dash__projects .proj-card {
   padding: 1rem;
   margin: 10px;
@@ -64,6 +43,7 @@
   transition: transform 0.2s;
   transition: transform 0.2s, -webkit-transform 0.2s;
   max-width: 20em;
+  background: #444;
 }
 
 .project-dash__projects .proj-card:hover {
@@ -76,14 +56,14 @@
   font-size: calc(2vw + 1rem);
   font-weight: 400;
   padding: 1rem 0;
-  color: #444;
+  color: #fff;
 }
 
 .project-dash__projects .proj-card__text {
   font-family: sans-serif;
   font-size: calc(1vw + 0.7rem);
   font-weight: 300;
-  color: #444;
+  color: #ddd;
 }
 
 a {
