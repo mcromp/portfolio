@@ -1,19 +1,12 @@
-import React, { Suspense } from "react";
 import "./styles/styles.css";
 
-const Email = React.lazy(() => import("./Email"));
-
 const Contact = () => {
- const [showingEmail, setShowingEmail] = React.useState(false);
-
- let email = showingEmail ? (
-  <Email />
- ) : (
-  <button onClick={() => setShowingEmail(true)}>Click for e-mail</button>
- );
  return (
   <div id="contact" className="contact">
-   <Suspense fallback={<>loading...</>}>{email}</Suspense>
+   <h2 className="section_title">Contact</h2>
+   <p>
+    <a href="mailto:mcromp.js@gmail.com?subject=Hello!">mcromp.js@gmail.com</a>
+   </p>
   </div>
  );
 };
