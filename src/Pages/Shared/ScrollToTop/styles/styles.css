@@ -24,6 +24,10 @@
           transform: translateY(10rem);
 }
 
+.top-scroll:hover, .top-scroll--hidden:hover {
+  cursor: pointer;
+}
+
 .top-scroll::after, .top-scroll--hidden::after {
   position: absolute;
   font-size: 2rem;
