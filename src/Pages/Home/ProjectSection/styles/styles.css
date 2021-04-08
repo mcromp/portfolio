@@ -37,6 +37,30 @@
   position: relative;
 }
 
+.project-dash__projects a:nth-child(6n + 1) {
+  background: #e94560;
+}
+
+.project-dash__projects a:nth-child(6n + 2) {
+  background: #1f4287;
+}
+
+.project-dash__projects a:nth-child(6n + 3) {
+  background: #206a5d;
+}
+
+.project-dash__projects a:nth-child(6n + 4) {
+  background: green;
+}
+
+.project-dash__projects a:nth-child(6n + 5) {
+  background: blue;
+}
+
+.project-dash__projects a:nth-child(6n + 6) {
+  background: purple;
+}
+
 .project-dash__projects .proj-card {
   padding: 1rem;
   margin: 10px;
@@ -46,6 +70,13 @@
   transition: transform 0.2s, -webkit-transform 0.2s;
   max-width: 20em;
   background: #000;
+}
+
+.project-dash__projects .proj-card:hover {
+  -webkit-transform: translateY(-0.2em);
+          transform: translateY(-0.2em);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .project-dash__projects .proj-card__bkgd-img {

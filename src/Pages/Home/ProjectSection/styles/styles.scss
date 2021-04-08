@@ -17,20 +17,22 @@
   position: relative;
   // maps color from color list as background for project cards
 
-  // @for $i from 1 through length($color-list) {
-  //  a:nth-child(#{length($color-list)}n + #{$i}) {
-  //   background: linear-gradient(to right, nth($color-list, $i), rgb(0, 0, 0));
-  //  }
-  // }
+  @for $i from 1 through length($color-list) {
+   a:nth-child(#{length($color-list)}n + #{$i}) {
+    background: nth($color-list, $i);
+    // background: linear-gradient(to right, nth($color-list, $i), rgb(0, 0, 0));
+   }
+  }
   .proj-card {
    padding: 1rem;
    margin: 10px;
    transition: transform 0.2s;
    max-width: 20em;
    background: $dark1;
-   //  &:hover {
-   //   transform: translateY(-0.2em);
-   //  }
+   &:hover {
+    transform: translateY(-0.2em);
+    transform: scale(1.1);
+   }
    &__bkgd-img {
     position: relative;
     width: 50%;
