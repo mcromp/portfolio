@@ -19,8 +19,8 @@ const AboutMe = () => {
     using the family’s Windows 95 computer.
     <br />
     <br />
-    Cut to the present day, I’ve completed several online frontend courses and
-    successfully deployed several web apps (none of which set in a fantasy
+    Cut to the present day, I’ve completed multiple frontend courses online and
+    successfully deployed several web apps (none of which are set in a fantasy
     dungeon, unfortunately).
     <br />
     <br />

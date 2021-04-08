@@ -1,7 +1,7 @@
 const Head3D = () => {
  return (
   <div className="head3d">
-   <span>😎</span>
+   <span>{`:)`}</span>
   </div>
  );
 };
