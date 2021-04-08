@@ -1,20 +1,20 @@
 .section_title {
-  text-transform: uppercase;
   padding: 1rem 0 2rem 0;
-  font-size: calc(2vw + 0.9rem);
-  font-family: "Mulish", sans-serif;
   color: #000;
-  text-align: left;
+  font-family: "Mulish", sans-serif;
+  font-size: calc(2vw + 0.9rem);
   font-weight: 800;
   letter-spacing: calc(2vw + 0.1em);
+  text-align: left;
+  text-transform: uppercase;
 }
 
 .project-dash p {
-  text-align: left;
+  padding-bottom: 1em;
   font-family: sans-serif;
   font-size: calc(1vw + 0.7rem);
   font-weight: 300;
-  padding-bottom: 1em;
+  text-align: left;
   white-space: pre-wrap;
 }
 
@@ -27,6 +27,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -34,7 +35,6 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: relative;
 }
 
 .project-dash__projects a:nth-child(6n + 1) {
@@ -62,15 +62,15 @@
 }
 
 .project-dash__projects .proj-card {
-  padding: 1rem;
+  max-width: 20em;
   margin: 10px;
+  padding: 1rem;
+  border-radius: 10%;
+  background: #666;
   -webkit-transition: -webkit-transform 0.2s;
   transition: -webkit-transform 0.2s;
   transition: transform 0.2s;
   transition: transform 0.2s, -webkit-transform 0.2s;
-  max-width: 20em;
-  background: #666;
-  border-radius: 10%;
 }
 
 .project-dash__projects .proj-card:hover {
@@ -81,29 +81,29 @@
 }
 
 .project-dash__projects .proj-card__icon {
-  font-size: 4em;
   margin: 1.2em;
   padding: 0.1em;
   border-radius: 10%;
   background: -webkit-gradient(linear, left top, right top, from(pink), to(blue));
   background: linear-gradient(to right, pink, blue);
+  font-size: 4em;
 }
 
 .project-dash__projects .proj-card__title {
-  font-family: "IBM Plex Sans", sans-serif;
-  font-size: calc(2vw + 1rem);
-  font-weight: 400;
   padding: 1rem 0;
   color: #fff;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: calc(2vw + 1rem);
   font-style: italic;
+  font-weight: 400;
 }
 
 .project-dash__projects .proj-card__text {
+  margin: 0.5rem 2em;
+  color: #fff;
   font-family: sans-serif;
   font-size: calc(1vw + 0.7rem);
-  margin: 0.5rem 2em;
   font-weight: 300;
-  color: #fff;
 }
 
 a {

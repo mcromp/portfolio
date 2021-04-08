@@ -14,24 +14,24 @@
   background: linear-gradient(180deg, #ba7eff 0%, rgb(247, 194, 231) 100%);
   box-shadow: 10px 1px 1px black;
   &__title {
-   padding: 2rem 0;
    margin: 0;
+   padding: 2rem 0;
    color: $dark1;
+   color: rgb(255, 220, 208);
+   font-family: $f-fam-primary;
+   font-size: $f-size-h;
    font-weight: 800;
    line-height: 80%;
-   font-size: $f-size-h;
-   font-family: $f-fam-primary;
-   color: rgb(255, 220, 208);
    text-shadow: 3px 3px 1px black;
    animation: 7s linear 1s infinite alternate colorFlair;
   }
   &__text {
-   padding: 0;
    margin: 0;
+   padding: 0;
    color: $dark1;
    font-family: $f-fam-h;
-   font-style: italic;
    font-size: $f-size-welcome-text;
+   font-style: italic;
   }
  }
 
@@ -39,8 +39,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: $l-color2;
   height: 10em;
+  background: $l-color2;
   span {
    font-size: 7rem;
   }

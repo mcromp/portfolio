@@ -12,10 +12,9 @@
   @extend %section-p;
  }
  &__tech-list {
-  width: 100%;
-  @extend %section-p;
-
   display: flex;
   justify-content: space-around;
+  width: 100%;
+  @extend %section-p;
  }
 }
