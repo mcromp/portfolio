@@ -1,4 +1,7 @@
 .App {
  text-align: center;
  overflow: hidden;
+ background-attachment: fixed;
+ /* background:; */
+  background-image:linear-gradient( rgb(173, 252, 232), #c6b1f8)
 }
