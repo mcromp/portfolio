@@ -9,9 +9,9 @@ const ProjectSection = () => {
    <p>Just some recent personal projects.</p>
    <div className="project-dash__projects">
     {projectList.map((project: any) => {
-     const { to, title, img, text } = project;
+     const { to, title, icon, text } = project;
      return (
-      <ProjectCard key={title} to={to} title={title} img={img} text={text} />
+      <ProjectCard key={title} to={to} title={title} icon={icon} text={text} />
      );
     })}
    </div>

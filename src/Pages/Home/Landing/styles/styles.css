@@ -40,8 +40,8 @@
   font-family: "Mulish", sans-serif;
   color: #ffdcd0;
   text-shadow: 3px 3px 1px black;
-  -webkit-animation: colorFlair 14s infinite;
-          animation: colorFlair 14s infinite;
+  -webkit-animation: 7s linear 1s infinite alternate colorFlair;
+          animation: 7s linear 1s infinite alternate colorFlair;
 }
 
 .landing .welcome__text {

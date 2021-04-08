@@ -23,7 +23,7 @@
    font-family: $f-fam-primary;
    color: rgb(255, 220, 208);
    text-shadow: 3px 3px 1px black;
-   animation: colorFlair 14s infinite;
+   animation: 7s linear 1s infinite alternate colorFlair;
   }
   &__text {
    padding: 0;
