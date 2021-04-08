@@ -16,7 +16,6 @@
   align-items: center;
   position: relative;
   // maps color from color list as background for project cards
-
   @for $i from 1 through length($color-list) {
    a:nth-child(#{length($color-list)}n + #{$i}) {
     background: nth($color-list, $i);
@@ -28,15 +27,19 @@
    margin: 10px;
    transition: transform 0.2s;
    max-width: 20em;
-   background: $dark1;
+   background: $dark2;
+   border-radius: 10%;
+
    &:hover {
     transform: translateY(-0.2em);
-    transform: scale(1.1);
+    transform: scale(1.05);
    }
-   &__bkgd-img {
-    position: relative;
-    width: 50%;
-    z-index: 1;
+   &__icon {
+    font-size: 4em;
+    margin: 1.2em;
+    padding: 0.1em;
+    border-radius: 10%;
+    background: linear-gradient(to right, pink, blue);
    }
    &__title {
     font-family: $f-fam-h;
@@ -49,10 +52,10 @@
    &__text {
     font-family: $f-fam-p;
     font-size: $f-size-p;
-    margin: 0 2em;
+    margin: 0.5rem 2em;
     font-weight: 300;
     $f-size-h2: calc(2vw + 0.9rem);
-    color: $light2;
+    color: $light1;
    }
   }
  }
