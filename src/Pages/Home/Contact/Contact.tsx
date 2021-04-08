@@ -1,4 +1,6 @@
 import React, { Suspense } from "react";
+import "./styles/styles.css";
+
 const Email = React.lazy(() => import("./Email"));
 
 const Contact = () => {
@@ -10,12 +12,8 @@ const Contact = () => {
   <button onClick={() => setShowingEmail(true)}>Click for e-mail</button>
  );
  return (
-  <div id="contact">
-   Email:
-   <Suspense fallback={<div>loading...</div>}>
-    <div>{email}</div>
-   </Suspense>
-   <div style={{ margin: "50em 0" }} />
+  <div id="contact" className="contact">
+   <Suspense fallback={<>loading...</>}>{email}</Suspense>
   </div>
  );
 };

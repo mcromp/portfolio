@@ -13,6 +13,7 @@
  text-indent: -10em;
  border: none;
  background: $light1;
+ box-shadow: $box-shadow-btn;
  &--hidden {
   @extend .top-scroll;
   transform: translateY(10em);

@@ -10,7 +10,7 @@
  z-index: 2;
  transition: transform 0.5s;
  background: $light1;
- box-shadow: 1px 1px 20px black;
+ box-shadow: $box-shadow-main;
  &--hidden {
   @extend .header;
   transform: translateY(-110%);
@@ -55,6 +55,7 @@
     color: $dark1;
     font-family: $f-fam-p;
     font-size: $f-size-nav-links;
+    box-shadow: $box-shadow-btn;
    }
   }
  }

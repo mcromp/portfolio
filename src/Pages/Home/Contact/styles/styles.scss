@@ -1,0 +1,13 @@
+@import "../../../../base";
+
+.section_title {
+ @extend %section-title;
+}
+
+.contact {
+ padding: 3rem 1rem 10rem 1rem;
+ background: $light2;
+ p {
+  @extend %section-p;
+ }
+}
