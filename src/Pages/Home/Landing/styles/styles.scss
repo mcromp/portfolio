@@ -9,8 +9,10 @@
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background-color: $l-color1;
-  background-image: linear-gradient(180deg, $l-color1 0%, $l-color2 74%);
+  // background-color: $l-color1;
+  background: #ba7eff;
+  background: linear-gradient(180deg, #ba7eff 0%, rgb(247, 194, 231) 100%);
+  box-shadow: 10px 1px 1px black;
   &__title {
    padding: 2rem 0;
    margin: 0;

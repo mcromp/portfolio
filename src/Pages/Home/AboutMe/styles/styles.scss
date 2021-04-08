@@ -6,7 +6,8 @@
 
 .about-me {
  padding: 3em 1em;
- background: $light2;
+ background: rgb(155, 255, 230);
+
  p {
   @extend %section-p;
  }

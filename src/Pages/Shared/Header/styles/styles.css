@@ -29,7 +29,7 @@
 .header .logo, .header--hidden .logo {
   font-size: calc(2vw + 1.2rem);
   font-family: "Mulish", sans-serif;
-  color: #444;
+  color: #000;
   font-weight: 800;
   letter-spacing: calc(2vw + 0.1em);
   text-transform: uppercase;
@@ -76,7 +76,7 @@
   margin: 0.5rem 0;
   text-transform: uppercase;
   font-weight: 300;
-  color: #444;
+  color: #000;
   font-family: sans-serif;
   font-size: calc(1vw + 1rem);
   -webkit-box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2), 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12);
@@ -111,7 +111,7 @@
   left: 0.2em;
   text-indent: 0;
   display: block;
-  color: #444;
+  color: #000;
   content: "\2261";
 }
 
