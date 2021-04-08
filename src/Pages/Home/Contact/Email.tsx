@@ -1,14 +1,9 @@
-import Obfuscate from "react-obfuscate";
-
-const Email = () => {
- return (
-  <Obfuscate
-   email="mcromp.js@gmail.com"
-   headers={{
-    subject: "Hello!",
-   }}
-  />
- );
-};
-
+const Email = () => (
+ <>
+  <blockquote>MCROMP.JS@GMAIL.COM</blockquote>
+  <p>
+   <a href="mailto:mcromp.js@gmail.com?subject=Hello!">Send Email</a>
+  </p>
+ </>
+);
 export default Email;
