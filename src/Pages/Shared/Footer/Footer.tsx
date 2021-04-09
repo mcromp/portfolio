@@ -1,9 +1,11 @@
+import "./styles/styles.css";
+
 const Footer = () => {
  return (
-  <footer>
-   <small>
-    &copy; {new Date().getFullYear()} Matthew Crompton &mdash; Link to GitHub
-    Repo
+  <footer className="footer">
+   <small className="footer__text">
+    Designed and built by Matthew Crompton &mdash;{" "}
+    <a href="http://google.com">check out the repo!</a>
    </small>
   </footer>
  );
