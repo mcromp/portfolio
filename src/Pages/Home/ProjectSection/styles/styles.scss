@@ -27,9 +27,12 @@
     background: rgb(255, 255, 255);
     box-shadow: $box-shadow-main;
     transition: transform 0.2s;
+    transition: background-color 0.4s;
+
     &:hover {
       transform: translateY(-0.2rem);
       transform: scale(1.05);
+      background-color:rgb(255, 213, 213)
    }
    &__icon {
 
@@ -44,7 +47,7 @@
    }
 
    &__title {
-    padding: .6rem 0;
+    padding: .6rem 0 0 0;
     padding-left: 1rem;
     color: $dark1;
     font-family: $f-fam-h;
