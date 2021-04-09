@@ -22,6 +22,6 @@ export const projectList: any[] = [
   title: "Flag Memeory",
   icon: flag,
   text:
-   "A memory game web application that reveals the wikipedia summary of a country when its flags are correctly matched",
+   "A memory game web application that reveals the wikipedia summary of a country when its flags are correctly matched.",
  },
 ];
