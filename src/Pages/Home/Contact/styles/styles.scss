@@ -6,8 +6,23 @@
 
 .contact {
  padding: 3rem 1rem 10rem 1rem;
-//  background: $light2;
- p {
-  @extend %section-p;
+
+ &__link{
+   display: block;
+   width: 50%;
+   margin: 2rem;
+   padding: 0;
+   color: $dark1;
+   font-size: calc(1vw + 1rem);
+   text-align: left;
+   text-indent: calc(2vw + 1rem);
+   text-transform: uppercase;
+   transition: all .4 s;
+   @extend %section-p;
+
+   &:hover{
+    color: $light1;
+    text-decoration-line: underline;
+   }
  }
 }
