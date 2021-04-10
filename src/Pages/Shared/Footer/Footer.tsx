@@ -1,6 +1,6 @@
 import "./styles/styles.css";
 
-const Footer = () => {
+const Footer = (): JSX.Element => {
  return (
   <footer className="footer">
    <small className="footer__text">

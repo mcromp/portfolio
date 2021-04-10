@@ -1,12 +1,12 @@
 import { useCallback, useLayoutEffect as useEffect } from "react";
 import { HashLink } from "react-router-hash-link";
 
-const NavBar: React.FC<any> = ({
+const NavBar = ({
  isMenuOpen,
  setIsMenuOpen,
  isVisible,
  menuRef,
-}) => {
+}: navBarProps) => {
  //listens to close window when esc key pressed
  const escCallback = useCallback(
   (event) => {
@@ -44,7 +44,18 @@ const NavBar: React.FC<any> = ({
  );
 };
 
-const MenuHashLink: React.FC<any> = ({ to, children, setIsMenuOpen }) => (
+type navBarProps = {
+ isMenuOpen: boolean;
+ setIsMenuOpen: React.Dispatch<React.SetStateAction<boolean>>;
+ isVisible: boolean;
+ menuRef: React.Ref<HTMLElement>;
+};
+
+const MenuHashLink = ({
+ to,
+ children,
+ setIsMenuOpen,
+}: menuHashLinkProps): JSX.Element => (
  <HashLink
   className="navbar__links"
   smooth
@@ -56,4 +67,9 @@ const MenuHashLink: React.FC<any> = ({ to, children, setIsMenuOpen }) => (
  </HashLink>
 );
 
+type menuHashLinkProps = {
+ to: string;
+ children: string;
+ setIsMenuOpen: React.Dispatch<React.SetStateAction<boolean>>;
+};
 export default NavBar;

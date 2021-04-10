@@ -5,7 +5,7 @@ import Logo from "./Logo";
 import Menu from "./Menu";
 import "./styles/styles.css";
 
-const Header: React.FC<any> = () => {
+const Header = (): JSX.Element => {
  const [isVisible, setIsVisible] = useState(true);
  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
