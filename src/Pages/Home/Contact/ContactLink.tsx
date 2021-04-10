@@ -1,6 +1,6 @@
 import { contactLink } from "./contactLinks";
 
-const ContactLink: React.FC<contactLink> = ({ href, text }) => (
+const ContactLink = ({ href, text }: contactLink): JSX.Element => (
  <a href={href} className="contact__link" target="_blank" rel="noreferrer">
   {text}
  </a>

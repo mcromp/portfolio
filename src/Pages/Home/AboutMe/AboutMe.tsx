@@ -1,7 +1,7 @@
 import "./styles/styles.css";
 import Emoji from "a11y-react-emoji";
 
-const AboutMe = () => {
+const AboutMe = (): JSX.Element => {
  return (
   <section id="about" className="about-me">
    <h2 className="section_title">About</h2>
