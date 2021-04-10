@@ -1,5 +1,5 @@
-import { useCallback, useLayoutEffect as useEffect } from "react";
-import { HashLink } from "react-router-hash-link";
+import React, { useCallback, useLayoutEffect as useEffect } from "react";
+import MenuHashLink from "./MenuHashLink";
 
 const NavBar = ({
  isMenuOpen,
@@ -51,25 +51,4 @@ type navBarProps = {
  menuRef: React.Ref<HTMLElement>;
 };
 
-const MenuHashLink = ({
- to,
- children,
- setIsMenuOpen,
-}: menuHashLinkProps): JSX.Element => (
- <HashLink
-  className="navbar__links"
-  smooth
-  replace
-  to={`/#${to}`}
-  onClick={() => setIsMenuOpen(false)}
- >
-  {children}
- </HashLink>
-);
-
-type menuHashLinkProps = {
- to: string;
- children: string;
- setIsMenuOpen: React.Dispatch<React.SetStateAction<boolean>>;
-};
 export default NavBar;
