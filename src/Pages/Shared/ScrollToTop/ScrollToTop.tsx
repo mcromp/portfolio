@@ -2,7 +2,7 @@ import { useScrollPosition } from "@n8tb1t/use-scroll-position";
 import { useState } from "react";
 import "./styles/styles.css";
 
-const ScrollToTop = () => {
+const ScrollToTop = (): JSX.Element => {
  const [isVisible, setIsVisible] = useState<boolean>(false);
 
  useScrollPosition(
