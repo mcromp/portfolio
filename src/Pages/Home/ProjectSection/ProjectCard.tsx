@@ -1,7 +1,8 @@
-import React from "react";
 import { Link } from "react-router-dom";
+import { projectType } from "./projectList";
 import "./styles/styles.css";
-const ProjectCard: React.FC<any> = ({ title, to, icon, text }) => {
+
+const ProjectCard = ({ title, to, icon, text }: projectType): JSX.Element => {
  return (
   <Link className="proj-card" to={`/p/${to}`}>
    <div className="proj-card__icon">

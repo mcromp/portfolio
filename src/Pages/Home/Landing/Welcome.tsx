@@ -1,4 +1,4 @@
-const Welcome = () => {
+const Welcome = (): JSX.Element => {
  return (
   <div className="welcome">
    <h3 className="welcome__title">

@@ -2,7 +2,7 @@ import flag from "../../../Assets/flag-ss.png";
 import muz from "../../../Assets/muz-ss.png";
 import menu from "../../../Assets/menu-ss.png";
 
-export const projectList: any[] = [
+export const projectList: projectType[] = [
  {
   to: "menu",
   title: "Munu Plan",
@@ -25,3 +25,10 @@ export const projectList: any[] = [
    "A memory game web application that reveals the wikipedia summary of a country when its flags are correctly matched.",
  },
 ];
+
+export type projectType = {
+ to: string;
+ title: string;
+ icon: string;
+ text: string;
+};

@@ -1,4 +1,4 @@
-export const contactLinks: contactLink[] = [
+export const contactLinks: contactLinkType[] = [
  {
   href: "mailto:mcromp.js@gmail.com?subject=Hello!",
   text: "email",
@@ -13,7 +13,7 @@ export const contactLinks: contactLink[] = [
  },
 ];
 
-export type contactLink = {
+export type contactLinkType = {
  href: string;
  text: string;
 };
