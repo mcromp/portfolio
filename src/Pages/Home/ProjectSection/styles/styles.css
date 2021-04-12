@@ -90,6 +90,9 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding-right: calc(1vw + .6rem);
   padding-left: calc(1vw + .6rem);
 }
