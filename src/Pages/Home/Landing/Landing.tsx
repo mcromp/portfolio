@@ -1,12 +1,12 @@
-import Head3D from "./Head3D";
 import Welcome from "./Welcome";
 import "./styles/styles.css";
+import Head3DModel from "./Head3D";
 
 const Landing = () => {
  return (
   <div className="landing">
    <Welcome />
-   <Head3D />
+   <Head3DModel />
   </div>
  );
 };

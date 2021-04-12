@@ -1,3 +1,57 @@
+@-webkit-keyframes colorFlair {
+  0% {
+    -webkit-transform: skew(0, 0);
+            transform: skew(0, 0);
+    -webkit-filter: hue-rotate(0);
+            filter: hue-rotate(0);
+  }
+  25% {
+    -webkit-transform: skew(-1deg, 5deg);
+            transform: skew(-1deg, 5deg);
+    -webkit-filter: hue-rotate(360deg);
+            filter: hue-rotate(360deg);
+  }
+  75% {
+    -webkit-transform: skew(5deg, -1deg);
+            transform: skew(5deg, -1deg);
+    -webkit-filter: hue-rotate(-360deg);
+            filter: hue-rotate(-360deg);
+  }
+  100% {
+    -webkit-transform: skew(0, 0);
+            transform: skew(0, 0);
+    -webkit-filter: hue-rotate(0);
+            filter: hue-rotate(0);
+  }
+}
+
+@keyframes colorFlair {
+  0% {
+    -webkit-transform: skew(0, 0);
+            transform: skew(0, 0);
+    -webkit-filter: hue-rotate(0);
+            filter: hue-rotate(0);
+  }
+  25% {
+    -webkit-transform: skew(-1deg, 5deg);
+            transform: skew(-1deg, 5deg);
+    -webkit-filter: hue-rotate(360deg);
+            filter: hue-rotate(360deg);
+  }
+  75% {
+    -webkit-transform: skew(5deg, -1deg);
+            transform: skew(5deg, -1deg);
+    -webkit-filter: hue-rotate(-360deg);
+            filter: hue-rotate(-360deg);
+  }
+  100% {
+    -webkit-transform: skew(0, 0);
+            transform: skew(0, 0);
+    -webkit-filter: hue-rotate(0);
+            filter: hue-rotate(0);
+  }
+}
+
 .top-scroll, .top-scroll--hidden {
   z-index: 2;
   position: fixed;

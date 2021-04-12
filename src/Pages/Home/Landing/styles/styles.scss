@@ -3,6 +3,8 @@
 .landing {
  display: flex;
  flex-direction: column;
+ background: #ba7eff;
+ background: linear-gradient(180deg, #ba7eff 0%, rgb(247, 194, 231) 100%);
  .welcome {
   display: flex;
   flex-direction: column;
@@ -10,9 +12,7 @@
   justify-content: center;
   height: 100vh;
   // background-color: $l-color1;
-  background: #ba7eff;
-  background: linear-gradient(180deg, #ba7eff 0%, rgb(247, 194, 231) 100%);
-  box-shadow: 10px 1px 1px black;
+  // box-shadow: 10px 1px 1px black;
   &__title {
    margin: 0;
    padding: 2rem 0;
@@ -36,32 +36,8 @@
  }
 
  .head3d {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 10em;
-  background: $l-color2;
-  span {
-   font-size: 7rem;
-  }
- }
-}
-
-@keyframes colorFlair {
- 0% {
-  transform: skew(0, 0);
-  filter: hue-rotate(0);
- }
- 25% {
-  transform: skew(-1deg, 5deg);
-  filter: hue-rotate(360deg);
- }
- 75% {
-  transform: skew(5deg, -1deg);
-  filter: hue-rotate(-360deg);
- }
- 100% {
-  transform: skew(0, 0);
-  filter: hue-rotate(0);
+  background: none;
+  height: calc(12vw + 5rem) !important; 
+  width: 50% ;
  }
 }
