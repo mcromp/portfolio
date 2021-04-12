@@ -1,5 +1,6 @@
+import { projectCardList } from "../../../Resources/projectCardList";
 import ProjectCard from "./ProjectCard";
-import { projectList } from "./projectList";
+
 import "./styles/styles.css";
 
 const ProjectSection = (): JSX.Element => {
@@ -9,7 +10,7 @@ const ProjectSection = (): JSX.Element => {
    <p>Here are some recent personal projects of mine.</p>
 
    <div className="project-dash__projects">
-    {projectList.map((project) => {
+    {projectCardList.map((project) => {
      const { to, title, icon, text } = project;
      return (
       <ProjectCard key={title} to={to} title={title} icon={icon} text={text} />

@@ -1,8 +1,13 @@
 import { Link } from "react-router-dom";
-import { projectType } from "./projectList";
+import { projectCardType } from "../../../Resources/projectCardList";
 import "./styles/styles.css";
 
-const ProjectCard = ({ title, to, icon, text }: projectType): JSX.Element => {
+const ProjectCard = ({
+ title,
+ to,
+ icon,
+ text,
+}: projectCardType): JSX.Element => {
  return (
   <Link className="proj-card" to={`/p/${to}`}>
    <div className="proj-card__icon">

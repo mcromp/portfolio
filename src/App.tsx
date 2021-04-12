@@ -5,7 +5,7 @@ import Footer from "./Pages/Shared/Footer/Footer";
 import Header from "./Pages/Shared/Header/Header";
 import Landing from "./Pages/Home/Landing/Landing";
 import ProjectSection from "./Pages/Home/ProjectSection/ProjectSection";
-import MenuPlan from "./Pages/Projects/MenuPlan";
+import Project from "./Pages/Projects/Project";
 import ScrollToTop from "./Pages/Shared/ScrollToTop/ScrollToTop";
 import "./App.css";
 
@@ -14,14 +14,8 @@ function App() {
   <div className="App">
    <Header />
    <Switch>
-    <Route path="/p/menu">
-     <MenuPlan />
-    </Route>
-    <Route path="/p/flag">
-     <span>flag</span>
-    </Route>
-    <Route path="/p/muz">
-     <span>muz</span>
+    <Route path="/p/:id">
+     <Project />
     </Route>
     <Route path="/">
      <Landing />

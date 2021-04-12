@@ -1,8 +1,8 @@
-import flag from "../../../Assets/flag-ss.png";
-import muz from "../../../Assets/muz-ss.png";
-import menu from "../../../Assets/menu-ss.png";
+import flag from "../Assets/flag-ss.png";
+import muz from "../Assets/muz-ss.png";
+import menu from "../Assets/menu-ss.png";
 
-export const projectList: projectType[] = [
+export const projectCardList: projectCardType[] = [
  {
   to: "menu",
   title: "Munu Plan",
@@ -26,7 +26,7 @@ export const projectList: projectType[] = [
  },
 ];
 
-export type projectType = {
+export type projectCardType = {
  to: string;
  title: string;
  icon: string;
