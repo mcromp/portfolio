@@ -1,4 +1,4 @@
-import { OrbitControls, Stars, Text } from "@react-three/drei";
+import { MapControls, Stars, Text } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
 import { Html } from "@react-three/drei/web/Html";
 import React, { Suspense } from "react";
@@ -9,12 +9,12 @@ const Head3D = () => {
   <Canvas className="head3d">
    <Suspense
     fallback={
-     <Html>
-      <h3>Loading</h3>
-     </Html>
+     <Text color="black" fontSize={3}>
+      Loading...
+     </Text>
     }
    >
-    <OrbitControls />
+    <MapControls enableZoom={false} />
     <ambientLight intensity={0.5} />
     <spotLight position={[100, 15, 10]} angle={0.3} />
     <Stars factor={10} saturation={0} fade />
