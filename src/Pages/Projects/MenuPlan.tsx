@@ -1,4 +1,8 @@
 import { useEffect } from "react";
+import css3 from "../../Assets/Icons/css3.svg";
+const path = "../../Assets/Icons/";
+
+const icons = ["css3", "expressjs", "jest", "redux", "sass", "tonejs"];
 
 const MenuPlan = () => {
  useEffect(() => {
@@ -6,8 +10,20 @@ const MenuPlan = () => {
  }, []);
 
  return (
-  <div style={{ margin: "1200px 0" }}>
-   <h1>HELO</h1>MenuPlan
+  <div>
+   {icons.map((name) => {
+    return (
+     <div>
+      <img
+       key={name}
+       src={require(`../../Assets/Icons/${name}.svg`).default}
+       alt="ok"
+       height="50px"
+      />
+      <h1>{name}</h1>
+     </div>
+    );
+   })}
   </div>
  );
 };
