@@ -61,3 +61,13 @@ $box-shadow-btn: 0 2px 4px -1px rgba(0, 0, 0, 0.2),
   filter: hue-rotate(0);
  }
 }
+
+@keyframes slidein {
+ from {
+  transform: translateX(100%);
+ }
+
+ to {
+  transform: translateX(0);
+ }
+}

@@ -23,11 +23,6 @@
   font-weight: 800;
   letter-spacing: calc(2vw + 0.1em);
   text-transform: uppercase;
-  transition: transform 1s;
-
-  &:hover {
-   transform: scale(1.07);
-  }
  }
 
  .navbar {
@@ -45,7 +40,7 @@
    z-index: 2;
    flex-direction: column;
    justify-content: flex-start;
-   background: $light1;
+   background: rgba(255, 255, 255,1);
    @extend .navbar;
    .navbar__links {
     margin: 0.5rem 0;
@@ -56,6 +51,9 @@
     font-size: $f-size-nav-links;
     font-weight: 300;
     text-transform: uppercase;
+    &:hover{
+    background: $light2;
+    }
    }
   }
  }
@@ -114,12 +112,3 @@
  }
 }
 
-@keyframes slidein {
- from {
-  transform: translateX(100%);
- }
-
- to {
-  transform: translateX(0);
- }
-}
