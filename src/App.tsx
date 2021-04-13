@@ -14,7 +14,7 @@ function App() {
   <div className="App">
    <Header />
    <Switch>
-    <Route path="/p/:id">
+    <Route path="/p/:slug">
      <Project />
     </Route>
     <Route path="/">

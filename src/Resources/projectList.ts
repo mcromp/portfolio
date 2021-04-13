@@ -1,4 +1,4 @@
-import { SvgIcons } from "./svgIconType";
+import { SvgIcons } from "../Pages/Shared/types";
 
 const projectList: ProjectPage[] = [
  {
@@ -57,7 +57,7 @@ const projectList: ProjectPage[] = [
  },
 ];
 
-interface ProjectPage {
+export interface ProjectPage {
  id: string;
  title: string;
  description: string;
