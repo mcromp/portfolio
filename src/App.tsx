@@ -5,7 +5,7 @@ import Footer from "./Pages/Shared/Footer/Footer";
 import Header from "./Pages/Shared/Header/Header";
 import Landing from "./Pages/Home/Landing/Landing";
 import ProjectSection from "./Pages/Home/ProjectSection/ProjectSection";
-import Project from "./Pages/Projects/Project";
+import Projects from "./Pages/Projects/Projects";
 import ScrollToTop from "./Pages/Shared/ScrollToTop/ScrollToTop";
 import "./App.css";
 
@@ -15,7 +15,7 @@ function App() {
    <Header />
    <Switch>
     <Route path="/p/:slug">
-     <Project />
+     <Projects />
     </Route>
     <Route path="/">
      <Landing />
