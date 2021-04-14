@@ -1,8 +1,7 @@
 import SvgIcon from "./SvgIcon";
 import { ProjectPage } from "../../Resources/projectList";
-import gitHubSvg from "../../Assets/Icons/github.svg";
-import openSvg from "../../Assets/Icons/open.svg";
 import ss from "../../Assets/menu-ss.png";
+import ProjectLinks from "./ProjectLinks";
 const Project = ({
  id,
  title,
@@ -27,27 +26,7 @@ const Project = ({
      />
     ))}
    </div>
-
-   <div className="project__links">
-    <a
-     href="http://google.com"
-     className="project__link"
-     target="_blank"
-     rel="noreferrer"
-    >
-     <img src={gitHubSvg} alt="Github Icon" />
-     Code
-    </a>
-    <a
-     href="http://google.com"
-     className="project__link"
-     target="_blank"
-     rel="noreferrer"
-    >
-     <img src={openSvg} alt="view online icon" />
-     View
-    </a>
-   </div>
+   <ProjectLinks deployedURL={deployedURL} repoURL={repoURL} />
    <img style={{ width: "100%" }} src={ss} alt={`screenshot of ${title}`} />
    {posts?.map((post) => (
     <div key={post.heading}>
