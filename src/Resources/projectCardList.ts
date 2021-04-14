@@ -1,6 +1,6 @@
-import flag from "../Assets/flag-ss.png";
-import muz from "../Assets/muz-ss.png";
-import menu from "../Assets/menu-ss.png";
+import flag from "../Assets/ScreenShots/flag-ss.png";
+import muz from "../Assets/ScreenShots/muz-ss.png";
+import menu from "../Assets/ScreenShots/menu-ss.png";
 
 export const projectCardList: projectCardType[] = [
  {

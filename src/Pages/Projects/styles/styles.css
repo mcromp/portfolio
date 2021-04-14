@@ -84,7 +84,7 @@
 }
 
 .project {
-  padding: 5rem 1em 0 1em;
+  padding: 5rem 1rem 0 1rem;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -123,16 +123,25 @@
 }
 
 .project__icons {
+  width: 100%;
   padding: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background: rgba(255, 255, 255, 0.644);
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
 }
 
 .project__title {
   font-family: "IBM Plex Sans", sans-serif;
   font-size: calc(2vw + 0.9rem);
+  margin: 0 0 2rem 0;
 }
 
 .svg-card {
@@ -143,11 +152,21 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  border: solid 1px red;
+  width: calc(1vw + 3rem);
+  height: calc(1vw + 3rem);
 }
 
-.svg-card__icon {
-  width: calc(1vw + 2rem);
-  max-height: 50px;
+.svg-card__svg {
+  background: white;
+  width: calc(1vw + 3rem);
+  height: calc(1vw + 3rem);
+  margin: 2px;
+  border-radius: 100%;
+}
+
+.svg-card__svg img {
+  max-height: 100%;
+  max-width: 100%;
+  border-radius: 100%;
 }
 /*# sourceMappingURL=styles.css.map */

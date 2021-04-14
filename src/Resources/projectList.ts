@@ -4,11 +4,21 @@ const projectList: ProjectPage[] = [
  {
   id: "menu",
   title: "Menu Plan",
-  description:
-   "hello everyone my name is menu plan, first of all i'd like th thank my father matthew lawrence crompton fro creating me. Thank you father, you have granted me this blessed life that i everso cherrish. I hope that with this sacred gift I may help you get a job. this will be the only way I would feel that my life has been worthy of created",
+  description: `hello everyone my name is menu plan, first of all i'd like th thank my father matthew lawrence crompton fro creating me. Thank you father, you have granted me this blessed life that i everso cherrish. I hope that with this sacred gift I may help you get a job. this will be the only way I would feel that my life has been worthy of created`,
   deployedURL: "https://mcromp.github.io/menu-plan/#/",
   repoURL: "https://github.com/mcromp/menu-plan",
-  icons: ["css3", "typescript", "jest"],
+  icons: [
+   "css3",
+   "typescript",
+   "jest",
+   "react",
+   "redux",
+   "javascript",
+   "mongodb",
+   "sass",
+   "expressjs",
+   "nodejs",
+  ],
   posts: [
    {
     heading: "heading1",

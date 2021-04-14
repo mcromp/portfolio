@@ -1,4 +1,3 @@
-import SvgIcon from "./SvgIcon";
 import { ProjectPage } from "../../Resources/projectList";
 import ss from "../../Assets/menu-ss.png";
 import ProjectLinks from "./ProjectLinks";
@@ -15,27 +14,30 @@ const Project = ({
   <div className="project">
    <h1 className="project__title">{title}</h1>
    <p className="project__description">{description}</p>
-   <div className="project__icons">
-    <h2>Tech used:</h2>
+
+   <span>Tech used:</span>
+   <ul>
     {icons.map((iconName, i) => (
-     <SvgIcon
-      title={iconName}
-      key={`${iconName}${i}`}
-      size={30}
-      name={iconName}
-     />
+     <li key={iconName}>{iconName}</li>
     ))}
-   </div>
+   </ul>
+
    <ProjectLinks deployedURL={deployedURL} repoURL={repoURL} />
+
    <img style={{ width: "100%" }} src={ss} alt={`screenshot of ${title}`} />
+
    {posts?.map((post) => (
-    <div key={post.heading}>
-     <h3>{post.heading}</h3>
-     <p>{post.body}</p>
-    </div>
+    <Post key={post.heading} heading={post.heading} body={post.body} />
    ))}
   </div>
  );
 };
+
+const Post = ({ heading, body }: { heading: string; body: string }) => (
+ <div>
+  <h3>{heading}</h3>
+  <p>{body}</p>
+ </div>
+);
 
 export default Project;
