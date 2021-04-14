@@ -1,12 +1,12 @@
-const SvgIcon = ({ name, title, size }: svgIcon) => (
- <>
+const SvgIcon = ({ name, title, size }: svgIcon): JSX.Element => (
+ <div className="svg-card">
   <img
+   className="svg-card__icon"
    src={require(`../../Assets/Icons/${name}.svg`).default}
    alt={`Icon of ${name}`}
-   style={{ width: `${size}px` }}
   />
-  <span>{title}</span>
- </>
+  <span className="svg-card__title">{title}</span>
+ </div>
 );
 
 type svgIcon = {

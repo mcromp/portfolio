@@ -1,0 +1,50 @@
+@import '../../../base';
+
+.project{
+ padding: 5rem 1em 0 1em;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+
+  &__links{
+  padding: 1rem;
+  display: flex;
+}
+&__link{
+    display: flex;
+    text-transform: uppercase;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    margin: 1rem;
+    background:rgba(255, 255, 255, 0.644);
+    font-family: $f-fam-p;
+    border-radius: 10px;
+  }
+
+  &__icons{
+    padding: 1rem;
+    display: flex;
+    background: rgba(255, 255, 255, 0.644);
+  }
+
+  &__title{
+    font-family: $f-fam-h;
+    font-size: $f-size-h2;
+  }
+  &__description{
+    @extend %section-p;
+
+  }
+}
+
+.svg-card{
+display: flex;
+flex-direction: column;
+border: solid 1px red;
+&__icon{
+  width: calc(1vw + 2rem);
+  max-height: 50px;
+}
+}

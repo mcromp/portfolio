@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import { ProjectPage } from "../../Resources/projectList";
 import projectList from "../../Resources/projectList";
 import Project from "./Project";
+import "./styles/styles.css";
 
 const Projects = () => {
  const { slug } = useParams<{ slug: string }>();
@@ -42,7 +43,7 @@ const Projects = () => {
     posts={projectData.posts}
    />
   );
- return <div>Error...</div>;
+ return <div>Error</div>;
 };
 
 export default Projects;

@@ -19,7 +19,7 @@ const Head3D = () => {
     <Stars factor={10} saturation={0} fade />
     <Head3DModel position={[0, 0, 0]} scale={[20, 20, 20]} />
     <Text color="black" fontSize={0.3}>
-     get out of my head
+     Oh Hi! How are you?
     </Text>
    </Suspense>
   </Canvas>
