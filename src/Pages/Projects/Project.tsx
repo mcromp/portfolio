@@ -1,5 +1,5 @@
 import { ProjectPage } from "../../Resources/projectList";
-import ss from "../../Assets/menu-ss.png";
+import ss from "../../Assets/ScreenShots/menu-ss.png";
 import ProjectLinks from "./ProjectLinks";
 const Project = ({
  id,
