@@ -18,9 +18,11 @@ const ProjectCard = ({
    <h4 className="proj-card__title">{title}</h4>
    <p className="proj-card__text">{text}</p>
    <ProjectLinks webURL={webURL} codeURL={codeURL} />
-   {tech.map((t) => {
-    return <div>{t}</div>;
-   })}
+   <div className="proj-card__tech">
+    {tech.map((name) => (
+     <span>{name}</span>
+    ))}
+   </div>
   </div>
  );
 };
