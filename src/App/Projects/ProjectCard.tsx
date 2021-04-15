@@ -1,4 +1,4 @@
-import { projectCardType } from "../../../Resources/projectCardList";
+import { projectCardType } from "../../Resources/projectCardList";
 import ProjectLinks from "./ProjectLinks";
 import "./styles/styles.css";
 

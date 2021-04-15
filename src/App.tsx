@@ -1,28 +1,23 @@
-import { Switch, Route } from "react-router-dom";
-import AboutMe from "./Pages/App/AboutMe/AboutMe";
-import Contact from "./Pages/App/Contact/Contact";
-import Footer from "./Pages/Shared/Footer/Footer";
-import Header from "./Pages/Shared/Header/Header";
-import Landing from "./Pages/App/Landing/Landing";
-import Projects from "./Pages/App/Projects/Projects";
-import ScrollToTop from "./Pages/Shared/ScrollToTop/ScrollToTop";
+import { Route } from "react-router-dom";
+import AboutMe from "./App/AboutMe/AboutMe";
+import ScrollToTop from "./App/Shared/ScrollToTop/ScrollToTop";
+import Contact from "./App/Contact/Contact";
+import Landing from "./App/Landing/Landing";
+import Projects from "./App/Projects/Projects";
+import Footer from "./App/Shared/Footer/Footer";
+import Header from "./App/Shared/Header/Header";
 import "./App.css";
 
 function App() {
  return (
   <div className="App">
    <Header />
-   {/* <Switch> */}
-   {/* <Route path="/p/:slug">
-     <Projects />
-    </Route> */}
    <Route path="/">
     <Landing />
     <AboutMe />
     <Projects />
     <Contact />
    </Route>
-   {/* </Switch> */}
    <ScrollToTop />
    <Footer />
   </div>

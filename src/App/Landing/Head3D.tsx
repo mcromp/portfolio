@@ -1,7 +1,7 @@
 import { MapControls, Stars, Text } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
 import { Suspense } from "react";
-import Head3DModel from "../../../Assets/Head3DModel";
+import Head3DModel from "../../Assets/Head3DModel";
 
 const Head3D = () => {
  return (

@@ -1,5 +1,5 @@
-import gitHubSvg from "../../../Assets/Icons/github.svg";
-import openSvg from "../../../Assets/Icons/open.svg";
+import gitHubSvg from "../../Assets/Icons/github.svg";
+import openSvg from "../../Assets/Icons/open.svg";
 
 const ProjectLinks = ({ webURL, codeURL }: ProjectLinksProps) => {
  return (

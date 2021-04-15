@@ -1,5 +1,5 @@
 import ContactLink from "./ContactLink";
-import { contactLinks } from "../../../Resources/contactLinks";
+import { contactLinks } from "../../Resources/contactLinks";
 import "./styles/styles.css";
 
 const Contact = (): JSX.Element => {
