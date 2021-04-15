@@ -8,7 +8,7 @@
  padding: 3rem 1rem;
  background: $light1;
  background: rgba(255, 255, 255, 0.575);
-  box-shadow: $box-shadow-main;
+ box-shadow: $box-shadow-main;
  p {
   @extend %section-p;
  }
@@ -18,36 +18,29 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  padding-right: calc(1vw + .6rem);
-  padding-left: calc(1vw + .6rem);
+  padding-right: calc(1vw + 0.6rem);
+  padding-left: calc(1vw + 0.6rem);
   .proj-card {
-    max-width: 17rem;
-    margin: 0.7rem;
-    padding: 1rem;
-    border-radius: 20px;
-    background: rgb(255, 255, 255);
-    box-shadow: $box-shadow-main;
-    transition: transform 0.2s;
-    &:hover {
-      transform: translateY(-0.2rem);
-      transform: scale(1.05);
-      background-image: linear-gradient(180deg, #ba7eff 0%, rgb(247, 194, 231) 100%);
-      
-   }
-   &__icon {
+   max-width: 17rem;
+   margin: 0.7rem;
+   padding: 1rem;
+   border-radius: 20px;
+   background: rgb(255, 255, 255);
+   box-shadow: $box-shadow-main;
 
-     img{
-       display: block;
-       min-width: 150px;
-       max-width: 250px;
-       margin-right: auto;
-       margin-left: auto;
-       box-shadow: $box-shadow-main;
-     }
+   &__icon {
+    img {
+     display: block;
+     min-width: 150px;
+     max-width: 250px;
+     margin-right: auto;
+     margin-left: auto;
+     box-shadow: $box-shadow-main;
+    }
    }
 
    &__title {
-    padding: .6rem 0 0 0;
+    padding: 0.6rem 0 0 0;
     padding-left: 1rem;
     color: $dark1;
     font-family: $f-fam-h;
@@ -57,7 +50,7 @@
     text-align: left;
    }
    &__text {
-    margin: .5rem .5em;
+    margin: 0.5rem 0.5em;
     padding: 0;
     color: $dark1;
     font-family: $f-fam-p;
@@ -67,6 +60,36 @@
  }
 }
 
+.card-links {
+ display: flex;
+ align-items: flex-end;
+ justify-content: space-around;
+ &__link {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.644);
+  background: $light1;
+  font-family: $f-fam-p;
+  font-size: calc(1vw + 0.3rem);
+  text-transform: uppercase;
+  transition: transform 0.2s;
+  &:hover {
+   background-image: linear-gradient(
+    180deg,
+    #ba7eff 0%,
+    rgb(247, 194, 231) 100%
+   );
+  }
+  img {
+   width: calc(1vw + 2rem);
+   height: calc(1vw + 2rem);
+  }
+ }
+}
 a {
  text-decoration: none;
 }

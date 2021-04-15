@@ -52,7 +52,7 @@ const projectList: ProjectPage[] = [
   id: "muz",
   title: "MuziKa!",
   description: "",
-  deployedURL: "https://mcromp.github.io/MuziKa/",
+  deployedURL: "https://mcromp.github.io/muzika/#/",
   repoURL: "https://github.com/mcromp/MuziKa",
   icons: ["css3", "redux", "jest", "react", "jest"],
   posts: [

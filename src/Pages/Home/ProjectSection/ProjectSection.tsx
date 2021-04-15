@@ -11,10 +11,8 @@ const ProjectSection = (): JSX.Element => {
 
    <div className="project-dash__projects">
     {projectCardList.map((project) => {
-     const { to, title, icon, text } = project;
-     return (
-      <ProjectCard key={title} to={to} title={title} icon={icon} text={text} />
-     );
+     const { to, title, icon, text, codeURL, webURL } = project;
+     return <ProjectCard key={title} {...project} />;
     })}
    </div>
   </section>
