@@ -11,6 +11,17 @@ export const projectCardList: projectCardType[] = [
    "Web application that generates a printable 7-day food calendar, letting users select food items from a customizable list of food.",
   webURL: "https://mcromp.github.io/menu-plan/#/",
   codeURL: "https://github.com/mcromp/menu-plan",
+  tech: [
+   "TypeScript",
+   "React",
+   "Redux",
+   "NodeJS",
+   "Jest",
+   "Express",
+   "Mongoose",
+   "MongoDB",
+   "SASS/SCSS",
+  ],
  },
  {
   to: "muz",
@@ -20,6 +31,7 @@ export const projectCardList: projectCardType[] = [
    "Musical ear-training web application in which users guess the pitch of a musical note after a chord progression is played.",
   webURL: "https://mcromp.github.io/muzika/#/",
   codeURL: "https://github.com/mcromp/muzika",
+  tech: ["React", "React-Router", "JavaScript (ES6+)", "CSS", "ToneJS"],
  },
 
  {
@@ -30,6 +42,7 @@ export const projectCardList: projectCardType[] = [
    "A memory game web application that reveals the wikipedia summary of a country when its flags are correctly matched.",
   webURL: "https://mcromp.github.io/flag-memory/",
   codeURL: "https://github.com/mcromp/flag-memory",
+  tech: ["React", "JavaScript (ES6+)", "CSS"],
  },
 ];
 
@@ -40,4 +53,5 @@ export type projectCardType = {
  text: string;
  webURL: string;
  codeURL: string;
+ tech: string[];
 };

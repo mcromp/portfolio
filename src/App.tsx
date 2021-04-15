@@ -4,7 +4,7 @@ import Contact from "./Pages/Home/Contact/Contact";
 import Footer from "./Pages/Shared/Footer/Footer";
 import Header from "./Pages/Shared/Header/Header";
 import Landing from "./Pages/Home/Landing/Landing";
-import ProjectSection from "./Pages/Home/ProjectSection/ProjectSection";
+import Projects from "./Pages/Home/Projects/Projects";
 import ScrollToTop from "./Pages/Shared/ScrollToTop/ScrollToTop";
 import "./App.css";
 
@@ -19,7 +19,7 @@ function App() {
    <Route path="/">
     <Landing />
     <AboutMe />
-    <ProjectSection />
+    <Projects />
     <Contact />
    </Route>
    {/* </Switch> */}
