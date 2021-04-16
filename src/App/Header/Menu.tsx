@@ -28,9 +28,6 @@ const NavBar = ({
    ref={menuRef}
    className={isMenuOpen && isVisible ? "navbar--menuOpen" : "navbar"}
   >
-   <MenuHashLink to="" setIsMenuOpen={setIsMenuOpen}>
-    home
-   </MenuHashLink>
    <MenuHashLink to="about" setIsMenuOpen={setIsMenuOpen}>
     about me
    </MenuHashLink>

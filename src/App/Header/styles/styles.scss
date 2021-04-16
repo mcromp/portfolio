@@ -122,14 +122,13 @@
    flex-direction: row;
    flex-grow: 1;
    align-items: center;
-   justify-content: space-around;
-   width: 100%;
+   justify-content: flex-end;
    height: 100%;
    padding: 0;
    .navbar__links {
     height: 100%;
     margin: 0;
-    padding: 0.7rem calc(1vw + 0.3rem);
+    padding: 0.7rem calc(1vw + 1rem);
     color: $dark1;
     font-family: $f-fam-p;
     font-size: $f-size-p;

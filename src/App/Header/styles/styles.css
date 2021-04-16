@@ -227,16 +227,16 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    width: 100%;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
     height: 100%;
     padding: 0;
   }
   .header .navbar .navbar__links, .header--hidden .navbar .navbar__links, .header .navbar--menuOpen .navbar__links, .header--hidden .navbar--menuOpen .navbar__links {
     height: 100%;
     margin: 0;
-    padding: 0.7rem calc(1vw + 0.3rem);
+    padding: 0.7rem calc(1vw + 1rem);
     color: #000;
     font-family: sans-serif;
     font-size: calc(1vw + 0.7rem);
