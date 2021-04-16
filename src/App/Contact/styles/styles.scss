@@ -5,13 +5,13 @@
 }
 
 .contact {
- padding: 3rem 1rem 5rem 1rem;
  display: flex;
  flex-direction: column;
+ padding: 3rem 1rem 5rem 1rem;
 
  &__link {
-  margin: 1rem 0;
   width: 20%;
+  margin: 1rem 0;
   padding: 0;
   color: $dark1;
   font-size: calc(1vw + 1rem);

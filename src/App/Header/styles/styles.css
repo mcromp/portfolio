@@ -208,7 +208,7 @@
   background-color: rgba(0, 0, 0, 0.4);
 }
 
-@media (min-width: 720px) {
+@media (min-width: 750px) {
   .header .menu-toggle, .header--hidden .menu-toggle, .header .menu-toggle--open, .header--hidden .menu-toggle--open {
     display: none;
   }
@@ -243,9 +243,11 @@
     font-weight: 300;
     text-transform: uppercase;
     white-space: nowrap;
+    -webkit-transition: background-color 0.2s;
+    transition: background-color 0.2s;
   }
   .header .navbar .navbar__links:hover, .header--hidden .navbar .navbar__links:hover, .header .navbar--menuOpen .navbar__links:hover, .header--hidden .navbar--menuOpen .navbar__links:hover {
-    background: #ddd;
+    background-color: #ddd;
     text-decoration: underline;
   }
 }

@@ -111,7 +111,7 @@
  }
 }
 
-@media (min-width: 720px) {
+@media (min-width: 750px) {
  .header {
   .menu-toggle {
    display: none;
@@ -135,8 +135,9 @@
     font-weight: 300;
     text-transform: uppercase;
     white-space: nowrap;
+    transition: background-color 0.2s;
     &:hover {
-     background: $light2;
+     background-color: $light2;
      text-decoration: underline;
     }
    }
