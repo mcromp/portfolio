@@ -20,7 +20,7 @@ const ProjectCard = ({
    <ProjectLinks webURL={webURL} codeURL={codeURL} />
    <div className="proj-card__tech">
     {tech.map((name) => (
-     <span>{name}</span>
+     <span key={name}>{name}</span>
     ))}
    </div>
   </div>
