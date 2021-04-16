@@ -24,7 +24,7 @@
    min-width: 17rem;
    max-width: 30%;
    margin: 0.7rem;
-   padding: 1rem;
+   padding: 2rem 1rem 1rem 1rem;
    border-radius: 20px;
    background: rgb(255, 255, 255);
    box-shadow: $box-shadow-main;
@@ -41,7 +41,7 @@
    }
 
    &__title {
-    padding: 0.6rem 0 0 0;
+    padding: 0.8rem 0;
     padding-left: 1rem;
     color: $dark1;
     font-family: $f-fam-h;
@@ -55,7 +55,7 @@
     padding: 0;
     color: $dark1;
     font-family: $f-fam-p;
-    font-size: calc(1vw + 0.5rem);
+    font-size: calc(1vw + 0.7rem);
    }
    &__tech {
     width: 100%;
@@ -66,7 +66,7 @@
     justify-content: center;
     span {
      font-family: $f-fam-p;
-     font-size: calc(1vw + 0.15rem);
+     font-size: calc(1vw + 0.5rem);
      color: rgb(71, 71, 71);
      border: solid 1px;
      padding: 2px 3px;

@@ -108,8 +108,8 @@
   text-align: left;
   text-indent: calc(2vw + 1rem);
   text-transform: uppercase;
-  -webkit-transition: all .4 s;
-  transition: all .4 s;
+  -webkit-transition: all 0.4 s;
+  transition: all 0.4 s;
 }
 
 .contact__link:hover {

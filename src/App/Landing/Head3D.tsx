@@ -12,13 +12,7 @@ const Head3D = () => {
     className="canvas"
     style={{ height: isBigScreen ? "100vh" : "200px" }}
    >
-    <Suspense
-     fallback={
-      <Text color="black" fontSize={3}>
-       Loading...
-      </Text>
-     }
-    >
+    <Suspense fallback={null}>
      <MapControls enableZoom={false} />
      <ambientLight intensity={0.5} />
      <spotLight position={[100, 15, 10]} angle={0.3} />
