@@ -14,11 +14,11 @@
  }
  &__projects {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr));
   padding-right: calc(1vw + 0.6rem);
   padding-left: calc(1vw + 0.6rem);
+  justify-content: center;
   .proj-card {
-   min-width: 17rem;
    margin: 0.7rem;
    padding: 2rem 1rem 1rem 1rem;
    border-radius: 20px;

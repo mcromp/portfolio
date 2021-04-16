@@ -105,14 +105,16 @@
 .project-dash__projects {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(20rem, 1fr))[auto-fill];
-      grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+  -ms-grid-columns: (minmax(17rem, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr));
   padding-right: calc(1vw + 0.6rem);
   padding-left: calc(1vw + 0.6rem);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .project-dash__projects .proj-card {
-  min-width: 17rem;
   margin: 0.7rem;
   padding: 2rem 1rem 1rem 1rem;
   border-radius: 20px;
