@@ -5,7 +5,7 @@ const AboutMe = (): JSX.Element => {
  return (
   <section id="about" className="about-me">
    <h2 className="section_title">About</h2>
-   <p>
+   <p className="about-me__text">
     Hey, thanks for stopping by!
     <br />
     <br />
@@ -29,7 +29,7 @@ const AboutMe = (): JSX.Element => {
     <br />
     ...Yes, also coffee <Emoji symbol="☕" label="coffee" />
    </p>
-   <p>Some of the tech I've been using recently:</p>
+   <p className="about-me__text">Some of the tech I've been using recently:</p>
    <div className="about-me__tech-list">
     <ul>
      <li>React</li>

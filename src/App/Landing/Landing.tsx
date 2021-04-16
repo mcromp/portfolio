@@ -6,7 +6,7 @@ const Landing = () => {
  return (
   <div className="landing">
    <Welcome />
-   <Head3DModel />
+   {/* <Head3DModel /> */}
   </div>
  );
 };
