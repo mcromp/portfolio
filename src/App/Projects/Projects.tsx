@@ -4,8 +4,10 @@ import "./styles/styles.css";
 
 const Projects = (): JSX.Element => {
  return (
-  <section id="projects" className="project-dash">
-   <h2 className="section_title">Projects</h2>
+  <section className="project-dash">
+   <h2 id="projects" className="section_title">
+    Projects
+   </h2>
    <p>Here are some recent personal projects of mine.</p>
 
    <div className="project-dash__projects">
