@@ -24,6 +24,7 @@ $icon-size: 2rem;
  }
  &:hover {
   cursor: pointer;
+  background: $light2;
  }
  &::after {
   position: absolute;

@@ -102,6 +102,7 @@
 
 .top-scroll:hover, .top-scroll--hidden:hover {
   cursor: pointer;
+  background: #ddd;
 }
 
 .top-scroll::after, .top-scroll--hidden::after {
