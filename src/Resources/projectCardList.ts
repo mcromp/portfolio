@@ -8,7 +8,7 @@ export const projectCardList: projectCardType[] = [
   title: "Menu Plan",
   icon: menu,
   text:
-   "Web application that generates a printable 7-day food calendar, letting users select food items from a customizable list of food.",
+   "A CRUD customizable food calendar, front end and back end built using MERN stack .",
   webURL: "https://mcromp.github.io/menu-plan/#/",
   codeURL: "https://github.com/mcromp/menu-plan",
   tech: [
@@ -28,7 +28,7 @@ export const projectCardList: projectCardType[] = [
   title: "MuziKa!",
   icon: muz,
   text:
-   "Musical ear-training web application in which users guess the pitch of a musical note after a chord progression is played.",
+   "Musical ear-training web app, the user must select correct tone generated and synthesised with ToneJS.",
   webURL: "https://mcromp.github.io/muzika/#/",
   codeURL: "https://github.com/mcromp/muzika",
   tech: ["React", "React-Router", "JavaScript (ES6+)", "CSS", "ToneJS"],
@@ -39,7 +39,7 @@ export const projectCardList: projectCardType[] = [
   title: "Flag Memeory",
   icon: flag,
   text:
-   "A memory game web application that reveals the wikipedia summary of a country when its flags are correctly matched.",
+   "A memory game application built using both MediaWiki and REST Countries API.",
   webURL: "https://mcromp.github.io/flag-memory/",
   codeURL: "https://github.com/mcromp/flag-memory",
   tech: ["React", "JavaScript (ES6+)", "CSS"],

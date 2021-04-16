@@ -16,8 +16,8 @@ const ProjectCard = ({
     <img src={icon} alt={`screen shot of ${title}`} />
    </div>
    <h4 className="proj-card__title">{title}</h4>
-   <p className="proj-card__text">{text}</p>
    <ProjectLinks webURL={webURL} codeURL={codeURL} />
+   <p className="proj-card__text">{text}</p>
    <div className="proj-card__tech">
     {tech.map((name) => (
      <span key={name}>{name}</span>
