@@ -4,7 +4,7 @@ import { Suspense } from "react";
 import { useMediaQuery } from "react-responsive";
 import Head3DModel from "../../Assets/Head3DModel";
 
-const Head3D = () => {
+const Head3D = (): JSX.Element => {
  const isBigScreen = useMediaQuery({ query: "(min-width: 600px)" });
  return (
   <div className="head3d">
