@@ -1,4 +1,4 @@
-@import "../../../../base";
+@import "../../../base";
 
 .header {
  display: flex;
@@ -40,7 +40,7 @@
    z-index: 2;
    flex-direction: column;
    justify-content: flex-start;
-   background: rgba(255, 255, 255,1);
+   background: rgba(255, 255, 255, 1);
    @extend .navbar;
    .navbar__links {
     margin: 0.5rem 0;
@@ -51,8 +51,8 @@
     font-size: $f-size-nav-links;
     font-weight: 300;
     text-transform: uppercase;
-    &:hover{
-    background: $light2;
+    &:hover {
+     background: $light2;
     }
    }
   }
@@ -111,4 +111,3 @@
   background-color: rgba(0, 0, 0, 0.4);
  }
 }
-

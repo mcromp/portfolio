@@ -129,7 +129,33 @@
 
 .landing .head3d {
   background: none;
-  height: calc(12vw + 5rem) !important;
-  width: 50%;
+}
+
+.landing .head3d .canvas {
+  width: 100%;
+  height: 400px;
+}
+
+@media (min-width: 600px) {
+  .landing {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .landing .welcome {
+    width: 50%;
+  }
+  .landing .head3d {
+    height: 100%;
+    width: 50%;
+  }
+  .landing .head3d .canvas {
+    width: 100%;
+    height: 400px;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
