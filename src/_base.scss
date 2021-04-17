@@ -71,3 +71,18 @@ $box-shadow-btn: 0 2px 4px -1px rgba(0, 0, 0, 0.2),
   transform: translateX(0);
  }
 }
+
+.my-node-enter {
+ opacity: 0;
+}
+.my-node-enter-active {
+ opacity: 1;
+ transition: opacity 200ms;
+}
+.my-node-exit {
+ opacity: 1;
+}
+.my-node-exit-active {
+ opacity: 0;
+ transition: opacity 200ms;
+}
