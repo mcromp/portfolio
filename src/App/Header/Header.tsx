@@ -1,6 +1,7 @@
 import { useScrollPosition } from "@n8tb1t/use-scroll-position";
 import useOutsideClickRef from "@rooks/use-outside-click-ref";
-import { useLayoutEffect, useState } from "react";
+import { useEffect, useLayoutEffect, useState } from "react";
+import { gsap } from "gsap";
 import Logo from "./Logo";
 import Menu from "./Menu";
 import "./styles/styles.css";
@@ -8,6 +9,15 @@ import "./styles/styles.css";
 const Header = (): JSX.Element => {
  const [isVisible, setIsVisible] = useState(true);
  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+ useEffect(() => {
+  gsap.from(".header", {
+   autoAlpha: 0,
+   ease: "easeIn",
+   delay: 0.8,
+   duration: 1,
+  });
+ }, []);
 
  //https://github.com/n8tb1t/use-scroll-position#readme
  useScrollPosition(
