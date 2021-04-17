@@ -6,6 +6,7 @@ import Landing from "./App/Landing/Landing";
 import Projects from "./App/Projects/Projects";
 import Footer from "./App/Footer/Footer";
 import Header from "./App/Header/Header";
+
 import "./App.css";
 
 function App() {
