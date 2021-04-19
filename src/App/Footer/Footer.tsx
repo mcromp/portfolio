@@ -5,7 +5,7 @@ const Footer = (): JSX.Element => {
   <footer className="footer">
    <small className="footer__text">
     Designed and built by Matthew Crompton &mdash;{" "}
-    <a href="http://google.com">check out the repo!</a>
+    <a href="https://github.com/mcromp/portfolio">check out the repo!</a>
    </small>
   </footer>
  );
