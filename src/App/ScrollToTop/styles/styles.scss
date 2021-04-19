@@ -15,7 +15,6 @@ $icon-size: 2rem;
  border-radius: 100%;
  background: $light1;
  box-shadow: $box-shadow-btn;
- text-indent: 10rem;
  text-indent: -10rem;
  transition: transform 0.6s;
  &--hidden {
@@ -23,8 +22,8 @@ $icon-size: 2rem;
   @extend .top-scroll;
  }
  &:hover {
-  cursor: pointer;
   background: $light2;
+  cursor: pointer;
  }
  &::after {
   position: absolute;

@@ -157,14 +157,13 @@
 .header .menu-toggle, .header--hidden .menu-toggle, .header .menu-toggle--open, .header--hidden .menu-toggle--open {
   z-index: 3;
   position: relative;
-  width: 1em;
-  height: 1em;
+  width: 3rem;
+  height: 3rem;
   overflow: hidden;
   border: 0;
   border-radius: 50%;
   background-color: #fff;
-  font-size: 3em;
-  line-height: 0.4;
+  font-size: 3rem;
   text-indent: 5em;
   white-space: nowrap;
   -webkit-transition: background-color 0.5s;
@@ -179,18 +178,18 @@
 .header .menu-toggle::after, .header--hidden .menu-toggle::after, .header .menu-toggle--open::after, .header--hidden .menu-toggle--open::after {
   display: block;
   position: absolute;
-  top: 0.3em;
-  left: 0.2em;
+  bottom: 1%;
+  left: 17%;
   color: #000;
   text-indent: 0;
-  content: "\2261";
+  content: url("../../../Assets/Icons/ham.svg");
 }
 
 .header .menu-toggle--open::after, .header--hidden .menu-toggle--open::after {
-  top: 0.4em;
-  left: 0.25em;
-  font-size: 0.8em;
-  content: "\2715";
+  top: -2px;
+  left: 10%;
+  font-size: 3rem;
+  content: url("../../../Assets/Icons/close.svg");
 }
 
 .modal {
