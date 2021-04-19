@@ -1,11 +1,12 @@
 .section_title {
   padding: 1rem 0 2rem 0;
+  display: inline-block;
+  text-align: center;
   color: #000;
   font-family: "Mulish", sans-serif;
   font-size: calc(2vw + 0.9rem);
   font-weight: 800;
   letter-spacing: calc(2vw + 0.1em);
-  text-align: left;
   text-transform: uppercase;
 }
 
@@ -102,18 +103,8 @@
           box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.4), 0 2px 6px 2px rgba(60, 64, 67, 0.3);
 }
 
-@media (min-width: 600px) {
-  .project-dash p {
-    padding-left: calc(2vw + 3.4rem);
-    padding-right: calc(2vw + 3.4rem);
-  }
-}
-
-@media (min-width: 1000px) {
-  .project-dash p {
-    padding-left: calc(2vw + 7rem);
-    padding-right: calc(2vw + 7rem);
-  }
+.project-dash p {
+  text-align: center;
 }
 
 .project-dash__projects {
@@ -156,7 +147,6 @@
   font-size: calc(1vw + 1rem);
   font-style: italic;
   font-weight: 400;
-  text-align: left;
 }
 
 .project-dash__projects .proj-card__text {

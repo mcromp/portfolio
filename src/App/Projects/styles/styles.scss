@@ -11,7 +11,8 @@
  box-shadow: $box-shadow-main;
  p {
   @extend %section-p;
-  @include indent;
+  // @include indent;
+  text-align: center;
  }
  &__projects {
   display: grid;
@@ -45,7 +46,7 @@
     font-size: calc(1vw + 1rem);
     font-style: italic;
     font-weight: 400;
-    text-align: left;
+    // text-align: left;
    }
    &__text {
     margin: 0.5rem 0.5em;

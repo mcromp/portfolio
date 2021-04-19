@@ -37,12 +37,13 @@ $box-shadow-btn: 0 2px 4px -1px rgba(0, 0, 0, 0.2),
 
 %section-title {
  padding: 1rem 0 2rem 0;
+ display: inline-block;
+ text-align: center;
  color: $dark1;
  font-family: $f-fam-primary;
  font-size: $f-size-h2;
  font-weight: 800;
  letter-spacing: calc(2vw + 0.1em);
- text-align: left;
  text-transform: uppercase;
 }
 %section-p {
