@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
+import { Linkedin, GitHub, Mail, ExternalLink } from "react-feather";
 
 const Welcome = (): JSX.Element => {
  let content = useRef<HTMLDivElement>(null);
@@ -26,6 +27,32 @@ const Welcome = (): JSX.Element => {
     Crompton
    </h3>
    <p className="welcome__text">Berlin-based Front End Developer.</p>
+   <div className="welcome__icons">
+    <a
+     aria-label="Linkedin"
+     target="_blank"
+     rel="noreferrer"
+     href="https://www.linkedin.com/in/mcromp/"
+    >
+     <Linkedin color="black" />
+    </a>
+    <a
+     aria-label="Linkedin"
+     target="_blank"
+     rel="noreferrer"
+     href="https://www.linkedin.com/in/mcromp/"
+    >
+     <GitHub color="black" />
+    </a>
+    <a
+     aria-label="Linkedin"
+     target="_blank"
+     rel="noreferrer"
+     href="https://www.linkedin.com/in/mcromp/"
+    >
+     <Mail color="black" />
+    </a>
+   </div>
   </div>
  );
 };

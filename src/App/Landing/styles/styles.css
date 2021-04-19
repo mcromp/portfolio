@@ -127,6 +127,30 @@
   font-style: italic;
 }
 
+.landing .welcome__icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.landing .welcome__icons a {
+  width: 20px;
+}
+
+.landing .welcome__icons .icon {
+  width: 100%;
+  height: 100%;
+}
+
+.landing .welcome__icons .icon path {
+  width: 100%;
+  height: 100%;
+}
+
 .landing .head3d {
   background: none;
 }

@@ -8,9 +8,11 @@ const Contact = (): JSX.Element => {
    <h2 id="contact" className="section_title">
     Contact
    </h2>
-   {contactLinks.map((link) => (
-    <ContactLink key={link.href} href={link.href} text={link.text} />
-   ))}
+   <div className="contact__links">
+    {contactLinks.map((link) => (
+     <ContactLink key={link.href} href={link.href} text={link.text} />
+    ))}
+   </div>
   </div>
  );
 };
