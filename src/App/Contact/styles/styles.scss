@@ -12,12 +12,11 @@
  &__link {
   width: 20%;
   margin: 1rem 0;
-  padding: 0;
   color: $dark1;
   font-size: calc(1vw + 1rem);
-  text-indent: calc(2vw + 1rem);
   text-transform: uppercase;
   transition: color 0.1s;
+  @include indent;
   @extend %section-p;
   &:hover {
    color: $light1;

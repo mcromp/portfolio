@@ -5,7 +5,18 @@ $light1: #fff;
 $light2: #ddd;
 $l-color1: #eee;
 $l-color2: #eee;
-$color-list: #e94560, #1f4287, #206a5d, green, blue, purple;
+
+@mixin indent() {
+ @media (min-width: 600px) {
+  padding-left: calc(2vw + 3.4rem);
+  padding-right: calc(2vw + 3.4rem);
+ }
+
+ @media (min-width: 1000px) {
+  padding-left: calc(2vw + 7rem);
+  padding-right: calc(2vw + 7rem);
+ }
+}
 
 $f-fam-primary: "Mulish", sans-serif;
 $f-fam-h: "IBM Plex Sans", sans-serif;
@@ -70,19 +81,4 @@ $box-shadow-btn: 0 2px 4px -1px rgba(0, 0, 0, 0.2),
  to {
   transform: translateX(0);
  }
-}
-
-.my-node-enter {
- opacity: 0;
-}
-.my-node-enter-active {
- opacity: 1;
- transition: opacity 200ms;
-}
-.my-node-exit {
- opacity: 1;
-}
-.my-node-exit-active {
- opacity: 0;
- transition: opacity 200ms;
 }

@@ -1,10 +1,10 @@
-@import '../../../../base';
+@import "../../../base";
 
-.footer{
-background: $light1;
-padding: 1.5rem;
-box-shadow: $box-shadow-main;
-&__text{
+.footer {
+ background: $light1;
+ padding: 1.5rem;
+ box-shadow: $box-shadow-main;
+ &__text {
   font-family: sans-serif;
-}
+ }
 }

@@ -11,6 +11,7 @@
  box-shadow: $box-shadow-main;
  p {
   @extend %section-p;
+  @include indent;
  }
  &__projects {
   display: grid;
@@ -31,8 +32,8 @@
      max-width: 250px;
      margin-right: auto;
      margin-left: auto;
-     box-shadow: $box-shadow-main;
      border-radius: 10px;
+     box-shadow: $box-shadow-main;
     }
    }
 
