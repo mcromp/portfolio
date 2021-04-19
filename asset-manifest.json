@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/mcromp_portfolio/static/css/main.902297b2.chunk.css",
+    "main.js": "/mcromp_portfolio/static/js/main.9254a044.chunk.js",
+    "main.js.map": "/mcromp_portfolio/static/js/main.9254a044.chunk.js.map",
+    "runtime-main.js": "/mcromp_portfolio/static/js/runtime-main.895d513b.js",
+    "runtime-main.js.map": "/mcromp_portfolio/static/js/runtime-main.895d513b.js.map",
+    "static/js/2.64bfff8f.chunk.js": "/mcromp_portfolio/static/js/2.64bfff8f.chunk.js",
+    "static/js/2.64bfff8f.chunk.js.map": "/mcromp_portfolio/static/js/2.64bfff8f.chunk.js.map",
+    "index.html": "/mcromp_portfolio/index.html",
+    "static/css/main.902297b2.chunk.css.map": "/mcromp_portfolio/static/css/main.902297b2.chunk.css.map",
+    "static/js/2.64bfff8f.chunk.js.LICENSE.txt": "/mcromp_portfolio/static/js/2.64bfff8f.chunk.js.LICENSE.txt",
+    "static/media/flag-ss.bdce1055.png": "/mcromp_portfolio/static/media/flag-ss.bdce1055.png",
+    "static/media/github.04be58c1.svg": "/mcromp_portfolio/static/media/github.04be58c1.svg",
+    "static/media/menu-ss.3f117062.png": "/mcromp_portfolio/static/media/menu-ss.3f117062.png",
+    "static/media/muz-ss.37cc21ac.png": "/mcromp_portfolio/static/media/muz-ss.37cc21ac.png",
+    "static/media/open.1fc2e64d.svg": "/mcromp_portfolio/static/media/open.1fc2e64d.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.895d513b.js",
+    "static/js/2.64bfff8f.chunk.js",
+    "static/css/main.902297b2.chunk.css",
+    "static/js/main.9254a044.chunk.js"
+  ]
+}
