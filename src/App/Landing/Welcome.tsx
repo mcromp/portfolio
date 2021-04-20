@@ -8,11 +8,11 @@ const Welcome = (): JSX.Element => {
  let content = useRef<HTMLDivElement>(null);
 
  useEffect(() => {
-  gsap.to(".welcome", { css: { visibility: "visible" } });
-  gsap.from(".welcome", {
+  let tl = gsap.timeline();
+  tl.to(".welcome", { css: { visibility: "visible" } });
+  tl.from(".welcome", {
    autoAlpha: 0,
    ease: "easeIn",
-   delay: 0.4,
    duration: 1,
   });
 
@@ -21,12 +21,11 @@ const Welcome = (): JSX.Element => {
    ease: "easeIn",
    duration: 1,
   });
-  gsap.from(".welcome__icons", {
+  tl.from(".welcome__icons", {
    translateY: 40,
    autoAlpha: 0,
    ease: "bounce",
    duration: 1,
-   delay: 1,
   });
  }, []);
 

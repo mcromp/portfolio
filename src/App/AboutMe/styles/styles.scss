@@ -7,15 +7,41 @@
 .about-me {
  padding: 3em 1em;
  background: none;
+
+ &__content-wrapper {
+  display: flex;
+  flex-direction: row;
+ }
  &__text {
   @extend %section-p;
-  @include indent;
+  // @include indent;
  }
  &__tech-list {
   display: flex;
   justify-content: space-around;
   width: 100%;
-  @include indent;
-  @extend %section-p;
+  // @include indent;
+  // @extend %section-p;
+ }
+}
+
+.comp-graphic {
+ min-width: 500px;
+ height: 500px;
+ width: 500px;
+ border-radius: 100%;
+ background: #ba7eff;
+ background: linear-gradient(180deg, #ba7eff 0%, rgb(247, 194, 231) 100%);
+ .dragon {
+  position: absolute;
+  font-size: 70px;
+ }
+ .comp {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 200px;
  }
 }
