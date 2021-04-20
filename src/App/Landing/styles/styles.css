@@ -135,20 +135,20 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-}
-
-.landing .welcome__icons a {
-  width: 20px;
+  padding: 1rem 0;
 }
 
 .landing .welcome__icons .icon {
-  width: 100%;
-  height: 100%;
+  margin: 0 calc(1vw + 0.4rem);
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
 }
 
-.landing .welcome__icons .icon path {
-  width: 100%;
-  height: 100%;
+.landing .welcome__icons .icon:hover {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
 }
 
 .landing .head3d {

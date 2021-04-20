@@ -1,8 +1,10 @@
 import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
-import { Linkedin, GitHub, Mail, ExternalLink } from "react-feather";
+import { Linkedin, GitHub, Mail } from "react-feather";
+import { useMediaQuery } from "react-responsive";
 
 const Welcome = (): JSX.Element => {
+ const isBigScreen = useMediaQuery({ query: "(min-width: 600px)" });
  let content = useRef<HTMLDivElement>(null);
 
  useEffect(() => {
@@ -17,6 +19,13 @@ const Welcome = (): JSX.Element => {
    scale: 0.5,
    ease: "easeIn",
    duration: 1,
+  });
+  gsap.from(".welcome__icons", {
+   translateY: 20,
+   autoAlpha: 0,
+   ease: "easeIn",
+   duration: 1,
+   delay: 1,
   });
  }, []);
 
@@ -34,7 +43,7 @@ const Welcome = (): JSX.Element => {
      rel="noreferrer"
      href="https://www.linkedin.com/in/mcromp/"
     >
-     <Linkedin color="black" />
+     <Linkedin color="black" className="icon" size={isBigScreen ? 35 : 20} />
     </a>
     <a
      aria-label="Linkedin"
@@ -42,7 +51,7 @@ const Welcome = (): JSX.Element => {
      rel="noreferrer"
      href="https://www.linkedin.com/in/mcromp/"
     >
-     <GitHub color="black" />
+     <GitHub color="black" className="icon" size={isBigScreen ? 35 : 20} />
     </a>
     <a
      aria-label="Linkedin"
@@ -50,7 +59,7 @@ const Welcome = (): JSX.Element => {
      rel="noreferrer"
      href="https://www.linkedin.com/in/mcromp/"
     >
-     <Mail color="black" />
+     <Mail color="black" className="icon" size={isBigScreen ? 35 : 20} />
     </a>
    </div>
   </div>
