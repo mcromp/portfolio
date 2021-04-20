@@ -4,14 +4,14 @@ import { useEffect } from "react";
 const ComputerGraphic = (): JSX.Element => {
  useEffect(() => {
   gsap.to(".dragon", {
-   x: 400 - 70,
-   duration: 2.1,
+   x: 240,
+   duration: 8.1,
    yoyo: true,
    repeat: -1,
   });
   gsap.to(".dragon", {
-   y: 400 - 70,
-   duration: 1.3,
+   y: 240,
+   duration: 5,
    yoyo: true,
    repeat: -1,
   });
