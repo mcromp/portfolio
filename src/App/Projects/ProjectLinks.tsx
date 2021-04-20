@@ -1,5 +1,4 @@
-import gitHubSvg from "../../Assets/Icons/github.svg";
-import openSvg from "../../Assets/Icons/open.svg";
+import { ExternalLink, GitHub } from "react-feather";
 
 const ProjectLinks = ({ webURL, codeURL }: ProjectLinksProps) => {
  return (
@@ -10,8 +9,7 @@ const ProjectLinks = ({ webURL, codeURL }: ProjectLinksProps) => {
     target="_blank"
     rel="noreferrer"
    >
-    <img src={openSvg} alt="view online icon" />
-    View
+    <ExternalLink />
    </a>
    <a
     href={codeURL}
@@ -19,8 +17,7 @@ const ProjectLinks = ({ webURL, codeURL }: ProjectLinksProps) => {
     target="_blank"
     rel="noreferrer"
    >
-    <img src={gitHubSvg} alt="Github Icon" />
-    Code
+    <GitHub />
    </a>
   </div>
  );
