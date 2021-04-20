@@ -11,19 +11,20 @@ const Welcome = (): JSX.Element => {
   gsap.to(".welcome", { css: { visibility: "visible" } });
   gsap.from(".welcome", {
    autoAlpha: 0,
-   ease: "bounce",
-   delay: 0.5,
+   ease: "easeIn",
+   delay: 0.4,
    duration: 1,
   });
+
   gsap.from(".welcome__text", {
    scale: 0.5,
    ease: "easeIn",
    duration: 1,
   });
   gsap.from(".welcome__icons", {
-   translateY: 20,
+   translateY: 40,
    autoAlpha: 0,
-   ease: "easeIn",
+   ease: "bounce",
    duration: 1,
    delay: 1,
   });
@@ -46,18 +47,18 @@ const Welcome = (): JSX.Element => {
      <Linkedin color="black" className="icon" size={isBigScreen ? 35 : 20} />
     </a>
     <a
-     aria-label="Linkedin"
+     aria-label="GitHub"
      target="_blank"
      rel="noreferrer"
-     href="https://www.linkedin.com/in/mcromp/"
+     href="https://github.com/mcromp"
     >
      <GitHub color="black" className="icon" size={isBigScreen ? 35 : 20} />
     </a>
     <a
-     aria-label="Linkedin"
+     aria-label="Email"
      target="_blank"
      rel="noreferrer"
-     href="https://www.linkedin.com/in/mcromp/"
+     href="mailto:mcromp.js@gmail.com?subject=Hello!"
     >
      <Mail color="black" className="icon" size={isBigScreen ? 35 : 20} />
     </a>
