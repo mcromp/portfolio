@@ -19,9 +19,9 @@ const ComputerGraphic = (): JSX.Element => {
 
  return (
   <div className="comp-graphic">
-   <div className="dragon">
+   {/* <div className="dragon">
     <Emoji symbol="🐉" label="dragon" />
-   </div>
+   </div> */}
    <div className="comp">
     <Emoji label="computer" symbol="🖥️" />
    </div>
