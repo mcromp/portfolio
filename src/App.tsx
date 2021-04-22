@@ -1,11 +1,11 @@
 import { Route } from "react-router-dom";
-import AboutMe from "./App/AboutMe/AboutMe";
-import ScrollToTop from "./App/ScrollToTop/ScrollToTop";
-import Contact from "./App/Contact/Contact";
-import Landing from "./App/Landing/Landing";
-import Projects from "./App/Projects/Projects";
-import Footer from "./App/Footer/Footer";
-import Header from "./App/Header/Header";
+import AboutMe from "./Pages/AboutMe/AboutMe";
+import ScrollToTop from "./Pages/ScrollToTop/ScrollToTop";
+import Contact from "./Pages/Contact/Contact";
+import Landing from "./Pages/Landing/Landing";
+import Projects from "./Pages/Projects/Projects";
+import Footer from "./Pages/Footer/Footer";
+import Header from "./Pages/Header/Header";
 
 import "./App.css";
 
