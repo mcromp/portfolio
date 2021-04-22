@@ -107,7 +107,6 @@
 .landing .welcome__title {
   margin: 0;
   padding: 2rem 0;
-  color: #000;
   color: #ffdcd0;
   font-family: "Mulish", sans-serif;
   font-size: calc(2vw + 2.3rem);
@@ -149,37 +148,5 @@
 .landing .welcome__icons .icon:hover {
   -webkit-transform: scale(1.3);
           transform: scale(1.3);
-}
-
-.landing .head3d {
-  background: none;
-}
-
-.landing .head3d .canvas {
-  width: 100%;
-  height: 400px;
-}
-
-@media (min-width: 600px) {
-  .landing {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .landing .welcome {
-    width: 50%;
-  }
-  .landing .head3d {
-    height: 100%;
-    width: 50%;
-  }
-  .landing .head3d .canvas {
-    width: 100%;
-    height: 400px;
-  }
 }
 /*# sourceMappingURL=styles.css.map */

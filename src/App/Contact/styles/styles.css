@@ -99,6 +99,9 @@
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 3rem 1rem 5rem 1rem;
+  background: #ba7eff;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ba7eff), to(#f7c2e7));
+  background: linear-gradient(180deg, #ba7eff 0%, #f7c2e7 100%);
 }
 
 .contact__links {
@@ -138,11 +141,11 @@
   color: #000;
   font-size: calc(1vw + 0.7rem);
   text-transform: uppercase;
-  -webkit-transition: all 0.4s;
-  transition: all 0.4s;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
 }
 
 .contact__link:hover {
-  background-color: white;
+  background-color: #8fffe5;
 }
 /*# sourceMappingURL=styles.css.map */

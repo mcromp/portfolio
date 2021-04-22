@@ -6,69 +6,75 @@
 
 .project-dash {
  padding: 3rem 1rem;
- background: $light1;
- background: rgba(255, 255, 255, 0.575);
- box-shadow: $box-shadow-main;
- p {
-  @extend %section-p;
-  text-align: center;
- }
- &__projects {
+ background-color: $green-main;
+ .proj-card {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
-  justify-content: center;
-  padding-right: calc(1vw + 0.6rem);
-  padding-left: calc(1vw + 0.6rem);
-  .proj-card {
-   margin: 0.7rem;
-   padding: 2rem 1rem 1rem 1rem;
-   border-radius: 20px;
-   background: rgb(255, 255, 255);
-   box-shadow: $box-shadow-main;
-   &__icon {
-    img {
-     display: block;
-     min-width: 150px;
-     max-width: 250px;
-     margin-right: auto;
-     margin-left: auto;
-     border-radius: 10px;
-     box-shadow: $box-shadow-main;
-    }
+  grid-template-columns: 1fr 2fr;
+  align-content: space-evenly;
+  margin: 2rem;
+  padding: 2rem;
+  background-color: $light1;
+  gap: 2rem;
+  @include border-shadow-main;
+
+  .proj-col-1 {
+   justify-self: center;
+   height: 100%;
+  }
+
+  &__icon {
+   img {
+    display: block;
+    min-width: 150px;
+    max-width: 250px;
+    margin-right: auto;
+    margin-left: auto;
+    @include border-shadow-main;
+   }
+  }
+
+  &__title {
+   z-index: 1;
+   position: relative;
+   margin-bottom: 2rem;
+   @include section-sub-header;
+  }
+  &__content {
+   margin: 0.5rem;
+   padding: 0 4rem;
+   text-align: left;
+
+   &--header {
+    margin: 1rem;
+    font-family: "Open Sans", "Helvetica Neue", sans-serif;
    }
 
-   &__title {
-    padding: 0.8rem 0;
-    padding-left: 1rem;
-    color: $dark1;
-    font-family: $f-fam-h;
-    font-size: calc(1vw + 1rem);
-    font-style: italic;
-    font-weight: 400;
-    // text-align: left;
-   }
-   &__text {
-    margin: 0.5rem 0.5em;
+   &--text {
+    margin: 0.5rem;
     padding: 0;
     color: $dark1;
     font-family: $f-fam-p;
-    font-size: calc(1vw + 0.7rem);
+    font-weight: 300;
+    font-size: 18px;
+    text-align: left;
    }
-   &__tech {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    margin-top: 1rem;
-    span {
-     margin: 3px;
-     padding: 2px 3px;
-     border: solid 1px;
-     color: rgb(71, 71, 71);
-     font-family: $f-fam-p;
-     font-size: calc(1vw + 0.5rem);
-    }
+  }
+
+  &__tech {
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+   justify-content: center;
+   width: 100%;
+   margin-top: 1rem;
+   span {
+    margin: 3px;
+    padding: 2px 3px;
+    background-color: white;
+    box-shadow: 3px 3px 1px #2cffce;
+    color: rgb(71, 71, 71);
+    font-family: $f-fam-p;
+    font-size: calc(1vw + 0.3rem);
    }
   }
  }
@@ -85,8 +91,6 @@
   align-items: center;
   padding: 1rem;
   border-radius: 10px;
-  background: rgba(255, 255, 255, 0.644);
-  background: $light1;
   font-family: $f-fam-p;
   font-size: calc(1vw + 0.3rem);
   text-transform: uppercase;

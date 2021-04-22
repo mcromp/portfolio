@@ -4,7 +4,8 @@ import ComputerGraphic from "./ComputerGraphic";
 
 const aboutMeText = [
  `If I had to describe myself in a word, I’d say "maker". 
-I have a natural motivation to learn, grow, tinker, and create. Whether I’m fixing up an old motorcycle, designing 3D models, or building a guitar fuzzbox, I love understanding a system, seeing how the pieces connect, and creating something new.`,
+I have a natural motivation to learn, grow, tinker, and create.
+Whether I’m fixing up an old motorcycle, designing 3D models, or building a guitar fuzzbox, I love understanding a system, seeing how the pieces connect, and creating something new.`,
  `As for programming...
 I first fell in love as a kid making fantasy text adventures with QBasic using the family’s Windows 95 computer.
 
@@ -25,14 +26,16 @@ const techList = [
  `Jest`,
  `MongoDB`,
  `GSAP`,
+ `JSX A11y`,
+ `Figma`,
 ];
+
 const AboutMe = (): JSX.Element => {
  return (
   <section className="about-me">
    <h2 id="about" className="section_title">
     About
    </h2>
-
    <div className="about-me__content-wrapper">
     <div className="col-1">
      <h3 className="about-me__sub-heading"> Hey, thanks for stopping by!</h3>
@@ -48,18 +51,22 @@ const AboutMe = (): JSX.Element => {
    </div>
    <br />
    <div className="about-me__tech-list">
-    <p>
-     I love learning new technologies. Some of the tech I've been using
-     recently:
+    <p className="about-me__text--bottom">
+     I love learning new technologies.
+     <br />
+     Some of the tech I've been using recently:
     </p>
     <ul>
      {techList.map((item) => (
       <li key={item}>{item}</li>
      ))}
     </ul>
-    <p className="about-me__text">
-     Outside of programming I enjoy creating art, traveling, playing guitar, and
-     hiking. And, of course, coffee <Emoji label="coffee" symbol="☕" />
+    <div className="line" />
+    <p className="about-me__text--bottom">
+     Outside of programming I enjoy art, traveling, guitar, and hiking.
+     <br />
+     And, of course, coffee <Emoji label="coffee" symbol="☕" /> ... Lots and
+     lots of coffee.
     </p>
    </div>
   </section>

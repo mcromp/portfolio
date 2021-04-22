@@ -182,14 +182,12 @@
   left: 17%;
   color: #000;
   text-indent: 0;
-  content: url("../../../Assets/Icons/ham.svg");
 }
 
 .header .menu-toggle--open::after, .header--hidden .menu-toggle--open::after {
   top: -2px;
   left: 10%;
   font-size: 3rem;
-  content: url("../../../Assets/Icons/close.svg");
 }
 
 .modal {

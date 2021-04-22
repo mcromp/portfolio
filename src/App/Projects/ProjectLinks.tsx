@@ -9,7 +9,7 @@ const ProjectLinks = ({ webURL, codeURL }: ProjectLinksProps) => {
     target="_blank"
     rel="noreferrer"
    >
-    <ExternalLink />
+    <ExternalLink size={35} color="black" />
    </a>
    <a
     href={codeURL}
@@ -17,7 +17,7 @@ const ProjectLinks = ({ webURL, codeURL }: ProjectLinksProps) => {
     target="_blank"
     rel="noreferrer"
    >
-    <GitHub />
+    <GitHub size={35} color="black" />
    </a>
   </div>
  );

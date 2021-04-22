@@ -10,15 +10,6 @@
   text-transform: uppercase;
 }
 
-.project-dash p {
-  padding-bottom: 1em;
-  font-family: sans-serif;
-  font-size: calc(1vw + 0.7rem);
-  font-weight: 300;
-  text-align: left;
-  white-space: pre-wrap;
-}
-
 @-webkit-keyframes colorFlair {
   0% {
     -webkit-transform: skew(0, 0);
@@ -97,67 +88,74 @@
 
 .project-dash {
   padding: 3rem 1rem;
-  background: #fff;
-  background: rgba(255, 255, 255, 0.575);
-  -webkit-box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.4), 0 2px 6px 2px rgba(60, 64, 67, 0.3);
-          box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.4), 0 2px 6px 2px rgba(60, 64, 67, 0.3);
+  background-color: #d5fff5;
 }
 
-.project-dash p {
-  text-align: center;
-}
-
-.project-dash__projects {
+.project-dash .proj-card {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(22rem, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding-right: calc(1vw + 0.6rem);
-  padding-left: calc(1vw + 0.6rem);
+  -ms-grid-columns: 1fr 2fr;
+      grid-template-columns: 1fr 2fr;
+  -ms-flex-line-pack: space-evenly;
+      align-content: space-evenly;
+  margin: 2rem;
+  padding: 2rem;
+  background-color: #fff;
+  gap: 2rem;
+  -webkit-box-shadow: 5px 5px 1px rgba(187, 128, 255, 0.663);
+          box-shadow: 5px 5px 1px rgba(187, 128, 255, 0.663);
+  border: solid 1px #ba7eff;
 }
 
-.project-dash__projects .proj-card {
-  margin: 0.7rem;
-  padding: 2rem 1rem 1rem 1rem;
-  border-radius: 20px;
-  background: white;
-  -webkit-box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.4), 0 2px 6px 2px rgba(60, 64, 67, 0.3);
-          box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.4), 0 2px 6px 2px rgba(60, 64, 67, 0.3);
+.project-dash .proj-card .proj-col-1 {
+  -ms-grid-column-align: center;
+      justify-self: center;
+  height: 100%;
 }
 
-.project-dash__projects .proj-card__icon img {
+.project-dash .proj-card__icon img {
   display: block;
   min-width: 150px;
   max-width: 250px;
   margin-right: auto;
   margin-left: auto;
-  border-radius: 10px;
-  -webkit-box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.4), 0 2px 6px 2px rgba(60, 64, 67, 0.3);
-          box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.4), 0 2px 6px 2px rgba(60, 64, 67, 0.3);
+  -webkit-box-shadow: 5px 5px 1px rgba(187, 128, 255, 0.663);
+          box-shadow: 5px 5px 1px rgba(187, 128, 255, 0.663);
+  border: solid 1px #ba7eff;
 }
 
-.project-dash__projects .proj-card__title {
-  padding: 0.8rem 0;
-  padding-left: 1rem;
-  color: #000;
-  font-family: "IBM Plex Sans", sans-serif;
-  font-size: calc(1vw + 1rem);
-  font-style: italic;
-  font-weight: 400;
+.project-dash .proj-card__title {
+  z-index: 1;
+  position: relative;
+  margin-bottom: 2rem;
+  color: #a95eff;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
 }
 
-.project-dash__projects .proj-card__text {
-  margin: 0.5rem 0.5em;
+.project-dash .proj-card__content {
+  margin: 0.5rem;
+  padding: 0 4rem;
+  text-align: left;
+}
+
+.project-dash .proj-card__content--header {
+  margin: 1rem;
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.project-dash .proj-card__content--text {
+  margin: 0.5rem;
   padding: 0;
   color: #000;
   font-family: sans-serif;
-  font-size: calc(1vw + 0.7rem);
+  font-weight: 300;
+  font-size: 18px;
+  text-align: left;
 }
 
-.project-dash__projects .proj-card__tech {
+.project-dash .proj-card__tech {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -173,13 +171,15 @@
   margin-top: 1rem;
 }
 
-.project-dash__projects .proj-card__tech span {
+.project-dash .proj-card__tech span {
   margin: 3px;
   padding: 2px 3px;
-  border: solid 1px;
+  background-color: white;
+  -webkit-box-shadow: 3px 3px 1px #2cffce;
+          box-shadow: 3px 3px 1px #2cffce;
   color: #474747;
   font-family: sans-serif;
-  font-size: calc(1vw + 0.5rem);
+  font-size: calc(1vw + 0.3rem);
 }
 
 .card-links {
@@ -207,8 +207,6 @@
           align-items: center;
   padding: 1rem;
   border-radius: 10px;
-  background: rgba(255, 255, 255, 0.644);
-  background: #fff;
   font-family: sans-serif;
   font-size: calc(1vw + 0.3rem);
   text-transform: uppercase;

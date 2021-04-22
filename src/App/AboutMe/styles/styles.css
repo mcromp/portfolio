@@ -1,16 +1,4 @@
-.about-me .section_title {
-  padding: 1rem 0 2rem 0;
-  display: inline-block;
-  text-align: center;
-  color: #000;
-  font-family: "Mulish", sans-serif;
-  font-size: calc(2vw + 0.9rem);
-  font-weight: 800;
-  letter-spacing: calc(2vw + 0.1em);
-  text-transform: uppercase;
-}
-
-.about-me__sub-heading, .about-me__text, .about-me__tech-list {
+.about-me__text, .about-me__tech-list {
   padding-bottom: 1em;
   font-family: sans-serif;
   font-size: calc(1vw + 0.7rem);
@@ -106,16 +94,12 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 3em 1em;
-  background-color: #ccfff2;
-  background-image: url("../../../Assets/svgs/wave.svg");
-  background-size: 100% auto;
+  padding-top: 3em;
+  border: solid 1px #ba7eff;
+  background-color: #fffaf6;
+  background-image: url("../../../Assets/svgs/top-wave.svg");
   background-repeat: no-repeat;
-}
-
-.about-me .section_title {
-  text-align: center;
-  color: #d2f1ff;
+  background-size: 100% auto;
 }
 
 .about-me__content-wrapper {
@@ -123,20 +107,27 @@
   display: grid;
   -ms-grid-columns: 1.5fr 1fr;
       grid-template-columns: 1.5fr 1fr;
-  width: 70%;
+  width: 80%;
   padding: 4rem;
-  border-radius: 30px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#ccfff2), to(#c6b1f8));
-  background-image: linear-gradient(#ccfff2, #c6b1f8);
-  -webkit-box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2), 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12);
-          box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2), 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12);
+  background-color: rgba(255, 255, 255, 0.692);
   gap: 2rem;
+  -webkit-box-shadow: 5px 5px 1px rgba(187, 128, 255, 0.663);
+          box-shadow: 5px 5px 1px rgba(187, 128, 255, 0.663);
+  border: solid 1px #ba7eff;
+}
+
+.about-me__content-wrapper:before {
+  background-image: url("../../../Assets/svgs/top-wave.svg");
 }
 
 .about-me__sub-heading {
-  font-size: 40px;
-  font-weight: 500;
-  color: #666;
+  padding: 2rem;
+  color: #000;
+  color: #a95eff;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  text-align: left;
 }
 
 .about-me__text {
@@ -144,9 +135,9 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  margin-right: 2rem;
+  margin-right: 1rem;
   padding: 1rem;
-  font-size: 24px;
+  font-size: 18px;
 }
 
 .about-me__tech-list {
@@ -157,8 +148,7 @@
   -webkit-box-direction: normal;
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
-  width: 50%;
-  padding: 2rem 0;
+  padding: 0rem 25% 6rem 25%;
   font-size: 20px;
 }
 
@@ -189,9 +179,10 @@
           flex: 1 auto;
   margin: 0.5rem;
   padding: 1rem;
-  background: #fff;
-  -webkit-box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.4), 0 2px 6px 2px rgba(60, 64, 67, 0.3);
-          box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.4), 0 2px 6px 2px rgba(60, 64, 67, 0.3);
+  border: solid 1px #ba7eff;
+  background-color: #fff;
+  -webkit-box-shadow: 5px 5px 1px #ba7effa9;
+          box-shadow: 5px 5px 1px #ba7effa9;
 }
 
 .about-me .col-2 {
@@ -231,5 +222,12 @@
   width: 100%;
   height: 100%;
   font-size: 160px;
+}
+
+.line {
+  width: 100%;
+  height: 1px;
+  margin: 2rem 0;
+  background-color: #ba7eff;
 }
 /*# sourceMappingURL=styles.css.map */
