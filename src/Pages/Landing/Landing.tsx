@@ -9,22 +9,23 @@ const Landing = (): JSX.Element => {
  useEffect(() => {
   let tl = gsap.timeline();
   tl.to(".landing", { css: { visibility: "visible" } });
-  tl.from(".landing", {
-   autoAlpha: 0,
-   ease: "easeIn",
-   duration: 0.3,
-  });
-  tl.from(".fade2", {
-   autoAlpha: 0,
-   ease: "power2.in",
-   duration: 0.4,
-  });
-  tl.from(".landing__icons", {
-   translateY: 40,
-   autoAlpha: 0,
-   ease: "bounce",
-   duration: 1,
-  });
+  tl
+   .from(".landing", {
+    autoAlpha: 0,
+    ease: "easeIn",
+    duration: 0.3,
+   })
+   .from(".fade2", {
+    autoAlpha: 0,
+    ease: "power2.in",
+    duration: 0.4,
+   })
+   .from(".landing__icons", {
+    translateY: 40,
+    autoAlpha: 0,
+    ease: "bounce",
+    duration: 1,
+   });
   gsap.from(".scale-ease", {
    scale: 0.5,
    ease: "easeIn",
