@@ -1,0 +1,22 @@
+@import "../../../base";
+.hero {
+ &__title {
+  margin: 0;
+  padding: 2rem 0;
+  color: $title-color;
+  font-family: $f-fam-primary;
+  font-size: $f-size-h;
+  font-weight: 800;
+  line-height: 80%;
+  text-shadow: 3px 3px 1px black;
+  animation: 7s linear 1s infinite alternate colorFlair;
+ }
+ &__subtitle {
+  margin: 0;
+  padding: 0;
+  color: $dark1;
+  font-family: $f-fam-h;
+  font-size: $f-size-welcome-text;
+  font-style: italic;
+ }
+}
