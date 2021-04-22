@@ -102,10 +102,6 @@
   gap: 2rem;
 }
 
-.about-me .block-grid:before {
-  background-image: url("../../../Assets/svgs/top-wave.svg");
-}
-
 .about-me .block-grid .col-2 {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
