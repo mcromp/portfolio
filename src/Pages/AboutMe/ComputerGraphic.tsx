@@ -1,6 +1,7 @@
 import Emoji from "a11y-react-emoji";
 import { gsap } from "gsap";
 import { useEffect } from "react";
+
 const ComputerGraphic = (): JSX.Element => {
  useEffect(() => {
   gsap.to(".dragon", {

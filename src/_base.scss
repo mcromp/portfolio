@@ -60,12 +60,7 @@ $box-shadow-btn: 0 2px 4px -1px rgba(0, 0, 0, 0.2),
  text-transform: uppercase;
 }
 %section-p {
- padding-bottom: 1em;
- font-family: $f-fam-p;
- font-size: $f-size-p;
- font-weight: 300;
- text-align: left;
- white-space: pre-wrap;
+ color: red;
 }
 
 @mixin indent() {

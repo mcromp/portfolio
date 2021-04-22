@@ -5,7 +5,6 @@ import * as Hero from "../../StyleComponents/Hero";
 import "./styles/styles.css";
 
 const Landing = (): JSX.Element => {
- //GSAP Animation
  useEffect(() => {
   let tl = gsap.timeline();
   tl.to(".landing", { css: { visibility: "visible" } });

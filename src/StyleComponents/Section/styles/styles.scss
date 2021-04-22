@@ -1,2 +1,23 @@
+@import "../../../base";
+
 .section {
+ &__title {
+  padding: 1rem 0 2rem 0;
+  display: inline-block;
+  text-align: center;
+  color: $dark1;
+  font-family: $f-fam-primary;
+  font-size: $f-size-h2;
+  font-weight: 800;
+  letter-spacing: calc(2vw + 0.1em);
+  text-transform: uppercase;
+ }
+ &__text {
+  padding: 1rem;
+  font-family: $f-fam-p;
+  font-size: 1.05rem;
+  font-weight: 300;
+  text-align: center;
+  white-space: pre-wrap;
+ }
 }

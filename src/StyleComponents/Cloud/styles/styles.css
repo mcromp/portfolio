@@ -74,91 +74,32 @@
   }
 }
 
-.about-me {
+ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding-top: 3em;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  list-style-type: none;
+  text-align: center;
+}
+
+ul li {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 auto;
+          flex: 1 auto;
+  margin: 0.5rem;
+  padding: 1rem;
+  background-color: #fff;
+  font-family: sans-serif;
+  font-size: 0.8rem;
+  color: #000;
+  -webkit-box-shadow: 5px 5px 1px rgba(187, 128, 255, 0.663);
+          box-shadow: 5px 5px 1px rgba(187, 128, 255, 0.663);
   border: solid 1px #ba7eff;
-  background-color: #fffaf6;
-  background-image: url("../../../Assets/svgs/top-wave.svg");
-  background-repeat: no-repeat;
-  background-size: 100% auto;
-}
-
-.about-me .block-grid {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1.5fr 1fr;
-      grid-template-columns: 1.5fr 1fr;
-  width: 80%;
-  gap: 2rem;
-}
-
-.about-me .block-grid:before {
-  background-image: url("../../../Assets/svgs/top-wave.svg");
-}
-
-.about-me .block-grid .col-2 {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding-top: 40px;
-}
-
-.about-me .tech-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 3rem 25% 6rem 25%;
-}
-
-.comp-graphic {
-  min-width: 400px;
-  height: 400px;
-  border-radius: 100%;
-  background: #ba7eff;
-  background: -webkit-gradient(linear, left top, left bottom, from(#ba7eff), to(#f7c2e7));
-  background: linear-gradient(180deg, #ba7eff 0%, #f7c2e7 100%);
-}
-
-.comp-graphic .dragon {
-  position: absolute;
-  font-size: 90px;
-}
-
-.comp-graphic .comp {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 100%;
-  height: 100%;
-  font-size: 160px;
 }
 /*# sourceMappingURL=styles.css.map */

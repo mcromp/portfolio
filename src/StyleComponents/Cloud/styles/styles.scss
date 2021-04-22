@@ -1,0 +1,21 @@
+@import "../../../base";
+
+ul {
+ display: flex;
+ flex-flow: row wrap;
+ margin-bottom: 1rem;
+ padding: 0.5rem;
+ list-style-type: none;
+ text-align: center;
+
+ li {
+  flex: 1 auto;
+  margin: 0.5rem;
+  padding: 1rem;
+  background-color: $light1;
+  font-family: $f-fam-p;
+  font-size: 0.8rem;
+  color: $dark1;
+  @include border-shadow-main;
+ }
+}

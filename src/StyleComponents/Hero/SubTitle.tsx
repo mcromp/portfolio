@@ -1,5 +1,4 @@
 import { ReactNode } from "react";
-import "./styles/styles.css";
 
 export const SubTitle = ({
  children,

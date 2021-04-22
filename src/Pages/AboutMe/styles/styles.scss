@@ -11,74 +11,30 @@
  background-repeat: no-repeat;
  background-size: 100% auto;
 
- &__content-wrapper {
+ .block-grid {
   display: grid;
   grid-template-columns: 1.5fr 1fr;
   width: 80%;
-  padding: 4rem;
-  background-color: rgba(255, 255, 255, 0.692);
   gap: 2rem;
-  @include border-shadow-main;
   &:before {
    background-image: url("../../../Assets/svgs/top-wave.svg");
   }
+  .col-2 {
+   align-self: center;
+   justify-content: center;
+   padding-top: 40px;
+  }
  }
-
- &__sub-heading {
-  padding: 2rem;
-  color: $dark1;
-  color: $purp-main-dark;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-   Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-size: 32px;
-  font-weight: 700;
-  text-align: left;
- }
-
- &__text {
-  flex-direction: row;
-  margin-right: 1rem;
-  padding: 1rem;
-  font-size: 18px;
-  @extend %section-p;
- }
- &__tech-list {
+ .tech-list {
   display: flex;
-  flex-flow: row wrap;
-  padding: 0rem 25% 6rem 25%;
-  font-size: 20px;
-  @extend %section-p;
-  p {
-   width: 100%;
-   padding: 1rem;
-   font-size: 24px;
-   text-align: center;
-  }
-  ul {
-   display: flex;
-   flex-flow: row wrap;
-   margin-bottom: 1rem;
-   padding: 0.5rem;
-   list-style-type: none;
-   text-align: center;
-
-   li {
-    flex: 1 auto;
-    margin: 0.5rem;
-    padding: 1rem;
-    // box-shadow: $box-shadow-main;
-    border: solid 1px #ba7eff;
-    background-color: $light1;
-    box-shadow: 5px 5px 1px #ba7effa9;
-   }
-  }
- }
- .col-2 {
-  align-self: center;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
-  padding-top: 40px;
+  padding: 3rem 25% 6rem 25%;
  }
 }
+
+//Computer Graphic stylings
 
 .comp-graphic {
  min-width: 400px;
@@ -99,11 +55,4 @@
   height: 100%;
   font-size: 160px;
  }
-}
-
-.line {
- width: 100%;
- height: 1px;
- margin: 2rem 0;
- background-color: #ba7eff;
 }
