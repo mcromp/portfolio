@@ -1,10 +1,5 @@
 @import "../../../base";
 
-// .section_title {
-//  text-align: center;
-//  @extend %section-title;
-// }
-
 .contact {
  display: flex;
  flex-direction: column;
@@ -13,11 +8,14 @@
  background-repeat: no-repeat;
  background-size: 100% auto;
  background-color: $pink-main;
- .email-text {
-  font-family: monospace;
-  font-size: calc(1vw + 1rem);
- }
- .email-icon {
-  padding-top: 2rem;
+ .email {
+  margin: 3rem 0;
+  &__text {
+   font-family: monospace;
+   font-size: calc(1vw + 1rem);
+  }
+  &__icon {
+   padding-top: 2rem;
+  }
  }
 }

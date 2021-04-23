@@ -89,12 +89,16 @@
   background-color: #f7c2e7;
 }
 
-.contact .email-text {
+.contact .email {
+  margin: 3rem 0;
+}
+
+.contact .email__text {
   font-family: monospace;
   font-size: calc(1vw + 1rem);
 }
 
-.contact .email-icon {
+.contact .email__icon {
   padding-top: 2rem;
 }
 /*# sourceMappingURL=styles.css.map */
