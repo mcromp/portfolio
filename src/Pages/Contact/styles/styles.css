@@ -101,7 +101,16 @@
   padding: 3rem 1rem 5rem 1rem;
   background-image: url("../../../Assets/wave-2.svg");
   background-repeat: no-repeat;
-  background-size: auto 100%;
+  background-size: 100% auto;
   background-color: #f7c2e7;
+}
+
+.contact .email-text {
+  font-family: monospace;
+  font-size: calc(1vw + 1rem);
+}
+
+.contact .email-icon {
+  padding-top: 2rem;
 }
 /*# sourceMappingURL=styles.css.map */
