@@ -1,5 +1,5 @@
 import ComputerGraphic from "./ComputerGraphic";
-import { SubHeader, Block, Text } from "../../StyleComponents/BlockLg";
+import { SubHeader, Block, Text } from "../../StyleComponents/Block";
 
 const AboutMeBlock = (): JSX.Element => (
  <Block styleAdd={"block-grid"}>

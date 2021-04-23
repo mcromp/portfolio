@@ -1,12 +1,9 @@
 @import "../../../base";
 
-.section_title {
- @extend %section-title;
-}
-
 .project-dash {
  padding: 3rem 1rem;
  background-color: $green-main;
+
  .proj-card {
   display: grid;
   grid-template-columns: 1fr 2fr;
@@ -21,43 +18,10 @@
    justify-self: center;
    height: 100%;
   }
-
-  &__icon {
-   img {
-    display: block;
-    min-width: 150px;
-    max-width: 250px;
-    margin-right: auto;
-    margin-left: auto;
-    @include border-shadow-main;
-   }
-  }
-
-  &__title {
-   z-index: 1;
-   position: relative;
-   margin-bottom: 2rem;
-   @include section-sub-header;
-  }
   &__content {
    margin: 0.5rem;
    padding: 0 4rem;
    text-align: left;
-
-   &--header {
-    margin: 1rem;
-    font-family: "Open Sans", "Helvetica Neue", sans-serif;
-   }
-
-   &--text {
-    margin: 0.5rem;
-    padding: 0;
-    color: $dark1;
-    font-family: $f-fam-p;
-    font-weight: 300;
-    font-size: 18px;
-    text-align: left;
-   }
   }
 
   &__tech {
@@ -107,12 +71,4 @@
 }
 a {
  text-decoration: none;
-}
-
-@media (max-width: 600px) {
- .project-dash {
-  &__projects {
-   grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
-  }
- }
 }

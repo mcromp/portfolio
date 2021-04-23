@@ -1,5 +1,6 @@
 import { projectCardType } from "../../Resources/projectCardList";
 import ProjectLinks from "./ProjectLinks";
+import * as Block from "../../StyleComponents/Block";
 import "./styles/styles.css";
 
 const ProjectCard = ({
@@ -13,16 +14,14 @@ const ProjectCard = ({
  return (
   <div className="proj-card">
    <div className="proj-col-1">
-    <h4 className="proj-card__title">{title}</h4>
-    <div className="proj-card__icon">
-     <img src={icon} alt={`screen shot of ${title}`} />
-    </div>
+    <Block.SubHeader>{title}</Block.SubHeader>
+    <Block.Img pic={icon} alt={title} />
    </div>
    <div className="proj-col-2">
     {content.map((block) => (
      <div key={block.text.substring(0, 12)} className="proj-card__content">
-      <h3 className="proj-card__content--header">{block.title}</h3>
-      <p className="proj-card__content--text">{block.text}</p>
+      <Block.TextHeader>{block.title}</Block.TextHeader>
+      <Block.Text>{block.text}</Block.Text>
      </div>
     ))}
     <ProjectLinks webURL={webURL} codeURL={codeURL} />

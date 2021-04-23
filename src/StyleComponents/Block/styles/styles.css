@@ -101,4 +101,20 @@
   text-align: left;
   white-space: pre-wrap;
 }
+
+.block__img {
+  display: block;
+  min-width: 150px;
+  max-width: 275px;
+  margin-right: auto;
+  margin-left: auto;
+  -webkit-box-shadow: 5px 5px 1px rgba(187, 128, 255, 0.663);
+          box-shadow: 5px 5px 1px rgba(187, 128, 255, 0.663);
+  border: solid 1px #ba7eff;
+}
+
+.block__text-header {
+  margin: 1rem;
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
+}
 /*# sourceMappingURL=styles.css.map */
