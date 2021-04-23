@@ -58,7 +58,7 @@ const MenuPlan = (): JSX.Element => (
 );
 
 const webURL = "https://mcromp.github.io/menu-plan/#/";
-const codeURL = "https://github.com/mcromp/menu-plan";
+const codeURL = "https://github.com/mcromp/menu-plan-backend";
 const tech = [
  "React",
  "TypeScript",
