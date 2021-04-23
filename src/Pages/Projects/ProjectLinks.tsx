@@ -1,24 +1,17 @@
 import { ExternalLink, GitHub } from "react-feather";
+import { IconLink } from "../../StyleComponents/Block";
+
+const iconsSize = 40;
 
 const ProjectLinks = ({ webURL, codeURL }: ProjectLinksProps) => {
  return (
   <div className="card-links">
-   <a
-    href={webURL}
-    className="card-links__link"
-    target="_blank"
-    rel="noreferrer"
-   >
-    <ExternalLink size={35} color="black" />
-   </a>
-   <a
-    href={codeURL}
-    className="card-links__link"
-    target="_blank"
-    rel="noreferrer"
-   >
-    <GitHub size={35} color="black" />
-   </a>
+   <IconLink url={webURL}>
+    <ExternalLink size={iconsSize} color="black" />
+   </IconLink>
+   <IconLink url={codeURL}>
+    <GitHub size={iconsSize} color="black" />
+   </IconLink>
   </div>
  );
 };

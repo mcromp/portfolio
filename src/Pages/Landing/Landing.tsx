@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { gsap } from "gsap";
 import { Linkedin, GitHub, Mail } from "react-feather";
 import * as Hero from "../../StyleComponents/Hero";
+import { IconLink } from "../../StyleComponents/Block";
 import "./styles/styles.css";
 
 const Landing = (): JSX.Element => {
@@ -43,30 +44,15 @@ const Landing = (): JSX.Element => {
    </Hero.SubTitle>
 
    <div className="landing__icons">
-    <a
-     aria-label="Linkedin"
-     target="_blank"
-     rel="noreferrer"
-     href="https://www.linkedin.com/in/mcromp/"
-    >
+    <IconLink url={"https://www.linkedin.com/in/mcromp/"}>
      <Linkedin color="black" className="icon" size={35} />
-    </a>
-    <a
-     aria-label="GitHub"
-     target="_blank"
-     rel="noreferrer"
-     href="https://github.com/mcromp"
-    >
+    </IconLink>
+    <IconLink url={"https://github.com/mcromp"}>
      <GitHub color="black" className="icon" size={35} />
-    </a>
-    <a
-     aria-label="Email"
-     target="_blank"
-     rel="noreferrer"
-     href="mailto:mcromp.js@gmail.com?subject=Hello!"
-    >
+    </IconLink>
+    <IconLink url={"mailto:mcromp.js@gmail.com?subject=Hello!"}>
      <Mail color="black" className="icon" size={35} />
-    </a>
+    </IconLink>
    </div>
   </section>
  );

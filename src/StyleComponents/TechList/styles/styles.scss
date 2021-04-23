@@ -1,0 +1,18 @@
+@import "../../../base";
+
+.tech-list {
+ display: flex;
+ padding: 0 2rem;
+ flex-flow: row wrap;
+ width: 100%;
+ margin-top: 1rem;
+ text-align: center;
+ span {
+  flex: 1 1 auto;
+  margin: 3px;
+  padding: 3px 4px;
+  border: solid 1px $green-main-dark;
+  box-shadow: 2px 2px 1px $green-main-dark;
+  font-family: monospace;
+ }
+}

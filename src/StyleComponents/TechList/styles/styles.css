@@ -74,38 +74,29 @@
   }
 }
 
-.landing {
+.tech-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  height: 100vh;
-  background: #ba7eff;
-  background: -webkit-gradient(linear, left top, left bottom, from(#ba7eff), to(#f7c2e7));
-  background: linear-gradient(180deg, #ba7eff 0%, #f7c2e7 100%);
-}
-
-.landing__icons {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  padding: 0 2rem;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  padding: 1rem 0;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  width: 100%;
+  margin-top: 1rem;
+  text-align: center;
 }
 
-.landing__icons .icon {
-  margin: 0 calc(1vw + 0.4rem);
+.tech-list span {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  margin: 3px;
+  padding: 3px 4px;
+  border: solid 1px #2cffce;
+  -webkit-box-shadow: 2px 2px 1px #2cffce;
+          box-shadow: 2px 2px 1px #2cffce;
+  font-family: monospace;
 }
 /*# sourceMappingURL=styles.css.map */

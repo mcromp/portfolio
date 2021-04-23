@@ -1,4 +1,4 @@
-import TechList from "./TechList";
+import TechCloud from "./TechCloud";
 import AboutMeBlock from "./AboutMeBlock";
 import * as Section from "../../StyleComponents/Section";
 
@@ -9,7 +9,7 @@ const AboutMe = (): JSX.Element => {
   <section className="about-me" id="about">
    <Section.Title> About</Section.Title>
    <AboutMeBlock />
-   <TechList />
+   <TechCloud />
   </section>
  );
 };

@@ -95,7 +95,7 @@ ul li {
   margin: 0.5rem;
   padding: 1rem;
   background-color: #fff;
-  font-family: sans-serif;
+  font-family: monospace;
   font-size: 0.8rem;
   color: #000;
   -webkit-box-shadow: 5px 5px 1px rgba(187, 128, 255, 0.663);
