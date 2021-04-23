@@ -76,12 +76,18 @@
 
 .footer {
   background: #fff;
-  padding: 1.5rem;
+  padding: 1.2rem;
   -webkit-box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.4), 0 2px 6px 2px rgba(60, 64, 67, 0.3);
           box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.4), 0 2px 6px 2px rgba(60, 64, 67, 0.3);
+  background: #666;
 }
 
 .footer__text {
-  font-family: sans-serif;
+  font-family: monospace;
+  color: #ffdcd0;
+}
+
+.footer__text a {
+  color: #ba7eff;
 }
 /*# sourceMappingURL=styles.css.map */

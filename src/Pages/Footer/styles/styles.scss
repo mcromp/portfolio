@@ -2,9 +2,14 @@
 
 .footer {
  background: $light1;
- padding: 1.5rem;
+ padding: 1.2rem;
  box-shadow: $box-shadow-main;
+ background: $dark2;
  &__text {
-  font-family: sans-serif;
+  font-family: monospace;
+  color: $title-color;
+  a {
+   color: $purp-main;
+  }
  }
 }
