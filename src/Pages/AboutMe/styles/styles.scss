@@ -62,13 +62,15 @@
  }
 }
 
+//Media Queries
+
 @media (max-width: 800px) {
  .about-me {
   background-size: auto 20%;
   .about-block {
    width: 95%;
    .col-1 {
-    padding: 0 0;
+    padding: 0;
     max-width: 700px;
    }
   }

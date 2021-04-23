@@ -1,6 +1,9 @@
 @import "../../../base";
 
 .project-dash {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
  padding: 3rem 1rem;
  background-color: $green-main;
 
@@ -33,19 +36,25 @@
 }
 
 @media (max-width: 900px) {
- .project-dash .proj-card {
-  display: flex;
-  flex-direction: column;
-  gap: 0;
+ .project-dash {
+  padding: 3rem 0;
+  .proj-card {
+   margin: 0;
+   display: flex;
+   flex-direction: column;
+   width: 95%;
 
-  .proj-col-2 {
-   justify-self: center;
-   height: 100%;
-   margin-top: 1.5rem;
-  }
+   .proj-col-2 {
+    justify-self: center;
+    height: 100%;
+    padding: 0;
 
-  .line {
-   width: 75%;
+    margin-top: 1.5rem;
+   }
+
+   .line {
+    width: 75%;
+   }
   }
  }
 }
@@ -54,6 +63,6 @@
   display: flex;
   flex-direction: column;
   padding: 2rem 0;
-  margin: 2rem 0;
+  margin: 3rem 0;
  }
 }
