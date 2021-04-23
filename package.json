@@ -6,6 +6,7 @@
  "dependencies": {
   "@n8tb1t/use-scroll-position": "^2.0.3",
   "@rooks/use-outside-click-ref": "^4.10.1",
+  "@rooks/use-window-size": "^4.11.0",
   "@testing-library/jest-dom": "^5.11.4",
   "@testing-library/react": "^11.1.0",
   "@testing-library/user-event": "^12.1.10",

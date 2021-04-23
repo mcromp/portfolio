@@ -1,2 +1,10 @@
+@import "../../../base";
+
 .text-link {
+ text-decoration: none;
+ box-shadow: 0px -2px inset $red-main;
+ transition: background-color 300ms ease 0s;
+ &:hover {
+  background-color: $red-main;
+ }
 }

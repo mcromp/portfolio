@@ -3,7 +3,6 @@
 ul {
  display: flex;
  flex-flow: row wrap;
- margin-bottom: 1rem;
  padding: 0.5rem;
  list-style-type: none;
  text-align: center;
@@ -17,5 +16,15 @@ ul {
   font-size: 1rem;
   color: $dark1;
   @include border-shadow-main;
+ }
+}
+
+@media (max-width: 800px) {
+ ul {
+  padding: 0 10%;
+  li {
+   padding: 0.5rem;
+   font-size: 0.85rem;
+  }
  }
 }

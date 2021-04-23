@@ -82,7 +82,6 @@ ul {
   -webkit-box-direction: normal;
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
-  margin-bottom: 1rem;
   padding: 0.5rem;
   list-style-type: none;
   text-align: center;
@@ -101,5 +100,15 @@ ul li {
   -webkit-box-shadow: 5px 5px 1px rgba(187, 128, 255, 0.663);
           box-shadow: 5px 5px 1px rgba(187, 128, 255, 0.663);
   border: solid 1px #ba7eff;
+}
+
+@media (max-width: 800px) {
+  ul {
+    padding: 0 10%;
+  }
+  ul li {
+    padding: 0.5rem;
+    font-size: 0.85rem;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
