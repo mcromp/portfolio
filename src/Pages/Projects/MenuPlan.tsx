@@ -41,8 +41,11 @@ const MenuPlan = (): JSX.Element => (
     {"\n\n"}
     Redux with Redux Thunk is very lightweight but when handling fetching logic
     with static type checking the code got hairy quickly. The solution I came up
-    with at the time was refactoring the Redux architecture using the Redux
-    ducks architecture and creating a custom helper function.
+    with at the time was refactoring the Redux architecture using the{" "}
+    <TextLink link="https://www.freecodecamp.org/news/scaling-your-redux-app-with-ducks-6115955638be/">
+     Redux ducks architecture
+    </TextLink>{" "}
+    and creating a custom helper function.
     {"\n\n"}
     If I were to change something about this project today I would instead opt
     to use a library for fetch management like React Query.

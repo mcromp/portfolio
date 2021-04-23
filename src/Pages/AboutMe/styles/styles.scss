@@ -10,15 +10,22 @@
  background-image: url("../../../Assets/top-wave.svg");
  background-repeat: no-repeat;
  background-size: 100% auto;
- .block-grid {
-  display: grid;
-  grid-template-columns: 1.5fr 1fr;
+ .about-block {
+  display: flex;
+  flex-direction: column;
   width: 80%;
-  gap: 2rem;
-  .col-2 {
-   align-self: center;
-   justify-content: center;
-   padding-top: 40px;
+  padding: 1rem 0 3rem 0;
+  &__flex {
+   display: flex;
+   margin: 0;
+   padding: 0;
+   .col-1 {
+    padding: 0 5%;
+   }
+   .col-2 {
+    align-self: center;
+    padding-right: 5%;
+   }
   }
  }
  .tech-cloud {

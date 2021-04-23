@@ -3,6 +3,7 @@ import { TechList } from "../../StyleComponents/TechList";
 import { Line } from "../../StyleComponents/Line";
 import ProjectLinks from "./ProjectLinks";
 import pic from "../../Assets/muz-ss.png";
+import { TextLink } from "../../StyleComponents/TextLink";
 
 const Muzika = (): JSX.Element => (
  <div className="proj-card">
@@ -14,10 +15,13 @@ const Muzika = (): JSX.Element => (
    <TextHeader>Info</TextHeader>
    <Text>
     One of the cool things about web dev is how it’s the intersection of so many
-    interesting technologies. For example Web Audio API. Synthesizing and
-    manipulating audio directly from the user’s browser is pretty neat I think.
-    And being a hobbyist musician, I was drawn to creating a musical application
-    for my aural skills.
+    interesting technologies. For example{" "}
+    <TextLink link="https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API">
+     Web Audio API
+    </TextLink>
+    . Synthesizing and manipulating audio directly from the user’s browser is
+    pretty neat I think. And being a hobbyist musician, I was drawn to creating
+    a musical application for my aural skills.
     {"\n\n"}
     With MuziKa the user plays a chord progression and a ‘mystery’ note
     generated in a random musical key. After hearing this the user must guess

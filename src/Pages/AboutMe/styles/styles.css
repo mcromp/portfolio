@@ -93,23 +93,35 @@
   background-size: 100% auto;
 }
 
-.about-me .block-grid {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1.5fr 1fr;
-      grid-template-columns: 1.5fr 1fr;
+.about-me .about-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 80%;
-  gap: 2rem;
+  padding: 1rem 0 3rem 0;
 }
 
-.about-me .block-grid .col-2 {
+.about-me .about-block__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.about-me .about-block__flex .col-1 {
+  padding: 0 5%;
+}
+
+.about-me .about-block__flex .col-2 {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding-top: 40px;
+  padding-right: 5%;
 }
 
 .about-me .tech-cloud {
