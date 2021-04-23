@@ -135,11 +135,13 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    gap: 0;
   }
   .project-dash .proj-card .proj-col-2 {
     -ms-grid-column-align: center;
         justify-self: center;
     height: 100%;
+    margin-top: 1.5rem;
   }
   .project-dash .proj-card .line {
     width: 75%;
