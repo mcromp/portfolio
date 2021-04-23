@@ -142,7 +142,7 @@
     padding: 3rem 0;
   }
   .project-dash .proj-card {
-    margin: 0;
+    margin: 3rem 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -157,7 +157,6 @@
         justify-self: center;
     height: 100%;
     padding: 0;
-    margin-top: 1.5rem;
   }
   .project-dash .proj-card .line {
     width: 75%;
@@ -174,7 +173,6 @@
         -ms-flex-direction: column;
             flex-direction: column;
     padding: 2rem 0;
-    margin: 3rem 0;
   }
 }
 /*# sourceMappingURL=styles.css.map */

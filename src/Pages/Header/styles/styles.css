@@ -135,7 +135,7 @@
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  background: white;
+  background: rgba(255, 255, 255, 0.836);
 }
 
 .header .navbar--menuOpen .navbar__links, .header--hidden .navbar--menuOpen .navbar__links {
