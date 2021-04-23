@@ -47,6 +47,7 @@ const Muzika = (): JSX.Element => (
     tutorial.
    </Text>
    <ProjectLinks webURL={webURL} codeURL={codeURL} />
+
    <Line />
    <TechList list={tech} />
   </div>
