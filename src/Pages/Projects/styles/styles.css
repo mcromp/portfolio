@@ -133,6 +133,7 @@
           align-items: flex-end;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  margin-top: 1rem;
   width: 75%;
 }
 
