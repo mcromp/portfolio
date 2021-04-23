@@ -109,15 +109,23 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin: 0;
   padding: 0;
 }
 
 .about-me .about-block__flex .col-1 {
   padding: 0 5%;
+  max-width: 700px;
 }
 
 .about-me .about-block__flex .col-2 {
+  max-width: 700px;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;

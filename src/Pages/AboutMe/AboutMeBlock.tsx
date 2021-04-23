@@ -1,6 +1,5 @@
 import ComputerGraphic from "./ComputerGraphic";
 import { SubHeader, Block, Text } from "../../StyleComponents/Block";
-import { TextLink } from "../../StyleComponents/TextLink";
 
 const AboutMeBlock = (): JSX.Element => (
  <Block styleAdd={"about-block"}>
