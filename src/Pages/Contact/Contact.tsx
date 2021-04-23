@@ -1,5 +1,3 @@
-import ContactLink from "./ContactLink";
-import { contactLinks } from "./contactLinks";
 import "./styles/styles.css";
 
 const Contact = (): JSX.Element => {
@@ -8,10 +6,10 @@ const Contact = (): JSX.Element => {
    <h2 id="contact" className="section_title">
     Contact
    </h2>
-   <div className="contact__links">
-    {contactLinks.map((link) => (
-     <ContactLink key={link.href} href={link.href} text={link.text} />
-    ))}
+   <div>
+    {/* <a className="contact" href="mailto:mcromp.js@gmail.com?subject=Hello!">
+     MCROMP.JS@GMAIL.COM
+    </a> */}
    </div>
   </div>
  );
