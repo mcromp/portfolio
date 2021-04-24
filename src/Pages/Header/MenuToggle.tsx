@@ -8,7 +8,7 @@ const MenuToggle = ({
  <button
   className={"menu-toggle"}
   onClick={() => setIsMenuOpen((pS) => !pS)}
-  aria-label="Open the menu"
+  aria-label="open the menu"
  >
   {isMenuOpen && isVisible ? (
    <X color="black" size={45} />
