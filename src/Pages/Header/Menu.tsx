@@ -1,12 +1,14 @@
-import React, { useCallback, useLayoutEffect as useEffect } from "react";
+import React, { useCallback, useEffect, useState } from "react";
 import MenuHashLink from "./MenuHashLink";
 
 const NavBar = ({
+ isToggleVisible,
  isMenuOpen,
  setIsMenuOpen,
  isVisible,
  menuRef,
 }: navBarProps) => {
+ const [isNavVisible, setIsNavVisible] = useState(true);
  //listens to close window when esc key pressed
  const escCallback = useCallback(
   (event) => {
@@ -14,6 +16,11 @@ const NavBar = ({
   },
   [setIsMenuOpen],
  );
+
+ useEffect(() => {
+  if (isToggleVisible && isMenuOpen && isVisible) setIsNavVisible(false);
+  else setIsNavVisible(true);
+ }, [isToggleVisible, isMenuOpen, isVisible]);
 
  useEffect(() => {
   document.addEventListener("keydown", escCallback, false);
@@ -26,7 +33,7 @@ const NavBar = ({
  return (
   <nav
    ref={menuRef}
-   className={isMenuOpen && isVisible ? "navbar--menuOpen" : "navbar"}
+   className={isMenuOpen && isVisible ? "navbar--menu-open" : "navbar"}
   >
    <MenuHashLink to="about" setIsMenuOpen={setIsMenuOpen}>
     about me
@@ -42,6 +49,7 @@ const NavBar = ({
 };
 
 type navBarProps = {
+ isToggleVisible: boolean;
  isMenuOpen: boolean;
  setIsMenuOpen: React.Dispatch<React.SetStateAction<boolean>>;
  isVisible: boolean;

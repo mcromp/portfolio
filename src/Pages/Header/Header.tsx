@@ -1,15 +1,23 @@
 import { useScrollPosition } from "@n8tb1t/use-scroll-position";
 import useOutsideClickRef from "@rooks/use-outside-click-ref";
+import { useMediaQuery } from "react-responsive";
 import { useEffect, useLayoutEffect, useState } from "react";
 import { gsap } from "gsap";
 import Logo from "./Logo";
 import Menu from "./Menu";
+import MenuToggle from "./MenuToggle";
 import "./styles/styles.css";
 
 const Header = (): JSX.Element => {
- const [isVisible, setIsVisible] = useState(true);
- const [isMenuOpen, setIsMenuOpen] = useState(false);
+ const [isVisible, setIsVisible] = useState<boolean>(true);
+ const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
+ const isToggleVisible = useMediaQuery({
+  query: "(max-width: 750px)",
+ });
 
+ useEffect(() => {
+  console.log(isToggleVisible);
+ }, [isToggleVisible]);
  useEffect(() => {
   gsap.from(".header", {
    autoAlpha: 0,
@@ -47,13 +55,15 @@ const Header = (): JSX.Element => {
    <div className={isMenuOpen && isVisible ? "modal--open" : "modal"} />
    <header className={isVisible ? "header" : "header--hidden"}>
     <Logo />
-    <button
-     className={isMenuOpen && isVisible ? "menu-toggle--open" : "menu-toggle"}
-     onClick={() => setIsMenuOpen((pS) => !pS)}
-    >
-     toggle menu
-    </button>
+    {isToggleVisible ? (
+     <MenuToggle
+      isMenuOpen={isMenuOpen}
+      isVisible={isVisible}
+      setIsMenuOpen={setIsMenuOpen}
+     />
+    ) : null}
     <Menu
+     isToggleVisible={isToggleVisible}
      isMenuOpen={isMenuOpen}
      setIsMenuOpen={setIsMenuOpen}
      isVisible={isVisible}
