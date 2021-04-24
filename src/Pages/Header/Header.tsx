@@ -16,9 +16,6 @@ const Header = (): JSX.Element => {
  });
 
  useEffect(() => {
-  console.log(isToggleVisible);
- }, [isToggleVisible]);
- useEffect(() => {
   gsap.from(".header", {
    autoAlpha: 0,
    ease: "easeIn",
@@ -63,7 +60,6 @@ const Header = (): JSX.Element => {
      />
     ) : null}
     <Menu
-     isToggleVisible={isToggleVisible}
      isMenuOpen={isMenuOpen}
      setIsMenuOpen={setIsMenuOpen}
      isVisible={isVisible}

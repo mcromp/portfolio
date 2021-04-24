@@ -2,13 +2,13 @@ import React, { useCallback, useEffect } from "react";
 import MenuHashLink from "./MenuHashLink";
 
 const NavBar = ({
- isToggleVisible,
  isMenuOpen,
  setIsMenuOpen,
  isVisible,
  menuRef,
 }: navBarProps) => {
  //listens to close window when esc key pressed
+
  const escCallback = useCallback(
   (event) => {
    if (event.keyCode === 27) setIsMenuOpen(false);
@@ -43,7 +43,6 @@ const NavBar = ({
 };
 
 type navBarProps = {
- isToggleVisible: boolean;
  isMenuOpen: boolean;
  setIsMenuOpen: React.Dispatch<React.SetStateAction<boolean>>;
  isVisible: boolean;

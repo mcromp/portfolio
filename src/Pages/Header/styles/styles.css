@@ -163,17 +163,22 @@
     height: 100vh;
     padding: 3rem 0 1rem 0;
     background: white;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(40%, #ffffff), to(#ffffff00));
+    background: linear-gradient(#ffffff 40%, #ffffff00);
     -webkit-animation: slidein 0.2s ease-in-out;
             animation: slidein 0.2s ease-in-out;
   }
   .header .navbar--menu-open .navbar__links, .header--hidden .navbar--menu-open .navbar__links {
+    width: 100%;
+    margin: 0;
+    border-top: 1px solid #666;
+    padding: 1rem;
     font-size: 1.2rem;
-    margin: 0.7rem 0;
-    padding: 0.7rem 0;
-    color: #000;
+    line-height: 1.5;
+    text-align: left;
   }
-  .header .navbar--menu-open .navbar__links:hover, .header--hidden .navbar--menu-open .navbar__links:hover {
-    background: #ffddd5;
+  .header .navbar--menu-open .navbar__links:last-child, .header--hidden .navbar--menu-open .navbar__links:last-child {
+    border-bottom: 1px solid #666;
   }
   .header .menu-toggle, .header--hidden .menu-toggle {
     display: block;
