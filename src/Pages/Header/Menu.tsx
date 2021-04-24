@@ -8,7 +8,6 @@ const NavBar = ({
  isVisible,
  menuRef,
 }: navBarProps) => {
- const [isNavVisible, setIsNavVisible] = useState(true);
  //listens to close window when esc key pressed
  const escCallback = useCallback(
   (event) => {
@@ -16,11 +15,6 @@ const NavBar = ({
   },
   [setIsMenuOpen],
  );
-
- useEffect(() => {
-  if (isToggleVisible && isMenuOpen && isVisible) setIsNavVisible(false);
-  else setIsNavVisible(true);
- }, [isToggleVisible, isMenuOpen, isVisible]);
 
  useEffect(() => {
   document.addEventListener("keydown", escCallback, false);
