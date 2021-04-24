@@ -6,9 +6,9 @@ const NavBar = ({
  setIsMenuOpen,
  isVisible,
  menuRef,
+ isSmallScreen,
 }: navBarProps) => {
  //listens to close window when esc key pressed
-
  const escCallback = useCallback(
   (event) => {
    if (event.keyCode === 27) setIsMenuOpen(false);
@@ -27,7 +27,9 @@ const NavBar = ({
  return (
   <nav
    ref={menuRef}
-   className={isMenuOpen && isVisible ? "navbar--menu-open" : "navbar"}
+   className={
+    isMenuOpen && isVisible && isSmallScreen ? "navbar--menu-open" : "navbar"
+   }
   >
    <MenuHashLink to="about" setIsMenuOpen={setIsMenuOpen}>
     about me
@@ -43,6 +45,7 @@ const NavBar = ({
 };
 
 type navBarProps = {
+ isSmallScreen: boolean;
  isMenuOpen: boolean;
  setIsMenuOpen: React.Dispatch<React.SetStateAction<boolean>>;
  isVisible: boolean;

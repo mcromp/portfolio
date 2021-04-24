@@ -11,7 +11,7 @@ import "./styles/styles.css";
 const Header = (): JSX.Element => {
  const [isVisible, setIsVisible] = useState<boolean>(true);
  const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
- const isToggleVisible = useMediaQuery({
+ const isSmallScreen = useMediaQuery({
   query: "(max-width: 750px)",
  });
 
@@ -52,7 +52,7 @@ const Header = (): JSX.Element => {
    <div className={isMenuOpen && isVisible ? "modal--open" : "modal"} />
    <header className={isVisible ? "header" : "header--hidden"}>
     <Logo />
-    {isToggleVisible ? (
+    {isSmallScreen ? (
      <MenuToggle
       isMenuOpen={isMenuOpen}
       isVisible={isVisible}
@@ -60,6 +60,7 @@ const Header = (): JSX.Element => {
      />
     ) : null}
     <Menu
+     isSmallScreen={isSmallScreen}
      isMenuOpen={isMenuOpen}
      setIsMenuOpen={setIsMenuOpen}
      isVisible={isVisible}

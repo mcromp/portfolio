@@ -163,8 +163,8 @@
     height: 100vh;
     padding: 3rem 0 1rem 0;
     background: white;
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(40%, #ffffff), to(#ffffff00));
-    background: linear-gradient(#ffffff 40%, #ffffff00);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(60%, #ffffff), to(#ffffff00));
+    background: linear-gradient(#ffffff 60%, #ffffff00);
     -webkit-animation: slidein 0.2s ease-in-out;
             animation: slidein 0.2s ease-in-out;
   }
