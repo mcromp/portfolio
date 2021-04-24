@@ -90,12 +90,9 @@
 }
 
 .project-dash .proj-card {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 2fr;
-      grid-template-columns: 1fr 2fr;
-  -ms-flex-line-pack: space-evenly;
-      align-content: space-evenly;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin: 2rem;
   padding: 2rem;
   background-color: #fff;
@@ -109,9 +106,11 @@
   -ms-grid-column-align: center;
       justify-self: center;
   height: 100%;
+  margin: 0 calc(1vw + 1rem);
 }
 
 .project-dash .proj-card .proj-col-2 {
+  margin: 0 calc(1vw + 1rem);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -163,7 +162,7 @@
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 1000px) {
   .project-dash .proj-card {
     display: -webkit-box;
     display: -ms-flexbox;

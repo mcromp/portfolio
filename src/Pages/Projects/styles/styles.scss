@@ -8,9 +8,7 @@
  background-color: $green-main;
 
  .proj-card {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  align-content: space-evenly;
+  display: flex;
   margin: 2rem;
   padding: 2rem;
   background-color: $light1;
@@ -19,8 +17,11 @@
   .proj-col-1 {
    justify-self: center;
    height: 100%;
+   margin: 0 calc(1vw + 1rem);
   }
   .proj-col-2 {
+   margin: 0 calc(1vw + 1rem);
+
    display: flex;
    flex-direction: column;
    align-items: center;
@@ -49,7 +50,6 @@
     justify-self: center;
     height: 100%;
     padding: 0;
-    // margin-top: 1.5rem;
    }
 
    .line {
@@ -58,7 +58,7 @@
   }
  }
 }
-@media (max-width: 500px) {
+@media (max-width: 1000px) {
  .project-dash .proj-card {
   display: flex;
   flex-direction: column;
