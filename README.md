@@ -4,6 +4,7 @@ Designed and built by me!
 # Tech used
 
 React  
+SASS  
 GSAP  
 React Router  
 Feather Icons  
