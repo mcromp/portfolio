@@ -82,11 +82,36 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 3rem 1rem 5rem 1rem;
+  padding: 3rem 1rem 2rem 1rem;
+  background-color: #f7c2e7;
   background-image: url("../../../Assets/wave-2.svg");
   background-repeat: no-repeat;
   background-size: 100% auto;
-  background-color: #f7c2e7;
+}
+
+.contact .flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 100%;
+  padding: 3rem 0;
+}
+
+.contact img {
+  width: 300px;
+  -webkit-box-shadow: 5px 5px 1px rgba(187, 128, 255, 0.663);
+          box-shadow: 5px 5px 1px rgba(187, 128, 255, 0.663);
+  border: solid 1px #ba7eff;
 }
 
 .contact .email {
@@ -100,5 +125,14 @@
 
 .contact .email__icon {
   padding-top: 2rem;
+}
+
+@media (max-width: 750px) {
+  .contact .flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

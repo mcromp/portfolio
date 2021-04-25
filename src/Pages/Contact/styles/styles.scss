@@ -3,11 +3,24 @@
 .contact {
  display: flex;
  flex-direction: column;
- padding: 3rem 1rem 5rem 1rem;
+ padding: 3rem 1rem 2rem 1rem;
+ background-color: $pink-main;
  background-image: url("../../../Assets/wave-2.svg");
  background-repeat: no-repeat;
  background-size: 100% auto;
- background-color: $pink-main;
+ .flex {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  padding: 3rem 0;
+ }
+ img {
+  width: 300px;
+  @include border-shadow-main;
+ }
+
  .email {
   margin: 3rem 0;
   &__text {
@@ -16,6 +29,14 @@
   }
   &__icon {
    padding-top: 2rem;
+  }
+ }
+}
+
+@media (max-width: 750px) {
+ .contact {
+  .flex {
+   flex-direction: column-reverse;
   }
  }
 }
