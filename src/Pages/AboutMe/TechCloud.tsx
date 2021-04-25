@@ -14,8 +14,7 @@ const TechCloud = (): JSX.Element => (
   <Text>
    Outside of programming I enjoy art, traveling, guitar, and hiking.
    {"\n"}
-   And, of course, coffee <Emoji label="coffee" symbol="☕" />
-   ... Lots and lots of coffee.
+   And, of course, coffee <Emoji label="coffee" symbol="☕" />!
   </Text>
  </div>
 );

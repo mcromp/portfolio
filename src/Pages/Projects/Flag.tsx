@@ -14,8 +14,8 @@ const Flag = (): JSX.Element => (
   <div className="proj-col-2">
    <TextHeader>Intro</TextHeader>
    <Text>
-    I created this project because I wanted to create a unique application to
-    better understand the React and REST API data fetching.
+    I built this project because I wanted to create a unique application to
+    better understand React Hooks and REST API data fetching.
     {"\n\n"}
     In Flag Memory the player selects a difficulty setting to start. They are
     presented with a board of flipped over cards. The player flips over two

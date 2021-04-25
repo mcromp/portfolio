@@ -24,10 +24,10 @@ const MenuPlan = (): JSX.Element => (
     then add them to a printable 7-day calendar. Food items are able to be
     filtered or searched.
     {"\n\n"}
-    This was my first project building an entire backend and database from
-    scratch and although I was using several technologies for the first time
-    (notably Express, MongoDB, and Mongoose) this stack is quite popular and I
-    was thankfully able to find lots of resources.
+    This was my first project building an entire backend and database and
+    although I was using several technologies for the first time (notably
+    Express, MongoDB, and Mongoose) this stack is quite popular and I was
+    thankfully able to find lots of resources.
    </Text>
    <TextHeader>Tech</TextHeader>
    <Text>
@@ -37,7 +37,7 @@ const MenuPlan = (): JSX.Element => (
     {"\n\n"}
     The client was built with React and TypeScript, React-Router for page
     routing, and Redux for global state management. For SASS/CSS I used BEM
-    architecture. For handling the async state management I used Redux Thunk.
+    architecture, and handling the async state management I used Redux Thunk.
     {"\n\n"}
     Redux with Redux Thunk is very lightweight but when handling fetching logic
     with static type checking the code got hairy quickly. The solution I came up
@@ -45,10 +45,11 @@ const MenuPlan = (): JSX.Element => (
     <TextLink link="https://www.freecodecamp.org/news/scaling-your-redux-app-with-ducks-6115955638be/">
      Redux ducks architecture
     </TextLink>{" "}
-    and creating a custom helper function.
+    and creating a custom service function.
     {"\n\n"}
     If I were to change something about this project today I would instead opt
-    to use a library for fetch management like React Query.
+    to use a premade service library and use a fetch management library like{" "}
+    <TextLink link="https://react-query.tanstack.com/">React Query.</TextLink>
    </Text>
    <ProjectLinks webURL={webURL} codeURL={codeURL} />
    <Line />

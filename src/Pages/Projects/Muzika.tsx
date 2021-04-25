@@ -19,9 +19,9 @@ const Muzika = (): JSX.Element => (
     <TextLink link="https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API">
      Web Audio API
     </TextLink>
-    . Synthesizing and manipulating audio directly from the user’s browser is
-    pretty neat I think. And being a hobbyist musician, I was drawn to creating
-    a musical application for my aural skills.
+    . Synthesizing and manipulating audio directly from the browser is pretty
+    neat, and being a hobbyist musician, I was drawn to creating a musical
+    application for my aural skills.
     {"\n\n"}
     With MuziKa the user plays a chord progression and a ‘mystery’ note
     generated in a random musical key. After hearing this the user must guess
@@ -29,21 +29,21 @@ const Muzika = (): JSX.Element => (
     {"\n\n"}
     The user is able to replay the chord progression entirely, play any of the
     individual chords within the progression, replay the mystery note, or change
-    to a new random key with a new mystery note. A score is kept as a percentage
-    of correct vs incorrect guesses in the top right corner.`
+    to a new random key. A score is kept as a percentage of correct vs incorrect
+    guesses in the top right corner.
    </Text>
    <TextHeader>Tech</TextHeader>
    <Text>
     I knew I wanted to create this project with synthetic tones generated using
-    Web Audio API, but the amount of time needed to utilize Web Audio API
-    directly was outside the scope of the project. So I began searching for a
-    React library that utilized the API.
+    Web Audio API, but the amount of time needed for me to implement Web Audio
+    API directly was outside the scope of the project. So I began searching for
+    a React library that utilized the API.
     {"\n\n"}I choose ToneJS because of the community, well written docs, and
     focus on tone synthesis. {"\n"}Although the library is very robust, ToneJS
     is designed for continuous playing or looping on a single timeline. I found
     that my use case of playing short generated timelines caused glitches in
     audio synthesis. Special care was needed to solve these issues.
-    {"\n\n"}If I were to add to this project I would add an interactive
+    {"\n\n"}If I were to add to this project, I would add an interactive
     tutorial.
    </Text>
    <ProjectLinks webURL={webURL} codeURL={codeURL} />
