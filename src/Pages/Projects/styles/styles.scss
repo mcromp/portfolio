@@ -9,10 +9,9 @@
 
  .proj-card {
   display: flex;
-  margin: 2rem;
+  margin: 3rem 2rem;
   padding: 2rem;
   background-color: $light1;
-  gap: 2rem;
   @include border-shadow-main;
   .proj-col-1 {
    justify-self: center;
@@ -62,6 +61,6 @@
  .project-dash .proj-card {
   display: flex;
   flex-direction: column;
-  padding: 2rem 0;
+  padding: 3rem 0;
  }
 }
