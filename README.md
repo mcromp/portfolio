@@ -1,5 +1,5 @@
-This is the repo to my personal portfolio! [mcromp.com](https://mcromp.com)
-Designed and built by me!
+This is the repo to my personal portfolio I designed and built  
+[mcromp.com](https://mcromp.com)
 
 # Tech used
 
