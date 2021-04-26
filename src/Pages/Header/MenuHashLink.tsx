@@ -1,19 +1,15 @@
-import { HashLink } from "react-router-hash-link";
-
 const MenuHashLink = ({
  to,
  children,
  setIsMenuOpen,
 }: menuHashLinkProps): JSX.Element => (
- <HashLink
+ <a
+  href={`#${to}`}
   className="navbar__links"
-  smooth
-  replace
-  to={`/#${to}`}
   onClick={() => setIsMenuOpen(false)}
  >
   {children}
- </HashLink>
+ </a>
 );
 
 type menuHashLinkProps = {

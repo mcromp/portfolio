@@ -8,7 +8,6 @@ import "./styles/styles.css";
 const Landing = (): JSX.Element => {
  useEffect(() => {
   let tl = gsap.timeline();
-  tl.to(".landing", { css: { visibility: "visible" } });
   tl
    .from(".landing", {
     autoAlpha: 0,
@@ -34,7 +33,7 @@ const Landing = (): JSX.Element => {
  }, []);
 
  return (
-  <section className="landing" style={{ visibility: "hidden" }}>
+  <section className="landing">
    <Hero.Title styleAdd={"fade2"}>
     Matthew <br />
     Crompton

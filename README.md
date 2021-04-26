@@ -6,7 +6,6 @@ Designed and built by me!
 React  
 SASS  
 GSAP  
-React Router  
 Feather Icons  
 React Rooks custom hooks  
 Bootstrapped with Create React App

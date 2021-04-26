@@ -1,9 +1,9 @@
-import { HashLink } from "react-router-hash-link";
+// import { HashLink } from "react-router-hash-link";
 
 const Logo = (): JSX.Element => (
- <HashLink style={{ textDecoration: "none" }} smooth replace to="/#">
+ <a style={{ textDecoration: "none" }} href="/#">
   <h1 className="logo">&#47;&#47;mcromp</h1>
- </HashLink>
+ </a>
 );
 
 export default Logo;
