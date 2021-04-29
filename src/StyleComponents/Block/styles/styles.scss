@@ -30,6 +30,10 @@
   margin-right: auto;
   margin-left: auto;
   @include border-shadow-main;
+  transition: transform 0.4s;
+  &:hover {
+   transform: scale(1.07);
+  }
  }
  &__text-header {
   margin: 1rem;

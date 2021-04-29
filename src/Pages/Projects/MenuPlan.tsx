@@ -9,7 +9,7 @@ const MenuPlan = (): JSX.Element => (
  <div className="proj-card">
   <div className="proj-col-1">
    <SubHeader>Menu Plan</SubHeader>
-   <Img pic={pic} alt={"Menu Plan"} />
+   <Img pic={pic} alt={"Menu Plan"} link={webURL} />
   </div>
   <div className="proj-col-2">
    <TextHeader>Intro</TextHeader>

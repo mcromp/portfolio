@@ -9,7 +9,7 @@ const Muzika = (): JSX.Element => (
  <div className="proj-card">
   <div className="proj-col-1">
    <SubHeader>MuZika!</SubHeader>
-   <Img pic={pic} alt={"muzika"} />
+   <Img pic={pic} alt={"muzika"} link={webURL} />
   </div>
   <div className="proj-col-2">
    <TextHeader>Info</TextHeader>

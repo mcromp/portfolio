@@ -109,6 +109,15 @@
   -webkit-box-shadow: 5px 5px 1px rgba(187, 128, 255, 0.663);
           box-shadow: 5px 5px 1px rgba(187, 128, 255, 0.663);
   border: solid 1px #ba7eff;
+  -webkit-transition: -webkit-transform 0.4s;
+  transition: -webkit-transform 0.4s;
+  transition: transform 0.4s;
+  transition: transform 0.4s, -webkit-transform 0.4s;
+}
+
+.block__img:hover {
+  -webkit-transform: scale(1.07);
+          transform: scale(1.07);
 }
 
 .block__text-header {
