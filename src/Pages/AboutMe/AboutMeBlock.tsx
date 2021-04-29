@@ -7,8 +7,8 @@ const AboutMeBlock = (): JSX.Element => (
   <div className="about-block__flex">
    <div className="col-1">
     <Text>
-     If I had to describe myself in a word, I’d say <i>“maker”</i>.{"\n"}I have
-     a natural motivation to learn, grow, tinker, and create.
+     If I had to describe myself in a word, I’d say <i>“maker.”</i>
+     {"\n"}I have a natural motivation to learn, grow, tinker, and create.
      {"\n\n"}
      Whether I’m fixing up an old motorcycle, designing 3D models, or building a
      guitar fuzzbox, I love understanding a system, seeing how the pieces

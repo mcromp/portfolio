@@ -24,10 +24,10 @@ const MenuPlan = (): JSX.Element => (
     then add them to a printable 7-day calendar. Food items are able to be
     filtered or searched.
     {"\n\n"}
-    This was my first project building an entire backend and database and
-    although I was using several technologies for the first time (notably
-    Express, MongoDB, and Mongoose) this stack is quite popular and I was
-    thankfully able to find lots of resources.
+    This was my first project building an entire backend and database. Although
+    I was using several technologies for the first time (for example, Express,
+    MongoDB, and Mongoose), I was able to find a number of excellent resources
+    to complement these projects' documentation.
    </Text>
    <TextHeader>Tech</TextHeader>
    <Text>
