@@ -44,7 +44,7 @@ const MenuPlan = (): JSX.Element => (
     with static type checking the code got hairy quickly. The solution I came up
     with at the time was refactoring Redux using the{" "}
     <TextLink link="https://www.freecodecamp.org/news/scaling-your-redux-app-with-ducks-6115955638be/">
-     Redux ducks design pattern.
+     Redux ducks design pattern
     </TextLink>{" "}
     and creating a custom service function.
     {"\n\n"}
