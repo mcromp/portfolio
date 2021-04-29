@@ -23,6 +23,7 @@
 
  .email {
   margin: 3rem 0;
+  user-select: all;
   &__text {
    font-family: monospace;
    font-size: calc(1vw + 1rem);
