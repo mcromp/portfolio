@@ -37,13 +37,14 @@ const MenuPlan = (): JSX.Element => (
     {"\n\n"}
     The client was built with React and TypeScript, React-Router for page
     routing, and Redux for global state management. For SASS/CSS I used BEM
-    architecture, and handling the async state management I used Redux Thunk.
+    naming conventions, and handling the async state management I used Redux
+    Thunk.
     {"\n\n"}
     Redux with Redux Thunk is very lightweight but when handling fetching logic
     with static type checking the code got hairy quickly. The solution I came up
-    with at the time was refactoring the Redux architecture using the{" "}
+    with at the time was refactoring Redux using the{" "}
     <TextLink link="https://www.freecodecamp.org/news/scaling-your-redux-app-with-ducks-6115955638be/">
-     Redux ducks architecture
+     Redux ducks design pattern.
     </TextLink>{" "}
     and creating a custom service function.
     {"\n\n"}
